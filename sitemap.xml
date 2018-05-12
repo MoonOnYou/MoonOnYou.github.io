@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://MoonOnYou.github.io/python/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9D%98-%EC%B2%A0%ED%95%99/</loc>
+    <lastmod>2018-05-13T00:12:21+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://MoonOnYou.github.io/kotlin/%EC%BD%94%ED%8B%80%EB%A6%B0-%ED%8A%B9%EC%A7%95/</loc>
     <lastmod>2018-05-12T23:53:43+09:00</lastmod>
   </url>
@@ -36,7 +41,13 @@
   
   <url>
     <loc>https://MoonOnYou.github.io/</loc>
-    <lastmod>2018-05-12T23:53:43+09:00</lastmod>
+    <lastmod>2018-05-13T00:12:21+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MoonOnYou.github.io/python/</loc>
+    <lastmod>2018-05-13T00:12:21+09:00</lastmod>
     <priority>0</priority>
   </url>
   
