@@ -17,7 +17,12 @@
       <pubDate>Sat, 12 May 2018 22:22:46 +0900</pubDate>
       
       <guid>https://MoonOnYou.github.io/hugo/hugo-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC/</guid>
-      <description></description>
+      <description>새 글 쓰는 법 hugo프로젝트 최상위 폴더에서 터미널을 연다. sh hugo new 폴더이름/글제목.md ex) hugo new kotlin/&amp;quot;글 제목입니다.md&amp;quot;  글 제목에 띄어쓰기가 있으면 &amp;ldquo; &amp;ldquo;(큰 따옴표)로 묶어준다.
+ 로컬 환경에서 테스트 하는 방법
+ hugo프로젝트 최상위 폴더에서 터미널을 연다.
+hugo server -D=true  이렇게 하면 웹 브라우저에 http://localhost:1313/ 로 접속헤서 만들어진 페이지를 볼 수 있다.
+ 코드를 새로고침 할 때 마다 반영됨 (커밋은 안된 상태)
+ 베포 스크립트 만들기 스크립트 내용 ```sh #!</description>
     </item>
     
     <item>
