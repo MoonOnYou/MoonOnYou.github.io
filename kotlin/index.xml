@@ -6,19 +6,34 @@
     <description>Recent content in Kotlins on ONYOU&#39;S  SITE</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 12 May 2018 22:00:14 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 12 May 2018 23:53:43 +0900</lastBuildDate>
     
 	<atom:link href="https://MoonOnYou.github.io/kotlin/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>kotlin 키워드 정리</title>
-      <link>https://MoonOnYou.github.io/kotlin/kotlin/</link>
+      <title>코틀린 기초문법, 코틀린 특징</title>
+      <link>https://MoonOnYou.github.io/kotlin/%EC%BD%94%ED%8B%80%EB%A6%B0-%ED%8A%B9%EC%A7%95/</link>
+      <pubDate>Sat, 12 May 2018 23:53:43 +0900</pubDate>
+      
+      <guid>https://MoonOnYou.github.io/kotlin/%EC%BD%94%ED%8B%80%EB%A6%B0-%ED%8A%B9%EC%A7%95/</guid>
+      <description>코틀린은 if 와 when (자바의 switch-case)를 명령어가 아닌 표현식(하나의 값을 가지는 식)으로 간주하기 때문에 대입문(=)의 오른쪽에 사용될 수 있다. 그러나 하나의 값만 가져야 하기 때문에 if를 사용할 때 else를 반드시 구현 해야함.
+ex) a 가 1 이면 &amp;ldquo;안녕하세요&amp;rdquo;라는 문자열이 text변수에 대입된다.
+val text = if (a == 1) &amp;quot;안녕하세요&amp;quot; else &amp;quot;안녕히가세요&amp;quot;  </description>
+    </item>
+    
+    <item>
+      <title>코틀린 키워드 정리</title>
+      <link>https://MoonOnYou.github.io/kotlin/%EC%BD%94%ED%8B%80%EB%A6%B0-%ED%82%A4%EC%9B%8C%EB%93%9C-%EC%A0%95%EB%A6%AC/</link>
       <pubDate>Sat, 12 May 2018 22:00:14 +0900</pubDate>
       
-      <guid>https://MoonOnYou.github.io/kotlin/kotlin/</guid>
-      <description> kotlin 키워드 정리 같은 뜻, 다른 키워드. java and kotlin 코틀린은 자바의 유용한 기능을 모두 사용하면서 더 필요한 기능을 추가한 언어다. 그래서 자바에서의 키워드는 대부분 코틀린에서 사용 할 수 있다. 다만 그 형태가 다를 뿐 &amp;hellip;
-   </description>
+      <guid>https://MoonOnYou.github.io/kotlin/%EC%BD%94%ED%8B%80%EB%A6%B0-%ED%82%A4%EC%9B%8C%EB%93%9C-%EC%A0%95%EB%A6%AC/</guid>
+      <description>java에서 쓰던 키워드 코틀린에서 쓰기  자바의 swich-case 코틀린에서는 whew
+ 자바의
+  kotlin에만 추가된 키워드 tailrec  꼬리형 재귀함수를 정의할 때 사용  infix 중위함수를 정의할 때 사용
+vararg 함수를 호출할 때 인자의 개수를 가변적으로 전달할 때 사용한다. //이전에는 정리안함
+init 기본생성자를 별개로 선언할 때 속성을 초기화 할 때 사용(init안의 코드를 초기화 블록이라고 한다 if 등 사용가능)
+constructor 1.생성자를 외부에서 호출할 수 없게 (private)와 같은 가시성 제한자를 만들때 2.</description>
     </item>
     
   </channel>

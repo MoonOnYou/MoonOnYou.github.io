@@ -6,19 +6,20 @@
     <description>Recent content on ONYOU&#39;S  SITE</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 May 2018 00:12:21 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 12 May 2018 23:53:43 +0900</lastBuildDate>
     
 	<atom:link href="https://MoonOnYou.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>파이썬의 철학</title>
-      <link>https://MoonOnYou.github.io/python/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9D%98-%EC%B2%A0%ED%95%99/</link>
-      <pubDate>Sun, 13 May 2018 00:12:21 +0900</pubDate>
+      <title>코틀린 기초문법, 코틀린 특징</title>
+      <link>https://MoonOnYou.github.io/kotlin/%EC%BD%94%ED%8B%80%EB%A6%B0-%ED%8A%B9%EC%A7%95/</link>
+      <pubDate>Sat, 12 May 2018 23:53:43 +0900</pubDate>
       
-      <guid>https://MoonOnYou.github.io/python/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9D%98-%EC%B2%A0%ED%95%99/</guid>
-      <description>파이썬의 철학은 파이썬 명령쉘에서 import this를 입력하면 나온다.
- import this The Zen of Python, by Tim Peters Beautiful is better than ugly. Explicit is better than implicit. Simple is better than complex. Complex is better than complicated. Flat is better than nested. Sparse is better than dense. Readability counts. Special cases aren&#39;t special enough to break the rules. Although practicality beats purity. Errors should never pass silently. Unless explicitly silenced.</description>
+      <guid>https://MoonOnYou.github.io/kotlin/%EC%BD%94%ED%8B%80%EB%A6%B0-%ED%8A%B9%EC%A7%95/</guid>
+      <description>코틀린은 if 와 when (자바의 switch-case)를 명령어가 아닌 표현식(하나의 값을 가지는 식)으로 간주하기 때문에 대입문(=)의 오른쪽에 사용될 수 있다. 그러나 하나의 값만 가져야 하기 때문에 if를 사용할 때 else를 반드시 구현 해야함.
+ex) a 가 1 이면 &amp;ldquo;안녕하세요&amp;rdquo;라는 문자열이 text변수에 대입된다.
+val text = if (a == 1) &amp;quot;안녕하세요&amp;quot; else &amp;quot;안녕히가세요&amp;quot;  </description>
     </item>
     
     <item>
@@ -29,17 +30,22 @@
       <guid>https://MoonOnYou.github.io/hugo/hugo-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC/</guid>
       <description>새 글 쓰는 법
  hugo프로젝트 최상위 폴더에서 터미널을 연다.   hugo new 폴더이름/글제목.md ex) hugo new kotlin/&amp;quot;글 제목입니다.md&amp;quot;   글 제목에 띄어쓰기가 있으면 &amp;ldquo; &amp;ldquo;(큰 따옴표)로 묶어준다.   로컬 환경에서 테스트 하는 방법
- hugo프로젝트 최상위 폴더에서 터미널을 연다.   hugo server -D=true   이렇게 하면 웹 브라우저에 http://localhost:1313/ 로 접속헤서 만들어진 페이지를 볼 수 있다. 코드를 새로고침 할 때 마다 반영됨 (커밋은 안된 상태)   베포 스크립트 만들기</description>
+ hugo프로젝트 최상위 폴더에서 터미널을 연다.   hugo server 또는 hugo server -D=true   -D=true는 &amp;ldquo;draft&amp;rdquo;가 &amp;ldquo;false&amp;rdquo;인 파일을 로컬환경에서 볼 수 있는 권한을 주는 것임
+ 이렇게 하면 웹 브라우저에 http://localhost:1313/ 로 접속헤서 만들어진 페이지를 볼 수 있다.</description>
     </item>
     
     <item>
-      <title>kotlin 키워드 정리</title>
-      <link>https://MoonOnYou.github.io/kotlin/kotlin/</link>
+      <title>코틀린 키워드 정리</title>
+      <link>https://MoonOnYou.github.io/kotlin/%EC%BD%94%ED%8B%80%EB%A6%B0-%ED%82%A4%EC%9B%8C%EB%93%9C-%EC%A0%95%EB%A6%AC/</link>
       <pubDate>Sat, 12 May 2018 22:00:14 +0900</pubDate>
       
-      <guid>https://MoonOnYou.github.io/kotlin/kotlin/</guid>
-      <description> kotlin 키워드 정리 같은 뜻, 다른 키워드. java and kotlin 코틀린은 자바의 유용한 기능을 모두 사용하면서 더 필요한 기능을 추가한 언어다. 그래서 자바에서의 키워드는 대부분 코틀린에서 사용 할 수 있다. 다만 그 형태가 다를 뿐 &amp;hellip;
-   </description>
+      <guid>https://MoonOnYou.github.io/kotlin/%EC%BD%94%ED%8B%80%EB%A6%B0-%ED%82%A4%EC%9B%8C%EB%93%9C-%EC%A0%95%EB%A6%AC/</guid>
+      <description>java에서 쓰던 키워드 코틀린에서 쓰기  자바의 swich-case 코틀린에서는 whew
+ 자바의
+  kotlin에만 추가된 키워드 tailrec  꼬리형 재귀함수를 정의할 때 사용  infix 중위함수를 정의할 때 사용
+vararg 함수를 호출할 때 인자의 개수를 가변적으로 전달할 때 사용한다. //이전에는 정리안함
+init 기본생성자를 별개로 선언할 때 속성을 초기화 할 때 사용(init안의 코드를 초기화 블록이라고 한다 if 등 사용가능)
+constructor 1.생성자를 외부에서 호출할 수 없게 (private)와 같은 가시성 제한자를 만들때 2.</description>
     </item>
     
   </channel>

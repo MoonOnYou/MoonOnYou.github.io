@@ -4,7 +4,7 @@
          
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Hugo 명령어 정리</title>
+        <title>코틀린 키워드 정리</title>
         
         <style>
 
@@ -80,7 +80,7 @@
 
                 <div class="navbar-header">
 
-                    <a class="navbar-brand visible-xs" href="#">Hugo 명령어 정리</a>
+                    <a class="navbar-brand visible-xs" href="#">코틀린 키워드 정리</a>
 
                     <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
                         <span class="icon-bar"></span>
@@ -134,120 +134,62 @@
     
     
 
-    <h4><a href="/hugo/hugo-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC/">Hugo 명령어 정리</a></h4>
+    <h4><a href="/kotlin/%EC%BD%94%ED%8B%80%EB%A6%B0-%ED%82%A4%EC%9B%8C%EB%93%9C-%EC%A0%95%EB%A6%AC/">코틀린 키워드 정리</a></h4>
     <h5>May 12, 2018</h5>
     
 
 </div>
 
 
-    <br> <div class="text-justify"><ol>
-<li><p>새 글 쓰는 법</p>
+    <br> <div class="text-justify">
 
-<ul>
-<li>hugo프로젝트 최상위 폴더에서 터미널을 연다.</li>
-</ul></li>
-</ol>
-
-<pre><code class="language-sh">hugo new 폴더이름/글제목.md
- ex) hugo new kotlin/&quot;글 제목입니다.md&quot;
-</code></pre>
-
-<ul>
-<li>글 제목에 띄어쓰기가 있으면 &ldquo; &ldquo;(큰 따옴표)로 묶어준다.</li>
-</ul>
+<h2 id="java에서-쓰던-키워드-코틀린에서-쓰기">java에서 쓰던 키워드 코틀린에서 쓰기</h2>
 
 <ol>
-<li><p>로컬 환경에서 테스트 하는 방법</p>
+<li><p>자바의 swich-case 코틀린에서는 whew</p></li>
 
-<ul>
-<li>hugo프로젝트 최상위 폴더에서 터미널을 연다.</li>
-</ul></li>
+<li><p>자바의</p></li>
 </ol>
 
-<pre><code class="language-sh">hugo server 또는 hugo server -D=true
-</code></pre>
+<h2 id="kotlin에만-추가된-키워드">kotlin에만 추가된 키워드</h2>
+
+<h3 id="tailrec">tailrec</h3>
 
 <ul>
-<li><p>-D=true는 &ldquo;draft&rdquo;가 &ldquo;false&rdquo;인 파일을 로컬환경에서 볼 수 있는 권한을 주는 것임</p></li>
-
-<li><p>이렇게 하면 웹 브라우저에 <a href="http://localhost:1313/">http://localhost:1313/</a> 로 접속헤서 만들어진 페이지를 볼 수 있다.</p></li>
-
-<li><p>코드를 새로고침 할 때 마다 반영됨 (커밋은 안된 상태)</p></li>
+<li>꼬리형 재귀함수를 정의할 때 사용</li>
 </ul>
 
-<ol>
-<li><p>베포 스크립트 만들기</p>
+<h3 id="infix">infix</h3>
 
-<ul>
-<li>스크립트 내용</li>
-</ul></li>
-</ol>
+<p>중위함수를 정의할 때 사용</p>
 
-<pre><code class="language-sh"> #!/bin/bash
+<h3 id="vararg">vararg</h3>
 
-echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot;
+<p>함수를 호출할 때 인자의 개수를 가변적으로 전달할 때 사용한다. //이전에는 정리안함</p>
 
-# Build the project.
-hugo # if using a theme, replace with `hugo -t &lt;YOURTHEME&gt;`
+<h3 id="init">init</h3>
 
-# Go To Public folder
-cd public
-# Add changes to git.
-git pull origin master
-git add .
+<p>기본생성자를 별개로 선언할 때 속성을 초기화 할 때 사용(init안의 코드를 초기화 블록이라고 한다 if 등 사용가능)</p>
 
-# Commit changes.
-msg=&quot;rebuilding site `date`&quot;
-if [ $# -eq 1 ]
-  then msg=&quot;$1&quot;
-fi
-git commit -m &quot;$msg&quot;
+<h3 id="constructor">constructor</h3>
 
-# Push source and build repos.
-git push origin master
+<p>1.생성자를 외부에서 호출할 수 없게 (private)와 같은 가시성 제한자를 만들때
+2.보조 생성자를 만들 때</p>
 
-# Come Back up to the Project Root
-cd ..
+<h3 id="field">field</h3>
 
-git pull origin master
-git add .
+<h3 id="lateinit">lateinit</h3>
 
-# Commit changes.
-msg=&quot;hugo rebuilding site `date`&quot;
-if [ $# -eq 1 ]
-  then msg=&quot;$1&quot;
-fi
-git commit -m &quot;$msg&quot;
+<p>continue와 break, break@라벨 차이점</p>
 
-# Push source and build repos.
-git push origin master
-</code></pre>
+<p>*속성과 필드의 차이점
+-가장중요한거는 사람눈에는 차이가 없다
+-필드는 단순히 값만 가지며 그 값가져오거나 변경 할 때 직접 참조한다.(함수내부에 선언된 지역변수)
+-속성은 값을 가져오거나 변경할 때 자동으로 관련함수가 호출되어 처리된다 (최상위변수나 클래스의 멤버변수,즉 접근자 함수)</p>
 
-<ol>
-<li><p>스크립트 실행 방법</p>
+<p>코틀린 연산자 정리</p>
 
-<ul>
-<li>위의 스크립트를 deploy.sh (제목상관없음) 파일에 저장한 후 아래 명령을 실행한다.</li>
-</ul></li>
-</ol>
-
-<pre><code class="language-sh"># deploy.sh 파일에 user 실행권한 주기, 최초 1회만 실행 
-sudo chmod u+x deploy.sh
-
-# 스크립트 실행하여 commit &amp; push 
-./deploy.sh
-</code></pre>
-
-<ul>
-<li>블로그 글 md 파일에서 글 속성 중 draft가 false인 것만 배포가 된다.</li>
-</ul>
-
-<pre><code class="language-sh">ex) 
-title: &quot;First&quot;
-date: 2018-05-12T22:22:46+09:00
-draft: false
-</code></pre>
+<p>코틀린 기본 함수 정리</p>
 </div>
 
     
