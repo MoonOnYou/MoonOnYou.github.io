@@ -3,7 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://MoonOnYou.github.io/post/test/</loc>
+    <loc>https://MoonOnYou.github.io/kotlin/%EC%A0%9C%EB%AA%A9/</loc>
+    <lastmod>2018-05-12T22:00:14+09:00</lastmod>
   </url>
   
   <url>
@@ -12,12 +13,14 @@
   </url>
   
   <url>
-    <loc>https://MoonOnYou.github.io/</loc>
+    <loc>https://MoonOnYou.github.io/kotlin/</loc>
+    <lastmod>2018-05-12T22:00:14+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://MoonOnYou.github.io/post/</loc>
+    <loc>https://MoonOnYou.github.io/</loc>
+    <lastmod>2018-05-12T22:00:14+09:00</lastmod>
     <priority>0</priority>
   </url>
   
