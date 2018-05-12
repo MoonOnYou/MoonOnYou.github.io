@@ -141,87 +141,92 @@
 </div>
 
 
-    <br> <div class="text-justify">
+    <br> <div class="text-justify"><ol>
+<li>새 글 쓰는 법</li>
+</ol>
+
+<ul>
+<li>hugo프로젝트 최상위 폴더에서 터미널을 연다.</li>
+</ul>
+
+<pre><code class="language-sh">hugo new 폴더이름/글제목.md
+ ex) hugo new kotlin/&quot;글 제목입니다.md&quot;
+</code></pre>
+
+<ul>
+<li>글 제목에 띄어쓰기가 있으면 &ldquo; &ldquo;(큰 따옴표)로 묶어준다.</li>
+</ul>
 
 <ol>
-<li>새 글 쓰는 법</li>
-<li>hugo프로젝트 최상위 폴더에서 터미널을 연다.
-<code>sh
-hugo new 폴더이름/글제목.md
-ex) hugo new kotlin/&quot;글 제목입니다.md&quot;
-</code></li>
+<li>로컬 환경에서 테스트 하는 방법</li>
+</ol>
 
-<li><p>글 제목에 띄어쓰기가 있으면 &ldquo; &ldquo;(큰 따옴표)로 묶어준다.</p></li>
-
-<li><p>로컬 환경에서 테스트 하는 방법</p></li>
-
-<li><p>hugo프로젝트 최상위 폴더에서 터미널을 연다.</p>
+<ul>
+<li>hugo프로젝트 최상위 폴더에서 터미널을 연다.</li>
+</ul>
 
 <pre><code class="language-sh">hugo server -D=true
-</code></pre></li>
+</code></pre>
 
-<li><p>이렇게 하면 웹 브라우저에 <a href="http://localhost:1313/">http://localhost:1313/</a> 로 접속헤서 만들어진 페이지를 볼 수 있다.</p></li>
-
-<li><p>코드를 새로고침 할 때 마다 반영됨 (커밋은 안된 상태)</p>
+<ul>
+<li>이렇게 하면 웹 브라우저에 <a href="http://localhost:1313/">http://localhost:1313/</a> 로 접속헤서 만들어진 페이지를 볼 수 있다.</li>
+<li>코드를 새로고침 할 때 마다 반영됨 (커밋은 안된 상태)</li>
+</ul>
 
 <ol>
 <li>베포 스크립트 만들기</li>
-<li>스크립트 내용
-```sh
-#!/bin/bash</li>
-</ol></li>
 </ol>
 
-<p>echo -e &ldquo;\033[0;32mDeploying updates to GitHub&hellip;\033[0m&rdquo;</p>
+<ul>
+<li>스크립트 내용</li>
+</ul>
 
-<h1 id="build-the-project">Build the project.</h1>
+<pre><code class="language-sh"> #!/bin/bash
 
-<p>hugo # if using a theme, replace with <code>hugo -t &lt;YOURTHEME&gt;</code></p>
+echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot;
 
-<h1 id="go-to-public-folder">Go To Public folder</h1>
+# Build the project.
+hugo # if using a theme, replace with `hugo -t &lt;YOURTHEME&gt;`
 
-<p>cd public</p>
+# Go To Public folder
+cd public
+# Add changes to git.
+git add .
 
-<h1 id="add-changes-to-git">Add changes to git.</h1>
-
-<p>git add .</p>
-
-<h1 id="commit-changes">Commit changes.</h1>
-
-<p>msg=&ldquo;rebuilding site <code>date</code>&ldquo;
+# Commit changes.
+msg=&quot;rebuilding site `date`&quot;
 if [ $# -eq 1 ]
-  then msg=&ldquo;$1&rdquo;
+  then msg=&quot;$1&quot;
 fi
-git commit -m &ldquo;$msg&rdquo;</p>
+git commit -m &quot;$msg&quot;
 
-<h1 id="push-source-and-build-repos">Push source and build repos.</h1>
+# Push source and build repos.
+git push origin master
 
-<p>git push origin master</p>
+# Come Back up to the Project Root
+cd ..
 
-<h1 id="come-back-up-to-the-project-root">Come Back up to the Project Root</h1>
+git add .
 
-<p>cd ..</p>
-
-<p>git add .</p>
-
-<h1 id="commit-changes-1">Commit changes.</h1>
-
-<p>msg=&ldquo;hugo rebuilding site <code>date</code>&ldquo;
+# Commit changes.
+msg=&quot;hugo rebuilding site `date`&quot;
 if [ $# -eq 1 ]
-  then msg=&ldquo;$1&rdquo;
+  then msg=&quot;$1&quot;
 fi
-git commit -m &ldquo;$msg&rdquo;</p>
+git commit -m &quot;$msg&quot;
 
-<h1 id="push-source-and-build-repos-1">Push source and build repos.</h1>
+# Push source and build repos.
+git push origin master
 
-<p>git push origin master</p>
+</code></pre>
 
-<pre><code>
- 4. 스크립트 실행 방법
+<ol>
+<li>스크립트 실행 방법</li>
+</ol>
 
- 위의 스크립트를 deploy.sh (제목상관없음) 파일에 저장한 후 아래 명령을 실행한다.
-```sh
-# deploy.sh 파일에 user 실행권한 주기, 최초 1회만 실행 
+<p>위의 스크립트를 deploy.sh (제목상관없음) 파일에 저장한 후 아래 명령을 실행한다.</p>
+
+<pre><code class="language-sh"># deploy.sh 파일에 user 실행권한 주기, 최초 1회만 실행 
 sudo chmod u+x deploy.sh
 
 # 스크립트 실행하여 commit &amp; push 
@@ -229,14 +234,14 @@ sudo chmod u+x deploy.sh
 </code></pre>
 
 <ul>
-<li>블로그 글 md 파일에서 글 속성 중 draft가 false인 것만 배포가 된다.
-<code>sh
-ex) 
-title: &quot;First&quot;
+<li>블로그 글 md 파일에서 글 속성 중 draft가 false인 것만 배포가 된다.</li>
+</ul>
+
+<pre><code class="language-sh"> ex) 
+ title: &quot;First&quot;
 date: 2018-05-12T22:22:46+09:00
 draft: false
-</code></li>
-</ul>
+</code></pre>
 </div>
 
     
