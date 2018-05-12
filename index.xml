@@ -17,15 +17,17 @@
       <pubDate>Sat, 12 May 2018 22:22:46 +0900</pubDate>
       
       <guid>https://MoonOnYou.github.io/hugo/hugo-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC/</guid>
-      <description>새 글 쓰는 법   hugo프로젝트 최상위 폴더에서 터미널을 연다.  hugo new 폴더이름/글제목.md ex) hugo new kotlin/&amp;quot;글 제목입니다.md&amp;quot;   글 제목에 띄어쓰기가 있으면 &amp;ldquo; &amp;ldquo;(큰 따옴표)로 묶어준다.   로컬 환경에서 테스트 하는 방법   hugo프로젝트 최상위 폴더에서 터미널을 연다.  hugo server -D=true   이렇게 하면 웹 브라우저에 http://localhost:1313/ 로 접속헤서 만들어진 페이지를 볼 수 있다. 코드를 새로고침 할 때 마다 반영됨 (커밋은 안된 상태)   베포 스크립트 만들기   스크립트 내용  #!</description>
+      <description>새 글 쓰는 법
+ hugo프로젝트 최상위 폴더에서 터미널을 연다.   hugo new 폴더이름/글제목.md ex) hugo new kotlin/&amp;quot;글 제목입니다.md&amp;quot;   글 제목에 띄어쓰기가 있으면 &amp;ldquo; &amp;ldquo;(큰 따옴표)로 묶어준다.   로컬 환경에서 테스트 하는 방법
+ hugo프로젝트 최상위 폴더에서 터미널을 연다.   hugo server -D=true   이렇게 하면 웹 브라우저에 http://localhost:1313/ 로 접속헤서 만들어진 페이지를 볼 수 있다. 코드를 새로고침 할 때 마다 반영됨 (커밋은 안된 상태)   베포 스크립트 만들기</description>
     </item>
     
     <item>
       <title>kotlin 키워드 정리</title>
-      <link>https://MoonOnYou.github.io/kotlin/%EC%A0%9C%EB%AA%A9/</link>
+      <link>https://MoonOnYou.github.io/kotlin/kotlin/</link>
       <pubDate>Sat, 12 May 2018 22:00:14 +0900</pubDate>
       
-      <guid>https://MoonOnYou.github.io/kotlin/%EC%A0%9C%EB%AA%A9/</guid>
+      <guid>https://MoonOnYou.github.io/kotlin/kotlin/</guid>
       <description> kotlin 키워드 정리 같은 뜻, 다른 키워드. java and kotlin 코틀린은 자바의 유용한 기능을 모두 사용하면서 더 필요한 기능을 추가한 언어다. 그래서 자바에서의 키워드는 대부분 코틀린에서 사용 할 수 있다. 다만 그 형태가 다를 뿐 &amp;hellip;
    </description>
     </item>
