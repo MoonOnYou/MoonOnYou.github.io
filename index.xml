@@ -17,16 +17,7 @@
       <pubDate>Sun, 13 May 2018 21:39:23 +0900</pubDate>
       
       <guid>https://MoonOnYou.github.io/kotlin/index-of-kotlin/</guid>
-      <description> Index  코틀린에서 쓰이는 자바 키워드도 함께 정리함  A absract as? add() and() arrayListOf() arrayOf() B break by ByteArray C continue D data &amp;nbsp; div() &amp;nbsp; E F final finally for fun G H I if in infix init instanceof interface is? it invoke() G K L M N O P Q R S T U V W X Y Z __ __ __ __ __ __ __ </description>
-    </item>
-    
-    <item>
-      <title>Test_css</title>
-      <link>https://MoonOnYou.github.io/kotlin/test_css/</link>
-      <pubDate>Mon, 14 May 2018 00:16:44 +0900</pubDate>
-      
-      <guid>https://MoonOnYou.github.io/kotlin/test_css/</guid>
-      <description></description>
+      <description> Index  코틀린에서 쓰이는 자바 키워드도 함께 정리함  ? A absract as? add() and() arrayListOf() arrayOf() B break by ByteArray C continue D data &amp;nbsp; div() &amp;nbsp; E F final finally for fun G H I if in infix init instanceof interface is? it invoke() G K L M N O P Q R S T U V W X Y Z __ __ __ __ __ __ __ </description>
     </item>
     
     <item>
@@ -66,10 +57,7 @@
       <pubDate>Sat, 12 May 2018 23:53:43 +0900</pubDate>
       
       <guid>https://MoonOnYou.github.io/kotlin/%EC%BD%94%ED%8B%80%EB%A6%B0-%EA%B8%B0%EB%B3%B8%EB%AC%B8%EB%B2%95-%EC%BD%94%ED%8B%80%EB%A6%B0-%ED%8A%B9%EC%A7%95/</guid>
-      <description>코틀린의 변수 ====================================
- var  가변변수를 의미하며 variable(변수)의 뜻을 가지고 있다.  val  불변변수(상수)를 의미하며 Value(값)의 뜻을 가지고 있다. (자바의 final)    val변수가 객체를 참조하는 경우 변수 자신의 참조 값을 변경할 수 없지만 (초깃값으로 참조되는 객체외에 다른 객체를 참조할 수 없지만),참조되는 객체가 갖는 데이터는 변경이 가능하다.
- 코틀린의 표현식 if, when ================================================================
- 코틀린은 if 와 when (자바의 switch-case)를 명령어가 아닌 표현식(하나의 값을 가지는 식)으로 간주하기 때문에 대입문(=)의 오른쪽에 사용될 수 있다.</description>
+      <description>코틀린의 변수  var  가변변수를 의미하며 variable(변수)의 뜻을 가지고 있다.  val  불변변수(상수)를 의미하며 Value(값)의 뜻을 가지고 있다. (자바의 final)     val변수가 객체를 참조하는 경우 변수 자신의 참조 값을 변경할 수 없지만 (초깃값으로 참조되는 객체외에 다른 객체를 참조할 수 없지만),참조되는 객체가 갖는 데이터는 변경이 가능하다.   코틀린의 표현식 if, when  코틀린은 if 와 when (자바의 switch-case)를 명령어가 아닌 표현식(하나의 값을 가지는 식)으로 간주하기 때문에 대입문(=)의 오른쪽에 사용될 수 있다.</description>
     </item>
     
     <item>
