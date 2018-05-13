@@ -17,20 +17,7 @@
       <pubDate>Sun, 13 May 2018 21:39:23 +0900</pubDate>
       
       <guid>https://MoonOnYou.github.io/kotlin/index-of-kotlin/</guid>
-<<<<<<< HEAD
       <description> Index  코틀린에서 쓰이는 자바 키워드도 함께 정리함  A &amp;nbsp; absract &amp;nbsp; as,as? add() &amp;nbsp; and() &amp;nbsp; arrayListOf() &amp;nbsp; arrayOf() B &amp;nbsp; break,continue by ByteArray C D &amp;nbsp; data &amp;nbsp; div() &amp;nbsp; E F &amp;nbsp; final finally for fun G H I &amp;nbsp; if in infix init instanceof interface is,is? it invoke() G K L M N O P Q R S T U V W X Y Z __ __ __ __ __ __ __ </description>
-=======
-      <description> Index  코틀린에서 쓰이는 자바 키워드도 함께 정리함  A absract &amp;nbsp; as,as? add() &amp;nbsp; and() &amp;nbsp; arrayListOf() &amp;nbsp; arrayOf() B break,continue by ByteArray C D data &amp;nbsp; div() &amp;nbsp; E F final &amp;nbsp; finally &amp;nbsp; for &amp;nbsp; fun G H I if &amp;nbsp; in &amp;nbsp; infix &amp;nbsp; init &amp;nbsp; instanceof &amp;nbsp; interface &amp;nbsp; is,is? &amp;nbsp; it invoke() G K L M N O P Q R S T U V W X Y Z __ __ __ __ __ __ __ </description>
-    </item>
-    
-    <item>
-      <title>Test_css</title>
-      <link>https://MoonOnYou.github.io/kotlin/test_css/</link>
-      <pubDate>Mon, 14 May 2018 00:16:44 +0900</pubDate>
-      
-      <guid>https://MoonOnYou.github.io/kotlin/test_css/</guid>
-      <description></description>
->>>>>>> a1e40a3a28caaa5c78f77b17bec17906b379b418
     </item>
     
     <item>
