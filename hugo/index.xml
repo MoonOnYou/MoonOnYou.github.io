@@ -6,10 +6,32 @@
     <description>Recent content in Hugos on ONYOU&#39;S  SITE</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 12 May 2018 22:22:46 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 13 May 2018 19:54:03 +0900</lastBuildDate>
     
 	<atom:link href="https://MoonOnYou.github.io/hugo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>포스팅 속성 정리</title>
+      <link>https://MoonOnYou.github.io/hugo/%ED%8F%AC%EC%8A%A4%ED%8C%85-%EC%86%8D%EC%84%B1-%EC%A0%95%EB%A6%AC/</link>
+      <pubDate>Sun, 13 May 2018 19:54:03 +0900</pubDate>
+      
+      <guid>https://MoonOnYou.github.io/hugo/%ED%8F%AC%EC%8A%A4%ED%8C%85-%EC%86%8D%EC%84%B1-%EC%A0%95%EB%A6%AC/</guid>
+      <description>터미널에 다음의 명령어를 입력하면 새 글을 작성하기 위한 md 파일을 만들 수 있다.
+hugo new hugo/&amp;quot;포스팅 속성 정리.md&amp;quot;   생성되는 위치: content &amp;gt; hugo &amp;gt; 포스팅 속성 정리.md   생성된 md 에는 다음과 같이 글 속성을 넣을 수 있다.
+--- title: &amp;quot;글 제목&amp;quot; date: 2018-05-13T14:08:02+09:00 draft: true author: jinhwan description: &amp;quot;hugo new site 명령어 알아보기&amp;quot; tags: [&amp;quot;hugo&amp;quot;] --- /  일반적으로 사용되고 있는 속성과 그 의미를 정리해보자.
+ title: 제목 date: 작성 시간 draft: 초안 여부.</description>
+    </item>
+    
+    <item>
+      <title>[Hugo] 새로운 사이트 만들기</title>
+      <link>https://MoonOnYou.github.io/hugo/hugo-%EC%83%88%EB%A1%9C%EC%9A%B4-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0/</link>
+      <pubDate>Sun, 13 May 2018 14:08:02 +0900</pubDate>
+      
+      <guid>https://MoonOnYou.github.io/hugo/hugo-%EC%83%88%EB%A1%9C%EC%9A%B4-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0/</guid>
+      <description>터미널에 다음과 같이 입력하여 새로운 사이트를 생성 할 수 있다.
+jinhwan@JungJinHwan:~/work/hugo$ hugo new site &amp;lt;사이트 이름&amp;gt;  Congratulations! Your new Hugo site is created in /home/jinhwan/work/hugo/first_site. Just a few more steps and you&#39;re ready to go: 1. Download a theme into the same-named folder. Choose a theme from https://themes.gohugo.io/, or create your own with the &amp;quot;hugo new theme &amp;lt;THEMENAME&amp;gt;&amp;quot; command. 2. Perhaps you want to add some content. You can add single files with &amp;quot;hugo new &amp;lt;SECTIONNAME&amp;gt;/&amp;lt;FILENAME&amp;gt;.</description>
+    </item>
     
     <item>
       <title>Hugo 명령어 정리</title>
