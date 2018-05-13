@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://MoonOnYou.github.io/kotlin/index-of-kotlin/</loc>
+    <lastmod>2018-05-13T21:39:23+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://MoonOnYou.github.io/kotlin/test/</loc>
+    <lastmod>2018-05-13T21:41:06+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://MoonOnYou.github.io/hugo/%ED%8F%AC%EC%8A%A4%ED%8C%85-%EC%86%8D%EC%84%B1-%EC%A0%95%EB%A6%AC/</loc>
     <lastmod>2018-05-13T19:54:03+09:00</lastmod>
   </url>
@@ -28,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://MoonOnYou.github.io/kotlin/%EC%BD%94%ED%8B%80%EB%A6%B0-%ED%82%A4%EC%9B%8C%EB%93%9C-%EC%A0%95%EB%A6%AC/</loc>
+    <loc>https://MoonOnYou.github.io/kotlin/%EC%BD%94%ED%8B%80%EB%A6%B0-%ED%82%A4%EC%9B%8C%EB%93%9C-bulit-in%ED%95%A8%EC%88%98--%EC%A0%95%EB%A6%AC/</loc>
     <lastmod>2018-05-12T22:00:14+09:00</lastmod>
   </url>
   
@@ -51,13 +61,13 @@
   
   <url>
     <loc>https://MoonOnYou.github.io/kotlin/</loc>
-    <lastmod>2018-05-12T23:53:43+09:00</lastmod>
+    <lastmod>2018-05-13T21:39:23+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://MoonOnYou.github.io/</loc>
-    <lastmod>2018-05-13T19:54:03+09:00</lastmod>
+    <lastmod>2018-05-13T21:39:23+09:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -6,10 +6,30 @@
     <description>Recent content on ONYOU&#39;S  SITE</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 May 2018 19:54:03 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 13 May 2018 21:39:23 +0900</lastBuildDate>
     
 	<atom:link href="https://MoonOnYou.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Index of Kotlin</title>
+      <link>https://MoonOnYou.github.io/kotlin/index-of-kotlin/</link>
+      <pubDate>Sun, 13 May 2018 21:39:23 +0900</pubDate>
+      
+      <guid>https://MoonOnYou.github.io/kotlin/index-of-kotlin/</guid>
+      <description> Index =============================================================================
+ 자바 키워드 포함 ( 코틀린에서 쓰이는 자바 키워드도 함께 정리함 )  A absract &amp;nbsp; B &amp;nbsp; A B add() &amp;nbsp; and() &amp;nbsp; arrayListOf() &amp;nbsp; arrayOf() ABAB
+B C D E F G H I if &amp;nbsp; in &amp;nbsp; infix &amp;nbsp; init &amp;nbsp; instanceof &amp;nbsp; interface &amp;nbsp; &amp;nbsp; is,is? &amp;nbsp; it invoke() G K L M N O P Q R S T U V W X Y Z __ __ __ __ __ __ __ </description>
+    </item>
+    
+    <item>
+      <title>Test</title>
+      <link>https://MoonOnYou.github.io/kotlin/test/</link>
+      <pubDate>Sun, 13 May 2018 21:41:06 +0900</pubDate>
+      
+      <guid>https://MoonOnYou.github.io/kotlin/test/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>포스팅 속성 정리</title>
@@ -67,14 +87,17 @@
     
     <item>
       <title>코틀린 키워드 정리</title>
-      <link>https://MoonOnYou.github.io/kotlin/%EC%BD%94%ED%8B%80%EB%A6%B0-%ED%82%A4%EC%9B%8C%EB%93%9C-%EC%A0%95%EB%A6%AC/</link>
+      <link>https://MoonOnYou.github.io/kotlin/%EC%BD%94%ED%8B%80%EB%A6%B0-%ED%82%A4%EC%9B%8C%EB%93%9C-bulit-in%ED%95%A8%EC%88%98--%EC%A0%95%EB%A6%AC/</link>
       <pubDate>Sat, 12 May 2018 22:00:14 +0900</pubDate>
       
-      <guid>https://MoonOnYou.github.io/kotlin/%EC%BD%94%ED%8B%80%EB%A6%B0-%ED%82%A4%EC%9B%8C%EB%93%9C-%EC%A0%95%EB%A6%AC/</guid>
-      <description>Index ======================
- 자바 키워드 포함 ( 코틀린에서 쓰이는 자바 키워드도 함께 정리함 )  A B C D E F G H I G K L M N O P Q R S T U V W X Y Z __ __ __ __ __ __ __ kotlin에서의 java키워드 =============================================================
+      <guid>https://MoonOnYou.github.io/kotlin/%EC%BD%94%ED%8B%80%EB%A6%B0-%ED%82%A4%EC%9B%8C%EB%93%9C-bulit-in%ED%95%A8%EC%88%98--%EC%A0%95%EB%A6%AC/</guid>
+      <description>kotlin에서의 java키워드 =============================================================
 표현식 when, 자바의 swich-case kotlin에만 추가된 키워드 ========================================================
-tailrec  꼬리형 재귀함수를 정의할 때 사용  infix 중위함수를 정의할 때 사용</description>
+tailrec  꼬리형 재귀함수를 정의할 때 사용  infix 중위함수를 정의할 때 사용
+vararg 함수를 호출할 때 인자의 개수를 가변적으로 전달할 때 사용한다. //이전에는 정리안함
+init 기본생성자를 별개로 선언할 때 속성을 초기화 할 때 사용(init안의 코드를 초기화 블록이라고 한다 if 등 사용가능)
+constructor 1.생성자를 외부에서 호출할 수 없게 (private)와 같은 가시성 제한자를 만들때 2.보조 생성자를 만들 때
+field lateinit continue와 break, break@라벨 차이점</description>
     </item>
     
   </channel>
