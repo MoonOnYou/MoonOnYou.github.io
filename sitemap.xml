@@ -8,11 +8,14 @@
   </url>
   
   <url>
+<<<<<<< HEAD
     <loc>https://MoonOnYou.github.io/kotlin/testtest/</loc>
     <lastmod>2018-05-14T00:31:27+09:00</lastmod>
   </url>
   
   <url>
+=======
+>>>>>>> f637a19d28ac4517196605ace5849a31059d0c67
     <loc>https://MoonOnYou.github.io/kotlin/test_css/</loc>
     <lastmod>2018-05-14T00:16:44+09:00</lastmod>
   </url>
