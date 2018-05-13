@@ -4,7 +4,7 @@
          
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Posts</title>
+        <title>포스팅 송석 정리</title>
         
         <style>
 
@@ -14,7 +14,7 @@
     }
 
     :root {
-        --accent: blue;
+        --accent: pink;
         --border-width:  5px ;
     }
 
@@ -24,7 +24,7 @@
 <link rel="stylesheet" href="https://MoonOnYou.github.io/css/main.css">
 
 
-
+ <link rel="stylesheet" href="https://MoonOnYou.github.io/css/us_style.css"> 
 
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
@@ -61,9 +61,6 @@
 <script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
  <meta name="generator" content="Hugo 0.40.3" />
         
-        <link href="https://MoonOnYou.github.io/post/index.xml" rel="alternate" type="application/rss+xml" title="MoonOnYou&#39;s Site" />
-        <link href="https://MoonOnYou.github.io/post/index.xml" rel="feed" type="application/rss+xml" title="MoonOnYou&#39;s Site" />
-        
 
         
     </head>
@@ -83,7 +80,7 @@
 
                 <div class="navbar-header">
 
-                    <a class="navbar-brand visible-xs" href="#">Posts</a>
+                    <a class="navbar-brand visible-xs" href="#">포스팅 송석 정리</a>
 
                     <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
                         <span class="icon-bar"></span>
@@ -98,9 +95,13 @@
                     
                         <ul class="nav navbar-nav">
                             
-                                <li><a href="/">Home</a></li>
+                                <li><a href="/">ONYOU&#39;S HOME</a></li>
                             
-                                <li><a href="/post/">Posts</a></li>
+                                <li><a href="/kotlin/">kotlin</a></li>
+                            
+                                <li><a href="/python/">python</a></li>
+                            
+                                <li><a href="/hugo/">hugo</a></li>
                             
                         </ul>
                     
@@ -108,9 +109,9 @@
                     
                         <ul class="nav navbar-nav navbar-right">
                             
-                                <li class="navbar-icon"><a href="mailto:me@example.com"><i class="fa fa-envelope-o"></i></a></li>
+                                <li class="navbar-icon"><a href="mailto:onyou0031@naver.com"><i class="fa fa-envelope-o"></i></a></li>
                             
-                                <li class="navbar-icon"><a href="https://github.com/username/"><i class="fa fa-github"></i></a></li>
+                                <li class="navbar-icon"><a href="https://github.com/MoonOnYou/"><i class="fa fa-github"></i></a></li>
                             
                         </ul>
                     
@@ -124,9 +125,7 @@
 
 <main>
 
-    <h2>Posts</h2>
-
-     <div class="item">
+    <div class="item">
 
     
     
@@ -135,16 +134,65 @@
     
     
 
-    <h4><a href="/post/test/"></a></h4>
-    <h5>January 1, 0001</h5>
+    <h4><a href="/hugo/%ED%8F%AC%EC%8A%A4%ED%8C%85-%EC%86%A1%EC%84%9D-%EC%A0%95%EB%A6%AC/">포스팅 송석 정리</a></h4>
+    <h5>May 13, 2018</h5>
     
 
 </div>
- 
+
+
+    <br> <div class="text-justify"><p>터미널에 다음의 명령어를 입력하면 새 글을 작성하기 위한 md 파일을 만들 수 있다.</p>
+
+<pre><code class="language-sh">hugo new hugo/&quot;포스팅 속성 정리.md&quot;
+</code></pre>
+
+<ul>
+<li>위치: content &gt; hugo &gt; 포스팅 속성 정리.md
+ㅊ
+<code>md
+title: &quot;글 제목&quot;
+date: 2018-05-13T14:08:02+09:00
+draft: true
+author: jinhwan
+description: &quot;hugo new site 명령어 알아보기&quot;
+tags: [&quot;hugo&quot;]
+</code></li>
+</ul>
+</div>
+
+    
+    
+
+    
+
+    
+
+        <h4 class="page-header">Comments</h4>
+
+        <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "onyous-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    
 
 </main>
-
-
 
         <footer>
 
