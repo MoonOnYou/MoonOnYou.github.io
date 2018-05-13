@@ -21,15 +21,6 @@
     </item>
     
     <item>
-      <title>New</title>
-      <link>https://MoonOnYou.github.io/kotlin/new/</link>
-      <pubDate>Mon, 14 May 2018 00:36:28 +0900</pubDate>
-      
-      <guid>https://MoonOnYou.github.io/kotlin/new/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>포스팅 속성 정리</title>
       <link>https://MoonOnYou.github.io/hugo/%ED%8F%AC%EC%8A%A4%ED%8C%85-%EC%86%8D%EC%84%B1-%EC%A0%95%EB%A6%AC/</link>
       <pubDate>Sun, 13 May 2018 19:54:03 +0900</pubDate>
@@ -38,16 +29,6 @@
       <description>터미널에 다음의 명령어를 입력하면 새 글을 작성하기 위한 md 파일을 만들 수 있다.
  hugo new hugo/&amp;quot;포스팅 속성 정리.md&amp;quot;   생성되는 위치: content &amp;gt; hugo &amp;gt; 포스팅 속성 정리.md   생성된 md 파일에는 다음과 같이 글 속성을 넣을 수 있다.
  --- title: &amp;quot;글 제목&amp;quot; date: 2018-05-13T14:08:02+09:00 draft: true author: jinhwan description: &amp;quot;hugo new site 명령어 알아보기&amp;quot; tags: [&amp;quot;hugo&amp;quot;] ---   일반적으로 사용되고 있는 속성과 의미는 다음과 같다.</description>
-    </item>
-    
-    <item>
-      <title>포스팅 송석 정리</title>
-      <link>https://MoonOnYou.github.io/hugo/%ED%8F%AC%EC%8A%A4%ED%8C%85-%EC%86%A1%EC%84%9D-%EC%A0%95%EB%A6%AC/</link>
-      <pubDate>Sun, 13 May 2018 19:54:03 +0900</pubDate>
-      
-      <guid>https://MoonOnYou.github.io/hugo/%ED%8F%AC%EC%8A%A4%ED%8C%85-%EC%86%A1%EC%84%9D-%EC%A0%95%EB%A6%AC/</guid>
-      <description>터미널에 다음의 명령어를 입력하면 새 글을 작성하기 위한 md 파일을 만들 수 있다.
-hugo new hugo/&amp;quot;포스팅 속성 정리.md&amp;quot;   위치: content &amp;gt; hugo &amp;gt; 포스팅 속성 정리.md ㅊ md title: &amp;quot;글 제목&amp;quot; date: 2018-05-13T14:08:02+09:00 draft: true author: jinhwan description: &amp;quot;hugo new site 명령어 알아보기&amp;quot; tags: [&amp;quot;hugo&amp;quot;]   </description>
     </item>
     
     <item>
