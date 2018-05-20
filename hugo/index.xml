@@ -6,21 +6,10 @@
     <description>Recent content in Hugos on ONYOU&#39;S  SITE</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 May 2018 18:55:17 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 13 May 2018 19:54:03 +0900</lastBuildDate>
     
 	<atom:link href="https://MoonOnYou.github.io/hugo/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Test</title>
-      <link>https://MoonOnYou.github.io/hugo/test/</link>
-      <pubDate>Sun, 20 May 2018 18:55:17 +0900</pubDate>
-      
-      <guid>https://MoonOnYou.github.io/hugo/test/</guid>
-      <description>Hugo 명령어 정리 1. 새 글을 작성하는 방법  hugo프로젝트 최상위 폴더에서 터미널을 연다.
- hugo new 폴더이름/글제목.md ex) hugo new kotlin/&amp;quot;글 제목입니다.md&amp;quot;   제목에 띄어쓰기가 있으면 &amp;ldquo; &amp;ldquo;(큰 따옴표)로 묶어준다.  2. 로컬 환경에서 테스트 하는 방법  hugo프로젝트 최상위 폴더에서 터미널을 연다.
- hugo server 또는 hugo server -D=true   D=true는 &amp;ldquo;draft&amp;rdquo;가 &amp;ldquo;false&amp;rdquo;인 파일을 로컬환경에서 볼 수 있는 권한을 주는 것임 이렇게 하면 웹 브라우저에 http://localhost:1313/ 로 접속헤서 만들어진 페이지를 볼 수 있다.</description>
-    </item>
     
     <item>
       <title>포스팅 속성 정리</title>
