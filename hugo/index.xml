@@ -6,10 +6,19 @@
     <description>Recent content in Hugos on ONYOU&#39;S  SITE</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 May 2018 19:54:03 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 20 May 2018 18:55:17 +0900</lastBuildDate>
     
 	<atom:link href="https://MoonOnYou.github.io/hugo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Test</title>
+      <link>https://MoonOnYou.github.io/hugo/test/</link>
+      <pubDate>Sun, 20 May 2018 18:55:17 +0900</pubDate>
+      
+      <guid>https://MoonOnYou.github.io/hugo/test/</guid>
+      <description>testtest</description>
+    </item>
     
     <item>
       <title>포스팅 속성 정리</title>
