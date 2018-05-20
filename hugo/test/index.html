@@ -141,11 +141,109 @@
 </div>
 
 
-    <br> <div class="text-justify"><blockquote>
-<p>testtest</p>
+    <br> <div class="text-justify">
+
+<h1 id="hugo-명령어-정리">Hugo 명령어 정리</h1>
+
+<h2 id="1-새-글을-작성하는-방법">1. 새 글을 작성하는 방법</h2>
+
+<blockquote>
+<p>hugo프로젝트 최상위 폴더에서 터미널을 연다.</p>
 </blockquote>
 
-<p>dsfadsfadsfadsfasd</p>
+<pre><code class="language-sh">hugo new 폴더이름/글제목.md
+ ex) hugo new kotlin/&quot;글 제목입니다.md&quot;
+</code></pre>
+
+<ul>
+<li>제목에 띄어쓰기가 있으면 &ldquo; &ldquo;(큰 따옴표)로 묶어준다.</li>
+</ul>
+
+<h2 id="2-로컬-환경에서-테스트-하는-방법">2. 로컬 환경에서 테스트 하는 방법</h2>
+
+<blockquote>
+<p>hugo프로젝트 최상위 폴더에서 터미널을 연다.</p>
+</blockquote>
+
+<pre><code class="language-sh">hugo server 또는 hugo server -D=true
+</code></pre>
+
+<ul>
+<li>D=true는 &ldquo;draft&rdquo;가 &ldquo;false&rdquo;인 파일을 로컬환경에서 볼 수 있는 권한을 주는 것임</li>
+<li>이렇게 하면 웹 브라우저에 <a href="http://localhost:1313/">http://localhost:1313/</a> 로 접속헤서 만들어진 페이지를 볼 수 있다.</li>
+<li>코드를 새로고침 할 때 마다 반영됨 (커밋은 안된 상태)</li>
+</ul>
+
+<h2 id="3-베포-스크립트-만들기">3. 베포 스크립트 만들기</h2>
+
+<blockquote>
+<p><code>hugo</code> 명령을 통해 생성된 정적 웹 파일들(/public/ 에 위치하게됨)을 github page로 업로드 하는 스크립트</p>
+</blockquote>
+
+<pre><code class="language-sh"> #!/bin/bash
+
+echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot;
+
+# Build the project.
+hugo # if using a theme, replace with `hugo -t &lt;YOURTHEME&gt;`
+
+# Go To Public folder
+cd public
+# Add changes to git.
+git pull origin master
+git add .
+
+# Commit changes.
+msg=&quot;rebuilding site `date`&quot;
+if [ $# -eq 1 ]
+  then msg=&quot;$1&quot;
+fi
+git commit -m &quot;$msg&quot;
+
+# Push source and build repos.
+git push origin master
+
+# Come Back up to the Project Root
+cd ..
+
+git pull origin master
+git add .
+
+# Commit changes.
+msg=&quot;hugo rebuilding site `date`&quot;
+if [ $# -eq 1 ]
+  then msg=&quot;$1&quot;
+fi
+git commit -m &quot;$msg&quot;
+
+# Push source and build repos.
+git push origin master
+</code></pre>
+
+<ul>
+<li>스크립트 실행 방법
+
+<ul>
+<li>위의 스크립트를 deploy.sh (제목상관없음) 파일에 저장한 후 아래 명령을 실행한다.</li>
+</ul></li>
+</ul>
+
+<pre><code class="language-sh"># deploy.sh 파일에 user 실행권한 주기, 최초 1회만 실행 
+sudo chmod u+x deploy.sh
+
+# 스크립트 실행하여 commit &amp; push 
+./deploy.sh
+</code></pre>
+
+<ul>
+<li>블로그 글 md 파일에서 글 속성 중 draft가 false인 것만 배포가 된다.</li>
+</ul>
+
+<pre><code class="language-sh">ex) 
+title: &quot;First&quot;
+date: 2018-05-12T22:22:46+09:00
+draft: false
+</code></pre>
 </div>
 
     
