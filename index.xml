@@ -21,27 +21,6 @@
     </item>
     
     <item>
-      <title>포스팅 속성 정리</title>
-      <link>https://MoonOnYou.github.io/hugo/%ED%8F%AC%EC%8A%A4%ED%8C%85-%EC%86%8D%EC%84%B1-%EC%A0%95%EB%A6%AC/</link>
-      <pubDate>Sun, 13 May 2018 19:54:03 +0900</pubDate>
-      
-      <guid>https://MoonOnYou.github.io/hugo/%ED%8F%AC%EC%8A%A4%ED%8C%85-%EC%86%8D%EC%84%B1-%EC%A0%95%EB%A6%AC/</guid>
-      <description>터미널에 다음의 명령어를 입력하면 새 글을 작성하기 위한 md 파일을 만들 수 있다.
- hugo new hugo/&amp;quot;포스팅 속성 정리.md&amp;quot;   생성되는 위치: content &amp;gt; hugo &amp;gt; 포스팅 속성 정리.md   생성된 md 파일에는 다음과 같이 글 속성을 넣을 수 있다.
- --- title: &amp;quot;글 제목&amp;quot; date: 2018-05-13T14:08:02+09:00 draft: true author: jinhwan description: &amp;quot;hugo new site 명령어 알아보기&amp;quot; tags: [&amp;quot;hugo&amp;quot;] ---   일반적으로 사용되고 있는 속성과 의미는 다음과 같다.</description>
-    </item>
-    
-    <item>
-      <title>[Hugo] 새로운 사이트 만들기</title>
-      <link>https://MoonOnYou.github.io/hugo/hugo-%EC%83%88%EB%A1%9C%EC%9A%B4-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0/</link>
-      <pubDate>Sun, 13 May 2018 14:08:02 +0900</pubDate>
-      
-      <guid>https://MoonOnYou.github.io/hugo/hugo-%EC%83%88%EB%A1%9C%EC%9A%B4-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0/</guid>
-      <description>터미널에 다음과 같이 입력하여 새로운 사이트를 생성 할 수 있다.
- jinhwan@JungJinHwan:~/work/hugo$ hugo new site &amp;lt;사이트 이름&amp;gt;  Congratulations! Your new Hugo site is created in /home/jinhwan/work/hugo/first_site. Just a few more steps and you&#39;re ready to go: 1. Download a theme into the same-named folder. Choose a theme from https://themes.gohugo.io/, or create your own with the &amp;quot;hugo new theme &amp;lt;THEMENAME&amp;gt;&amp;quot; command. 2. Perhaps you want to add some content. You can add single files with &amp;quot;hugo new &amp;lt;SECTIONNAME&amp;gt;/&amp;lt;FILENAME&amp;gt;.</description>
-    </item>
-    
-    <item>
       <title>코틀린 기본문법, 코틀린 특징</title>
       <link>https://MoonOnYou.github.io/kotlin/%EC%BD%94%ED%8B%80%EB%A6%B0-%EA%B8%B0%EB%B3%B8%EB%AC%B8%EB%B2%95-%EC%BD%94%ED%8B%80%EB%A6%B0-%ED%8A%B9%EC%A7%95/</link>
       <pubDate>Sat, 12 May 2018 23:53:43 +0900</pubDate>
@@ -51,17 +30,6 @@
  var  가변변수를 의미하며 variable(변수)의 뜻을 가지고 있다.  val  불변변수(상수)를 의미하며 Value(값)의 뜻을 가지고 있다. (자바의 final)    val변수가 객체를 참조하는 경우 변수 자신의 참조 값을 변경할 수 없지만 (초깃값으로 참조되는 객체외에 다른 객체를 참조할 수 없지만),참조되는 객체가 갖는 데이터는 변경이 가능하다.
  코틀린의 표현식 if, when ================================================================
  코틀린은 if 와 when (자바의 switch-case)를 명령어가 아닌 표현식(하나의 값을 가지는 식)으로 간주하기 때문에 대입문(=)의 오른쪽에 사용될 수 있다.</description>
-    </item>
-    
-    <item>
-      <title>Hugo 명령어 정리</title>
-      <link>https://MoonOnYou.github.io/hugo/hugo-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC/</link>
-      <pubDate>Sat, 12 May 2018 22:22:46 +0900</pubDate>
-      
-      <guid>https://MoonOnYou.github.io/hugo/hugo-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC/</guid>
-      <description>Hugo 명령어 정리 1. 새 글을 작성하는 방법  hugo프로젝트 최상위 폴더에서 터미널을 연다.
- hugo new 폴더이름/글제목.md ex) hugo new kotlin/&amp;quot;글 제목입니다.md&amp;quot;   제목에 띄어쓰기가 있으면 &amp;ldquo; &amp;ldquo;(큰 따옴표)로 묶어준다.  2. 로컬 환경에서 테스트 하는 방법  hugo프로젝트 최상위 폴더에서 터미널을 연다.
- hugo server 또는 hugo server -D=true   D=true는 &amp;ldquo;draft&amp;rdquo;가 &amp;ldquo;false&amp;rdquo;인 파일을 로컬환경에서 볼 수 있는 권한을 주는 것임 이렇게 하면 웹 브라우저에 http://localhost:1313/ 로 접속헤서 만들어진 페이지를 볼 수 있다.</description>
     </item>
     
     <item>
