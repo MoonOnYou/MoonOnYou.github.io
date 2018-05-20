@@ -6,19 +6,17 @@
     <description>Recent content in Pythons on ONYOU&#39;S  SITE</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 May 2018 00:12:21 +0900</lastBuildDate>
     
 	<atom:link href="https://MoonOnYou.github.io/python/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>파이썬의 철학</title>
-      <link>https://MoonOnYou.github.io/python/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9D%98-%EC%B2%A0%ED%95%99/</link>
-      <pubDate>Sun, 13 May 2018 00:12:21 +0900</pubDate>
+      <title></title>
+      <link>https://MoonOnYou.github.io/python/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://MoonOnYou.github.io/python/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9D%98-%EC%B2%A0%ED%95%99/</guid>
-      <description>파이썬의 철학은 파이썬 명령쉘에서 import this를 입력하면 나온다.
- import this The Zen of Python, by Tim Peters Beautiful is better than ugly. Explicit is better than implicit. Simple is better than complex. Complex is better than complicated. Flat is better than nested. Sparse is better than dense. Readability counts. Special cases aren&#39;t special enough to break the rules. Although practicality beats purity. Errors should never pass silently. Unless explicitly silenced.</description>
+      <guid>https://MoonOnYou.github.io/python/readme/</guid>
+      <description>Mblog_post_python MoonOnYou.github.io 블로그의 Python 카테고리 글 관리</description>
     </item>
     
   </channel>
