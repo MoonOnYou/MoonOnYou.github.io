@@ -8,6 +8,16 @@
   </url>
   
   <url>
+    <loc>https://MoonOnYou.github.io/%EA%B8%B0%ED%83%80/gitignore%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/</loc>
+    <lastmod>2018-06-04T22:23:23+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://MoonOnYou.github.io/android/%EA%B6%8C%ED%95%9C%EC%84%A4%EC%A0%95/</loc>
+    <lastmod>2018-06-04T18:25:46+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://MoonOnYou.github.io/kotlin/java-setting/</loc>
     <lastmod>2018-06-03T18:51:27+09:00</lastmod>
   </url>
@@ -20,6 +30,12 @@
   <url>
     <loc>https://MoonOnYou.github.io/kotlin/%EC%BD%94%ED%8B%80%EB%A6%B0-%ED%82%A4%EC%9B%8C%EB%93%9C-bulit-in%ED%95%A8%EC%88%98--%EC%A0%95%EB%A6%AC/</loc>
     <lastmod>2018-05-12T22:00:14+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://MoonOnYou.github.io/android/</loc>
+    <lastmod>2018-06-04T18:25:46+09:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -41,6 +57,12 @@
   
   <url>
     <loc>https://MoonOnYou.github.io/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MoonOnYou.github.io/%EA%B8%B0%ED%83%80/</loc>
+    <lastmod>2018-06-04T22:23:23+09:00</lastmod>
     <priority>0</priority>
   </url>
   

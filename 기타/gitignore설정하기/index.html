@@ -4,7 +4,7 @@
          
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Java Setting</title>
+        <title>Gitignore설정하기</title>
         
         <style>
 
@@ -80,7 +80,7 @@
 
                 <div class="navbar-header">
 
-                    <a class="navbar-brand visible-xs" href="#">Java Setting</a>
+                    <a class="navbar-brand visible-xs" href="#">Gitignore설정하기</a>
 
                     <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
                         <span class="icon-bar"></span>
@@ -134,18 +134,22 @@
     
     
 
-    <h4><a href="/kotlin/java-setting/">Java Setting</a></h4>
-    <h5>June 3, 2018</h5>
+    <h4><a href="/%EA%B8%B0%ED%83%80/gitignore%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/">Gitignore설정하기</a></h4>
+    <h5>June 4, 2018</h5>
     
 
 </div>
 
 
-    <br> <div class="text-justify">
+    <br> <div class="text-justify"><p>편집기의 캐쉬파일(idea)들이 git에 같이 올라가는 것을 막기위해 git이 있는 폴더에 .&ldquo;gitignore&rdquo; 파일을 만들어 명시해 준다. (또는 git에 올리고 싶지 않은 파일들을 명시해포함시켜주면 된다.)</p>
 
-<h1 id="java-se-download-page">Java SE Download Page</h1>
-
-<p><img src="/images/java-se-downloads-page.png" alt="자바se 다운로드 페이지" /></p>
+<pre><code class="language-sh">$ vi .gitignore
+# i 를 눌러 입력모드로 바꾸고 내용을 추가한다
+# esc 를 누르고 :wq 를 입력하여 저장하고 나간다.
+*/idea/
+./idea/
+# 또는 다른 포함하고 싶지 않은 파일들을 명시 
+</code></pre>
 </div>
 
     

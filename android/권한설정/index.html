@@ -4,7 +4,7 @@
          
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Java Setting</title>
+        <title>권한설정</title>
         
         <style>
 
@@ -80,7 +80,7 @@
 
                 <div class="navbar-header">
 
-                    <a class="navbar-brand visible-xs" href="#">Java Setting</a>
+                    <a class="navbar-brand visible-xs" href="#">권한설정</a>
 
                     <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
                         <span class="icon-bar"></span>
@@ -134,8 +134,8 @@
     
     
 
-    <h4><a href="/kotlin/java-setting/">Java Setting</a></h4>
-    <h5>June 3, 2018</h5>
+    <h4><a href="/android/%EA%B6%8C%ED%95%9C%EC%84%A4%EC%A0%95/">권한설정</a></h4>
+    <h5>June 4, 2018</h5>
     
 
 </div>
@@ -143,9 +143,28 @@
 
     <br> <div class="text-justify">
 
-<h1 id="java-se-download-page">Java SE Download Page</h1>
+<ul>
+<li>AndroidMenifest.xml파일의 <code>&lt;menifest&gt;</code>태그 안에서 필요한 권한을 명시함과 동시에 어플리케이션 내에서 사용자에게 권한을 승인받으면 사용하고자 하는 기능을 사용 할 수 있다.</li>
+</ul>
 
-<p><img src="/images/java-se-downloads-page.png" alt="자바se 다운로드 페이지" /></p>
+<h3 id="권한-설정-명시-코드">권한 설정 명시 코드</h3>
+
+<p>카메라 사용을 위한 권한 설정</p>
+
+<pre><code>&lt;uses-permission android:name=&quot;android.permission.CAMERA&quot;/&gt;
+</code></pre>
+
+<p>찍은 사진을 저장하기 위한 권한 설정</p>
+
+<pre><code>&lt;uses-permission android:name=&quot;android.permission.WRITE_EXTERNAL_STORAGE&quot;/&gt;
+</code></pre>
+
+<p>갤러리에서 사진을 읽기위한 권한 설정</p>
+
+<pre><code>&lt;uses-permission android:name=&quot;android.permission.READ_EXTERNAL_STORAGE&quot;/&gt;
+</code></pre>
+
+<h3 id="사용자에게-권한을-요청하는-코드">사용자에게 권한을 요청하는 코드</h3>
 </div>
 
     

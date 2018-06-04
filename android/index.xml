@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Androids on ONYOU&#39;S  SITE</title>
+    <link>https://MoonOnYou.github.io/android/</link>
+    <description>Recent content in Androids on ONYOU&#39;S  SITE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 04 Jun 2018 18:25:46 +0900</lastBuildDate>
+    
+	<atom:link href="https://MoonOnYou.github.io/android/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>권한설정</title>
+      <link>https://MoonOnYou.github.io/android/%EA%B6%8C%ED%95%9C%EC%84%A4%EC%A0%95/</link>
+      <pubDate>Mon, 04 Jun 2018 18:25:46 +0900</pubDate>
+      
+      <guid>https://MoonOnYou.github.io/android/%EA%B6%8C%ED%95%9C%EC%84%A4%EC%A0%95/</guid>
+      <description>  AndroidMenifest.xml파일의 &amp;lt;menifest&amp;gt;태그 안에서 필요한 권한을 명시함과 동시에 어플리케이션 내에서 사용자에게 권한을 승인받으면 사용하고자 하는 기능을 사용 할 수 있다.  권한 설정 명시 코드 카메라 사용을 위한 권한 설정
+&amp;lt;uses-permission android:name=&amp;quot;android.permission.CAMERA&amp;quot;/&amp;gt;  찍은 사진을 저장하기 위한 권한 설정
+&amp;lt;uses-permission android:name=&amp;quot;android.permission.WRITE_EXTERNAL_STORAGE&amp;quot;/&amp;gt;  갤러리에서 사진을 읽기위한 권한 설정
+&amp;lt;uses-permission android:name=&amp;quot;android.permission.READ_EXTERNAL_STORAGE&amp;quot;/&amp;gt;  사용자에게 권한을 요청하는 코드 </description>
+    </item>
+    
+  </channel>
+</rss>

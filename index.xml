@@ -21,6 +21,28 @@
     </item>
     
     <item>
+      <title>Gitignore설정하기</title>
+      <link>https://MoonOnYou.github.io/%EA%B8%B0%ED%83%80/gitignore%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/</link>
+      <pubDate>Mon, 04 Jun 2018 22:23:23 +0900</pubDate>
+      
+      <guid>https://MoonOnYou.github.io/%EA%B8%B0%ED%83%80/gitignore%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/</guid>
+      <description>편집기의 캐쉬파일(idea)들이 git에 같이 올라가는 것을 막기위해 git이 있는 폴더에 .&amp;ldquo;gitignore&amp;rdquo; 파일을 만들어 명시해 준다. (또는 git에 올리고 싶지 않은 파일들을 명시해포함시켜주면 된다.)
+$ vi .gitignore # i 를 눌러 입력모드로 바꾸고 내용을 추가한다 # esc 를 누르고 :wq 를 입력하여 저장하고 나간다. */idea/ ./idea/ # 또는 다른 포함하고 싶지 않은 파일들을 명시  </description>
+    </item>
+    
+    <item>
+      <title>권한설정</title>
+      <link>https://MoonOnYou.github.io/android/%EA%B6%8C%ED%95%9C%EC%84%A4%EC%A0%95/</link>
+      <pubDate>Mon, 04 Jun 2018 18:25:46 +0900</pubDate>
+      
+      <guid>https://MoonOnYou.github.io/android/%EA%B6%8C%ED%95%9C%EC%84%A4%EC%A0%95/</guid>
+      <description>  AndroidMenifest.xml파일의 &amp;lt;menifest&amp;gt;태그 안에서 필요한 권한을 명시함과 동시에 어플리케이션 내에서 사용자에게 권한을 승인받으면 사용하고자 하는 기능을 사용 할 수 있다.  권한 설정 명시 코드 카메라 사용을 위한 권한 설정
+&amp;lt;uses-permission android:name=&amp;quot;android.permission.CAMERA&amp;quot;/&amp;gt;  찍은 사진을 저장하기 위한 권한 설정
+&amp;lt;uses-permission android:name=&amp;quot;android.permission.WRITE_EXTERNAL_STORAGE&amp;quot;/&amp;gt;  갤러리에서 사진을 읽기위한 권한 설정
+&amp;lt;uses-permission android:name=&amp;quot;android.permission.READ_EXTERNAL_STORAGE&amp;quot;/&amp;gt;  사용자에게 권한을 요청하는 코드 </description>
+    </item>
+    
+    <item>
       <title>Java Setting</title>
       <link>https://MoonOnYou.github.io/kotlin/java-setting/</link>
       <pubDate>Sun, 03 Jun 2018 18:51:27 +0900</pubDate>
