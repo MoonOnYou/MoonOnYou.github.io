@@ -52,15 +52,6 @@ $ vi .gitignore # i 를 눌러 입력모드로 바꾸고 내용을 추가한다 
     </item>
     
     <item>
-      <title>Java Setting</title>
-      <link>https://MoonOnYou.github.io/kotlin/java-setting/</link>
-      <pubDate>Sun, 03 Jun 2018 18:51:27 +0900</pubDate>
-      
-      <guid>https://MoonOnYou.github.io/kotlin/java-setting/</guid>
-      <description> Java SE Download Page </description>
-    </item>
-    
-    <item>
       <title>코틀린 기본문법, 코틀린 특징</title>
       <link>https://MoonOnYou.github.io/kotlin/%EC%BD%94%ED%8B%80%EB%A6%B0-%EA%B8%B0%EB%B3%B8%EB%AC%B8%EB%B2%95-%EC%BD%94%ED%8B%80%EB%A6%B0-%ED%8A%B9%EC%A7%95/</link>
       <pubDate>Sat, 12 May 2018 23:53:43 +0900</pubDate>
