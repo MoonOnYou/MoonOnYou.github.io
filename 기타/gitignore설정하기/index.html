@@ -143,28 +143,25 @@
 </div>
 
 
-    <br> <div class="text-justify"><ul>
-<li>편집기의 캐쉬파일(idea)들이 git에 같이 올라가는 것을 막기위해 git이 있는 폴더에 .&ldquo;gitignore&rdquo; 파일을 만들어 명시해 준다. (또는 git에 올리고 싶지 않은 파일들을 명시해포함시켜주면 된다.)</li>
-</ul>
+    <br> <div class="text-justify"><blockquote>
+<p>편집기의 캐쉬파일(idea)들이 git에 같이 올라가는 것을 막기위해 git이 있는 폴더에 .&ldquo;gitignore&rdquo; 파일을 만들어 명시해 준다. (또는 git에 올리고 싶지 않은 파일들을 명시해포함시켜주면 된다.)</p>
+</blockquote>
 
-<ol>
-<li>터미널 창을 열어 아래와 같이 입력하여 편집창을 연다</li>
-</ol>
+<pre><code>1) 터미널 창을 열어 아래와 같이 입력하여 편집창을 연다
 
-<pre><code class="language-sh">$ vi .gitignore
+    ```sh
+    $ vi .gitignore
+    ```
+
+2) i 를 눌러 입력모드로 바꾸고 아래의 파일(캐시파일) 또는 다른 포함하고 싶지 않은 파일들을 명시하여 추가한다.
+
+    ```
+    */idea/
+    ./idea/
+    ```
+
+3) esc 를 누르고 :wq 를 입력하여 저장하고 나간다.
 </code></pre>
-
-<ol>
-<li>i 를 눌러 입력모드로 바꾸고 아래의 파일(캐시파일) 또는 다른 포함하고 싶지 않은 파일들을 명시하여 추가한다.</li>
-</ol>
-
-<pre><code>*/idea/
-./idea/
-</code></pre>
-
-<ol>
-<li>esc 를 누르고 :wq 를 입력하여 저장하고 나간다.</li>
-</ol>
 </div>
 
     
