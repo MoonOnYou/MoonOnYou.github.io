@@ -191,7 +191,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun permissionCheck() {
-        if (android.os.Build.VERSION.SDK_INT &gt;= 23) {  // start
+        if (android.os.Build.VERSION.SDK_INT &gt;= 23) { 
             // 1. 읽기권한 체크
             var permissionCheck = ContextCompat.checkSelfPermission(this,
                     Manifest.permission.READ_EXTERNAL_STORAGE)
@@ -220,7 +220,7 @@ class MainActivity : AppCompatActivity() {
                         arrayOf(Manifest.permission.CAMERA), 100)
             }
 
-        }  // end
+        } 
 
 
     }
