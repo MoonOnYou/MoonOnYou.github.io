@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>https://MoonOnYou.github.io/english/some%EA%B3%BC-any%EC%9D%98-%EC%B0%A8%EC%9D%B4/</loc>
+    <lastmod>2018-06-05T18:41:25+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://MoonOnYou.github.io/%EA%B8%B0%ED%83%80/%EC%97%90%EB%9F%AC%EA%B2%BD%EA%B3%A0%EB%AC%B8-%EC%A0%95%EB%A6%AC/</loc>
     <lastmod>2018-06-05T01:19:00+09:00</lastmod>
   </url>
@@ -60,6 +65,12 @@
   
   <url>
     <loc>https://MoonOnYou.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://MoonOnYou.github.io/english/</loc>
+    <lastmod>2018-06-05T18:41:25+09:00</lastmod>
     <priority>0</priority>
   </url>
   
