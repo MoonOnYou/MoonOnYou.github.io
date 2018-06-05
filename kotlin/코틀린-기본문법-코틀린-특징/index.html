@@ -149,8 +149,6 @@
 
 <h1 id="코틀린의-변수">코틀린의 변수</h1>
 
-<p>====================================</p>
-
 <ol>
 <li>var
 
@@ -176,8 +174,6 @@
 
 <h1 id="코틀린의-표현식-if-when">코틀린의 표현식 if, when</h1>
 
-<p>================================================================</p>
-
 <blockquote>
 <p>코틀린은 if 와 when (자바의 switch-case)를 명령어가 아닌
 <strong>표현식(하나의 값을 가지는 식)</strong>으로 간주하기 때문에 대입문(=)의
@@ -190,12 +186,17 @@
 <ul>
 <li><p><em>ex 1</em><br></p>
 
-<p>1) a 가 1 이면 &ldquo;안녕하세요&rdquo;라는 문자열이 text변수에 대입된다.</p>
-
 <pre><code class="language-kotlin">val text = if (a == 1) &quot;안녕하세요&quot; else &quot;안녕히가세요&quot; //1
-</code></pre></li>
+</code></pre>
+
+<p>1) a 가 1 이면 &ldquo;안녕하세요&rdquo;라는 문자열이 text변수에 대입된다.</p></li>
 
 <li><p><em>ex 2</em> <br></p>
+
+<pre><code class="language-kotlin">val testText = when (myText) {                //1
+    is String -&gt; text.startsWith(&quot;onyou&quot;)   //2
+    else -&gt; false                           //3
+</code></pre>
 
 <p>2) <a href="/kotlin/코틀린-키워드-정리/#is,!is">is 키워드</a>
 (is는 java의 instanceof)를 이용하여 변수 타입이
@@ -206,12 +207,7 @@ boolean으로 <strong>자동 추론</strong>)</p>
 <p>3) when도 if와 마찬가지로 표현식으로 사용되기 위해선 반드시
 하나의 값을 가져야만 하므로 <strong>else</strong>를 구현해 주어야 한다.</p>
 
-<p>1) when을 통해 나온 값을 testText에 대입한다.</p>
-
-<pre><code class="language-kotlin">val testText = when (myText) {                //1
-    is String -&gt; text.startsWith(&quot;onyou&quot;)   //2
-    else -&gt; false                           //3
-</code></pre></li>
+<p>1) when을 통해 나온 값을 testText에 대입한다.</p></li>
 </ul>
 </div>
 
