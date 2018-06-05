@@ -4,7 +4,7 @@
          
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Gitignore설정하기</title>
+        <title>에러,경고문 정리</title>
         
         <style>
 
@@ -80,7 +80,7 @@
 
                 <div class="navbar-header">
 
-                    <a class="navbar-brand visible-xs" href="#">Gitignore설정하기</a>
+                    <a class="navbar-brand visible-xs" href="#">에러,경고문 정리</a>
 
                     <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
                         <span class="icon-bar"></span>
@@ -134,35 +134,26 @@
     
     
 
-    <h4><a href="/%EA%B8%B0%ED%83%80/gitignore%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/">Gitignore설정하기</a></h4>
-    <h5>June 4, 2018</h5>
+    <h4><a href="/%EA%B8%B0%ED%83%80/%EC%97%90%EB%9F%AC%EA%B2%BD%EA%B3%A0%EB%AC%B8-%EC%A0%95%EB%A6%AC/">에러,경고문 정리</a></h4>
+    <h5>June 5, 2018</h5>
     
 
 </div>
 
 
-    <br> <div class="text-justify"><ul>
-<li>편집기의 캐쉬파일(idea)들이 git에 같이 올라가는 것을 막기위해 git이 있는 폴더에 .&ldquo;gitignore&rdquo; 파일을 만들어 명시해 준다. (또는 git에 올리고 싶지 않은 파일들을 명시해포함시켜주면 된다.)</li>
-</ul>
+    <br> <div class="text-justify"><p>가끔 grdle파일을 건드리다 보면 상단에 다음과 같은 문구가 뜨는데</p>
 
-<ol>
-<li>터미널 창을 열어 아래와 같이 입력하여 편집창을 연다</li>
-</ol>
+<blockquote>
+<p>gradle files have changed since last project sync. A project sync may be necessary for the IDE to work properly. : sync now</p>
+</blockquote>
 
-<pre><code class="language-sh">$ vi .gitignore
-</code></pre>
+<p>번역하면 이렇다</p>
 
-<ol>
-<li>i 를 눌러 입력모드로 바꾸고 아래의 파일(캐시파일) 또는 다른 포함하고 싶지 않은 파일들을 명시하여 추가한다.</li>
-</ol>
+<blockquote>
+<p>이전 프로젝트 동기화 이후에 gradle 파일이 변경되었습니다. IDE가 제대로 작동하려면 프로젝트 동기화가 필요할 수 있습니다. : 지금 동기화</p>
+</blockquote>
 
-<pre><code>*/idea/
-./idea/
-</code></pre>
-
-<ol>
-<li>esc 를 누르고 :wq 를 입력하여 저장하고 나간다.</li>
-</ol>
+<p>grable를 동기화 하면 .gradle파일안에 명시된 의존 라이브러리 및 패키지를 설치해준다. 빠른 동기화를 하도록 하자</p>
 </div>
 
     

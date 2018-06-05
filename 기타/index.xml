@@ -6,10 +6,23 @@
     <description>Recent content in 기타s on ONYOU&#39;S  SITE</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Jun 2018 23:55:43 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 05 Jun 2018 01:19:00 +0900</lastBuildDate>
     
 	<atom:link href="https://MoonOnYou.github.io/%EA%B8%B0%ED%83%80/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>에러,경고문 정리</title>
+      <link>https://MoonOnYou.github.io/%EA%B8%B0%ED%83%80/%EC%97%90%EB%9F%AC%EA%B2%BD%EA%B3%A0%EB%AC%B8-%EC%A0%95%EB%A6%AC/</link>
+      <pubDate>Tue, 05 Jun 2018 01:19:00 +0900</pubDate>
+      
+      <guid>https://MoonOnYou.github.io/%EA%B8%B0%ED%83%80/%EC%97%90%EB%9F%AC%EA%B2%BD%EA%B3%A0%EB%AC%B8-%EC%A0%95%EB%A6%AC/</guid>
+      <description>가끔 grdle파일을 건드리다 보면 상단에 다음과 같은 문구가 뜨는데
+ gradle files have changed since last project sync. A project sync may be necessary for the IDE to work properly. : sync now
+ 번역하면 이렇다
+ 이전 프로젝트 동기화 이후에 gradle 파일이 변경되었습니다. IDE가 제대로 작동하려면 프로젝트 동기화가 필요할 수 있습니다. : 지금 동기화
+ grable를 동기화 하면 .gradle파일안에 명시된 의존 라이브러리 및 패키지를 설치해준다. 빠른 동기화를 하도록 하자</description>
+    </item>
     
     <item>
       <title>용어정리</title>
@@ -17,7 +30,10 @@
       <pubDate>Mon, 04 Jun 2018 23:55:43 +0900</pubDate>
       
       <guid>https://MoonOnYou.github.io/%EA%B8%B0%ED%83%80/%EC%9A%A9%EC%96%B4%EC%A0%95%EB%A6%AC/</guid>
-      <description> 용어정리  라이브러리 : 자주 사용하는 부분 프로그램 집합 모듈 : 프로그램을 구성하는 독립적인 부품 프로그램 API : 앱을 개발하기 위한 규칙, 제공하는 기능을 제어할 수 있게 만든 인터페이스  </description>
+      <description> 용어정리  라이브러리 : 자주 사용하는 부분 프로그램 집합
+ 모듈 : 프로그램을 구성하는 독립적인 부품 프로그램
+ API : 앱을 개발하기 위한 규칙, 제공하는 기능을 제어할 수 있게 만든 인터페이스
+  </description>
     </item>
     
     <item>
@@ -26,8 +42,22 @@
       <pubDate>Mon, 04 Jun 2018 22:23:23 +0900</pubDate>
       
       <guid>https://MoonOnYou.github.io/%EA%B8%B0%ED%83%80/gitignore%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/</guid>
-      <description>편집기의 캐쉬파일(idea)들이 git에 같이 올라가는 것을 막기위해 git이 있는 폴더에 .&amp;ldquo;gitignore&amp;rdquo; 파일을 만들어 명시해 준다. (또는 git에 올리고 싶지 않은 파일들을 명시해포함시켜주면 된다.)
-$ vi .gitignore # i 를 눌러 입력모드로 바꾸고 내용을 추가한다 # esc 를 누르고 :wq 를 입력하여 저장하고 나간다. */idea/ ./idea/ # 또는 다른 포함하고 싶지 않은 파일들을 명시  </description>
+      <description> 편집기의 캐쉬파일(idea)들이 git에 같이 올라가는 것을 막기위해 git이 있는 폴더에 .&amp;ldquo;gitignore&amp;rdquo; 파일을 만들어 명시해 준다. (또는 git에 올리고 싶지 않은 파일들을 명시해포함시켜주면 된다.)   터미널 창을 열어 아래와 같이 입력하여 편집창을 연다  $ vi .gitignore   i 를 눌러 입력모드로 바꾸고 아래의 파일(캐시파일) 또는 다른 포함하고 싶지 않은 파일들을 명시하여 추가한다.  */idea/ ./idea/   esc 를 누르고 :wq 를 입력하여 저장하고 나간다.  </description>
+    </item>
+    
+    <item>
+      <title>Html,css</title>
+      <link>https://MoonOnYou.github.io/%EA%B8%B0%ED%83%80/htmlcss/</link>
+      <pubDate>Sun, 03 Jun 2018 03:33:33 +0900</pubDate>
+      
+      <guid>https://MoonOnYou.github.io/%EA%B8%B0%ED%83%80/htmlcss/</guid>
+      <description>brackets  Ctrl + D : 한줄 복사 및 생성
+ 모든 단축키에 Shift를 더하면 반대가 된다.
+ 예시  Shift + Ctrl + D // 한 줄 삭제     html  &amp;lt; img src=&amp;ldquo;&amp;rdquo; alt=&amp;ldquo;&amp;rdquo; &amp;gt;
+ src : 이미지 경로(상대적경로 또는 절대적경로 또는 이미지 URL)
+ alt : 이미지를 못 불러올 경우, 이 텍스트가 나온다.
+ alt를 써줘야 하는 이유
+ 이미지가 안뜰 경우에도 검색엔진에 최적화 되기위해 프로그래머를 위해* 액박떳을 경우 사용자를 위해 시각장애인을 고려하여 웹사이트를 제작할때 (웹표준 점수가 좋아짐) ``` ***     css  클래스 및 id 생성시 이름에 숫자를 포함하는 것은 좋지 않다.</description>
     </item>
     
   </channel>

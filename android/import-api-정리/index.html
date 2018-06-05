@@ -4,7 +4,7 @@
          
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Gitignore설정하기</title>
+        <title>import API 정리</title>
         
         <style>
 
@@ -80,7 +80,7 @@
 
                 <div class="navbar-header">
 
-                    <a class="navbar-brand visible-xs" href="#">Gitignore설정하기</a>
+                    <a class="navbar-brand visible-xs" href="#">import API 정리</a>
 
                     <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
                         <span class="icon-bar"></span>
@@ -134,35 +134,88 @@
     
     
 
-    <h4><a href="/%EA%B8%B0%ED%83%80/gitignore%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/">Gitignore설정하기</a></h4>
+    <h4><a href="/android/import-api-%EC%A0%95%EB%A6%AC/">import API 정리</a></h4>
     <h5>June 4, 2018</h5>
     
 
 </div>
 
 
-    <br> <div class="text-justify"><ul>
-<li>편집기의 캐쉬파일(idea)들이 git에 같이 올라가는 것을 막기위해 git이 있는 폴더에 .&ldquo;gitignore&rdquo; 파일을 만들어 명시해 준다. (또는 git에 올리고 싶지 않은 파일들을 명시해포함시켜주면 된다.)</li>
-</ul>
+    <br> <div class="text-justify">
+
+<h1 id="mainactivity-kt">MainActivity.kt</h1>
+
+<h2 id="permissioncheck-함수-구현분에서-사용한-import-api-정리">permissionCheck()함수 구현분에서 사용한 import API 정리</h2>
 
 <ol>
-<li>터미널 창을 열어 아래와 같이 입력하여 편집창을 연다</li>
+<li>Manifest</li>
 </ol>
 
-<pre><code class="language-sh">$ vi .gitignore
+<p>import android.Manifest</p>
+
+<pre><code class="language-kotlin"># 사용
+Manifest.permission.READ_EXTERNAL_STORAGE
+Manifest.permission.WRITE_EXTERNAL_STORAGE
+Manifest.permission.CAMERA
 </code></pre>
 
 <ol>
-<li>i 를 눌러 입력모드로 바꾸고 아래의 파일(캐시파일) 또는 다른 포함하고 싶지 않은 파일들을 명시하여 추가한다.</li>
+<li>AppCompatActivity</li>
 </ol>
 
-<pre><code>*/idea/
-./idea/
+<p>import android.support.v7.app.AppCompatActivity</p>
+
+<pre><code class="language-kotlin"># 사용
+class MainActivity : AppCompatActivity() { ... }
 </code></pre>
 
 <ol>
-<li>esc 를 누르고 :wq 를 입력하여 저장하고 나간다.</li>
+<li>Bundle</li>
 </ol>
+
+<p>import android.os.Bundle
+* String값부터 다양한 parcelable type( 기본 type이 아닌 class객체를 activity 간에 주고 받기 위한 타입)까지 mapping해줌</p>
+
+<pre><code class="language-kotlin"># 사용
+override fun onCreate(savedInstanceState: Bundle?) { ... }
+</code></pre>
+
+<ol>
+<li>PackageManager</li>
+</ol>
+
+<p>import android.content.pm.PackageManager</p>
+
+<pre><code class="language-kotlin"># 사용
+PackageManager.PERMISSION_GRANTED
+</code></pre>
+
+<ol>
+<li>ActivityCompat</li>
+</ol>
+
+<p>import android.support.v4.app.ActivityCompat</p>
+
+<pre><code class="language-kotlin"># 사용
+ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE), 100)
+</code></pre>
+
+<ol>
+<li>ContextCompat</li>
+</ol>
+
+<p>import android.support.v4.content.ContextCompat</p>
+
+<pre><code class="language-kotlin"># 사용
+ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
+</code></pre>
+
+<ol>
+<li>Activity</li>
+</ol>
+
+<p>import android.app.Activity
+* 안드로이드 어플리케이션 구성요소 중 Activity를 사용하겠다고 선언</p>
 </div>
 
     

@@ -4,7 +4,7 @@
          
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Gitignore설정하기</title>
+        <title>Html,css</title>
         
         <style>
 
@@ -80,7 +80,7 @@
 
                 <div class="navbar-header">
 
-                    <a class="navbar-brand visible-xs" href="#">Gitignore설정하기</a>
+                    <a class="navbar-brand visible-xs" href="#">Html,css</a>
 
                     <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
                         <span class="icon-bar"></span>
@@ -134,34 +134,87 @@
     
     
 
-    <h4><a href="/%EA%B8%B0%ED%83%80/gitignore%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/">Gitignore설정하기</a></h4>
-    <h5>June 4, 2018</h5>
+    <h4><a href="/%EA%B8%B0%ED%83%80/htmlcss/">Html,css</a></h4>
+    <h5>June 3, 2018</h5>
     
 
 </div>
 
 
-    <br> <div class="text-justify"><ul>
-<li>편집기의 캐쉬파일(idea)들이 git에 같이 올라가는 것을 막기위해 git이 있는 폴더에 .&ldquo;gitignore&rdquo; 파일을 만들어 명시해 준다. (또는 git에 올리고 싶지 않은 파일들을 명시해포함시켜주면 된다.)</li>
-</ul>
+    <br> <div class="text-justify">
+
+<h2 id="brackets">brackets</h2>
 
 <ol>
-<li>터미널 창을 열어 아래와 같이 입력하여 편집창을 연다</li>
+<li><p>Ctrl + D : 한줄 복사 및 생성</p>
+
+<ul>
+<li><p>모든 단축키에 Shift를 더하면 반대가 된다.</p>
+
+<ul>
+<li>예시
+<code>
+Shift + Ctrl + D // 한 줄 삭제 
+</code></li>
+</ul></li>
+</ul></li>
 </ol>
 
-<pre><code class="language-sh">$ vi .gitignore
-</code></pre>
+<hr />
+
+<h2 id="html">html</h2>
 
 <ol>
-<li>i 를 눌러 입력모드로 바꾸고 아래의 파일(캐시파일) 또는 다른 포함하고 싶지 않은 파일들을 명시하여 추가한다.</li>
+<li><p>&lt; img src=&ldquo;&rdquo; alt=&ldquo;&rdquo; &gt;</p>
+
+<ul>
+<li><p>src : 이미지 경로(상대적경로 또는 절대적경로 또는 이미지 URL)</p></li>
+
+<li><p>alt : 이미지를 못 불러올 경우, 이 텍스트가 나온다.</p>
+
+<ul>
+<li><p>alt를 써줘야 하는 이유</p>
+
+<ol>
+<li>이미지가 안뜰 경우에도 검색엔진에 최적화 되기위해</li>
+<li>프로그래머를 위해* 액박떳을 경우 사용자를 위해</li>
+<li>시각장애인을 고려하여 웹사이트를 제작할때 (웹표준 점수가 좋아짐)
+```
+***</li>
+</ol></li>
+</ul></li>
+</ul></li>
 </ol>
 
-<pre><code>*/idea/
-./idea/
-</code></pre>
+<h2 id="css">css</h2>
 
 <ol>
-<li>esc 를 누르고 :wq 를 입력하여 저장하고 나간다.</li>
+<li><p>클래스 및 id 생성시 이름에 숫자를 포함하는 것은 좋지 않다.</p>
+
+<ul>
+<li>프로젝트가 커지면 걷잡을 수 없다.</li>
+</ul></li>
+
+<li><p>css파일에서 가장 상위에 있어야 하는 것이 초기화이다.</p>
+
+<ul>
+<li><p><code>&lt;ul&gt; &lt;li&gt;</code> 초기화를 해주어야 pading이 0으로 되서 글이 가운데로 이쁘게 된다.</p>
+
+<ul>
+<li>예시
+<code>css
+h1,h2,body,p,ul{ margin: 0; padding: 0;} /모든 h2에있는 기본마진을 없애겟다/
+h1{ font-weight: normal; }
+li{ list-style-type: none; }
+a{ color: dimgray; text-decoration: none; }
+a:hover, a:active{ text-decoration: none; color: dimgray; }
+</code></li>
+</ul></li>
+</ul></li>
+
+<li><p>공공재 style은 위 쪽 (상위)에 적어 주는 것이 좋다.</p></li>
+
+<li><p>width는 960px이 가장 많이 쓰이고 쓸때도 손 쉽게 쓸 수 있다.</p></li>
 </ol>
 </div>
 
