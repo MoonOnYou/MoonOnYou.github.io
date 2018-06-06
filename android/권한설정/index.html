@@ -101,9 +101,9 @@
                             
                                 <li><a href="/android/">Android</a></li>
                             
-                                <li><a href="/%EA%B8%B0%ED%83%80/">기타</a></li>
+                                <li><a href="/etc/">etc</a></li>
                             
-                                <li><a href="/%EC%98%81%EC%96%B4/">영어</a></li>
+                                <li><a href="/english/">English</a></li>
                             
                         </ul>
                     
@@ -145,33 +145,39 @@
 
     <br> <div class="text-justify">
 
-<ul>
-<li>AndroidMenifest.xml파일의 <code>&lt;menifest&gt;</code>태그 안에서 필요한 권한을 명시함과 동시에 어플리케이션 내에서 사용자에게 권한을 승인받으면 사용하고자 하는 기능을 사용 할 수 있다.</li>
-</ul>
+<blockquote>
+<p>AndroidMenifest.xml파일의 <code>&lt;menifest&gt;</code>태그 안에서 필요한 권한을 명시함과 동시에 어플리케이션 내에서 사용자에게 권한을 승인받으면 사용하고자 하는 기능을 사용 할 수 있다.</p>
+</blockquote>
 
 <h3 id="권한-설정-명시-코드">권한 설정 명시 코드</h3>
 
-<p>카메라 사용을 위한 권한 설정</p>
+<ul>
+<li><p>카메라 사용을 위한 권한 설정</p>
 
 <pre><code>&lt;uses-permission android:name=&quot;android.permission.CAMERA&quot;/&gt;
-</code></pre>
+</code></pre></li>
 
-<p>(찍은 사진을) 저장하기 위한 권한 설정</p>
+<li><p>(찍은 사진을) 저장하기 위한 권한 설정</p>
 
 <pre><code>&lt;uses-permission android:name=&quot;android.permission.WRITE_EXTERNAL_STORAGE&quot;/&gt;
-</code></pre>
+</code></pre></li>
 
-<p>(갤러리에서 사진을) 읽기위한 권한 설정</p>
+<li><p>(갤러리에서 사진을) 읽기위한 권한 설정</p>
 
 <pre><code>&lt;uses-permission android:name=&quot;android.permission.READ_EXTERNAL_STORAGE&quot;/&gt;
-</code></pre>
+</code></pre></li>
 
-<p>카메라 사용을 사용자에게 알림</p>
+<li><p>카메라 사용을 사용자에게 알림</p>
 
 <pre><code>&lt;uses-feature android:name=&quot;android.hardware.camera2&quot;/&gt;
-</code></pre>
+</code></pre></li>
+</ul>
 
 <h3 id="사용자에게-권한을-요청하는-코드">사용자에게 권한을 요청하는 코드</h3>
+
+<ul>
+<li>전체코드</li>
+</ul>
 
 <pre><code>package com.example.moononyou.phonebookkotlin
 

@@ -4,7 +4,7 @@
          
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>코틀린 키워드 정리</title>
+        <title>Gitignore설정하기</title>
         
         <style>
 
@@ -80,7 +80,7 @@
 
                 <div class="navbar-header">
 
-                    <a class="navbar-brand visible-xs" href="#">코틀린 키워드 정리</a>
+                    <a class="navbar-brand visible-xs" href="#">Gitignore설정하기</a>
 
                     <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
                         <span class="icon-bar"></span>
@@ -136,88 +136,33 @@
     
     
 
-    <h4><a href="/kotlin/%EC%BD%94%ED%8B%80%EB%A6%B0-%ED%82%A4%EC%9B%8C%EB%93%9C-%EC%A0%95%EB%A6%AC/">코틀린 키워드 정리</a></h4>
-    <h5>May 12, 2018</h5>
+    <h4><a href="/etc/gitignore%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/">Gitignore설정하기</a></h4>
+    <h5>June 4, 2018</h5>
     
 
 </div>
 
 
-    <br> <div class="text-justify">
-
-<hr />
-
-<h1 id="kotlin에서의-java키워드">kotlin에서의 java키워드</h1>
-
-<p>=============================================================</p>
-
-<h2 id="표현식"><em>표현식</em></h2>
-
-<h3 id="when-자바의-swich-case"><strong>when</strong>, 자바의 swich-case</h3>
-
-<hr />
-
-<h1 id="kotlin에만-추가된-키워드">kotlin에만 추가된 키워드</h1>
-
-<p>========================================================</p>
-
-<h3 id="tailrec">tailrec</h3>
-
-<ul>
-<li>꼬리형 재귀함수를 정의할 때 사용</li>
-</ul>
-
-<h3 id="is-is">is,!is</h3>
-
-<blockquote>
-<p>is는 자바의 instanceof로 자료형 혹은 타입을 확인하기 위한 키워드 이다.</p>
+    <br> <div class="text-justify"><blockquote>
+<p>편집기의 캐쉬파일(idea)들이 git에 같이 올라가는 것을 막기위해 git이 있는 폴더에 .&ldquo;gitignore&rdquo; 파일을 만들어 명시해 준다. (또는 git에 올리고 싶지 않은 파일들을 명시해포함시켜주면 된다.)</p>
 </blockquote>
 
-<pre><code>* 예제
+<p>1) 터미널 창을 열어 아래와 같이 입력하여 편집창을 연다</p>
 
-```kotlin
-fun main (args: Array&lt;String&gt;) {
-    val str:Any = &quot;문자열&quot;
-    if(str is String) {
-        println(&quot;str은 문자열입니다&quot;)
-    }else if(str is Int){
-        println(&quot;str은 정수입니다&quot;)
-    }
-}
+<pre><code>```sh
+$ vi .gitignore
 ```
 </code></pre>
 
-<h3 id="infix">infix</h3>
+<p>2) i 를 눌러 입력모드로 바꾸고 아래의 파일(캐시파일) 또는 다른 포함하고 싶지 않은 파일들을 명시하여 추가한다.</p>
 
-<p>중위함수를 정의할 때 사용</p>
+<pre><code>```
+*/idea/
+./idea/
+```
+</code></pre>
 
-<h3 id="vararg">vararg</h3>
-
-<p>함수를 호출할 때 인자의 개수를 가변적으로 전달할 때 사용한다. //이전에는 정리안함</p>
-
-<h3 id="init">init</h3>
-
-<p>기본생성자를 별개로 선언할 때 속성을 초기화 할 때 사용(init안의 코드를 초기화 블록이라고 한다 if 등 사용가능)</p>
-
-<h3 id="constructor">constructor</h3>
-
-<p>1.생성자를 외부에서 호출할 수 없게 (private)와 같은 가시성 제한자를 만들때
-2.보조 생성자를 만들 때</p>
-
-<h3 id="field">field</h3>
-
-<h3 id="lateinit">lateinit</h3>
-
-<p>continue와 break, break@라벨 차이점</p>
-
-<p>*속성과 필드의 차이점
--가장중요한거는 사람눈에는 차이가 없다
--필드는 단순히 값만 가지며 그 값가져오거나 변경 할 때 직접 참조한다.(함수내부에 선언된 지역변수)
--속성은 값을 가져오거나 변경할 때 자동으로 관련함수가 호출되어 처리된다 (최상위변수나 클래스의 멤버변수,즉 접근자 함수)</p>
-
-<p>코틀린 연산자 정리</p>
-
-<p>코틀린 기본 함수 정리</p>
+<p>3) esc 를 누르고 :wq 를 입력하여 저장하고 나간다.</p>
 </div>
 
     

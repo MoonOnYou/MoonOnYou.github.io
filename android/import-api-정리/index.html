@@ -101,9 +101,9 @@
                             
                                 <li><a href="/android/">Android</a></li>
                             
-                                <li><a href="/%EA%B8%B0%ED%83%80/">기타</a></li>
+                                <li><a href="/etc/">etc</a></li>
                             
-                                <li><a href="/%EC%98%81%EC%96%B4/">영어</a></li>
+                                <li><a href="/english/">English</a></li>
                             
                         </ul>
                     
@@ -149,27 +149,27 @@
 
 <h3 id="manifest">Manifest</h3>
 
-<pre><code>* 사용예
+<ul>
+<li><p>사용예</p>
 
-```kotlin
-import android.Manifest
+<pre><code>import android.Manifest
 
 Manifest.permission.READ_EXTERNAL_STORAGE
 Manifest.permission.WRITE_EXTERNAL_STORAGE
 Manifest.permission.CAMERA
-```
-</code></pre>
+</code></pre></li>
+</ul>
 
 <h3 id="appcompatactivity">AppCompatActivity</h3>
 
-<pre><code>* 사용예
+<ul>
+<li><p>사용예</p>
 
-```kotlin
-import android.support.v7.app.AppCompatActivity
+<pre><code>import android.support.v7.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() { ... }
-```
-</code></pre>
+</code></pre></li>
+</ul>
 
 <h3 id="bundle">Bundle</h3>
 
@@ -177,47 +177,47 @@ class MainActivity : AppCompatActivity() { ... }
 <p>String값부터 다양한 parcelable type( 기본 type이 아닌 class객체를 activity 간에 주고 받기 위한 타입)까지 mapping해줌</p>
 </blockquote>
 
-<pre><code>* 사용예
+<ul>
+<li><p>사용예</p>
 
-```kotlin
-import android.os.Bundle
+<pre><code>import android.os.Bundle
 
 override fun onCreate(savedInstanceState: Bundle?) { ... }
-```
-</code></pre>
+</code></pre></li>
+</ul>
 
 <h3 id="packagemanager">PackageManager</h3>
 
-<pre><code>* 사용예
+<ul>
+<li><p>사용예</p>
 
-```kotlin
-import android.content.pm.PackageManager
+<pre><code>import android.content.pm.PackageManager
 
 PackageManager.PERMISSION_GRANTED
-```
-</code></pre>
+</code></pre></li>
+</ul>
 
 <h3 id="activitycompat">ActivityCompat</h3>
 
-<pre><code>* 사용예
+<ul>
+<li><p>사용예</p>
 
-```kotlin
-import android.support.v4.app.ActivityCompat
+<pre><code>import android.support.v4.app.ActivityCompat
 
 ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE), 100)
-``` 
-</code></pre>
+</code></pre></li>
+</ul>
 
 <h3 id="contextcompat">ContextCompat</h3>
 
-<pre><code>* 사용예
+<ul>
+<li><p>사용예</p>
 
-```kotlin
-import android.support.v4.content.ContextCompat
+<pre><code>import android.support.v4.content.ContextCompat
 
 ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
-```
-</code></pre>
+</code></pre></li>
+</ul>
 
 <h3 id="activity">Activity</h3>
 
@@ -225,8 +225,12 @@ ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORA
 <p>안드로이드 어플리케이션 구성요소 중 Activity를 사용하겠다고 선언</p>
 </blockquote>
 
-<pre><code>import android.app.Activity
-</code></pre>
+<ul>
+<li>사용예
+<code>
+import android.app.Activity
+</code></li>
+</ul>
 </div>
 
     

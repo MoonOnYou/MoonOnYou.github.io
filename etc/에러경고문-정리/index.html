@@ -4,7 +4,7 @@
          
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>코틀린 키워드 정리</title>
+        <title>에러,경고문 정리</title>
         
         <style>
 
@@ -80,7 +80,7 @@
 
                 <div class="navbar-header">
 
-                    <a class="navbar-brand visible-xs" href="#">코틀린 키워드 정리</a>
+                    <a class="navbar-brand visible-xs" href="#">에러,경고문 정리</a>
 
                     <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
                         <span class="icon-bar"></span>
@@ -136,88 +136,26 @@
     
     
 
-    <h4><a href="/kotlin/%EC%BD%94%ED%8B%80%EB%A6%B0-%ED%82%A4%EC%9B%8C%EB%93%9C-%EC%A0%95%EB%A6%AC/">코틀린 키워드 정리</a></h4>
-    <h5>May 12, 2018</h5>
+    <h4><a href="/etc/%EC%97%90%EB%9F%AC%EA%B2%BD%EA%B3%A0%EB%AC%B8-%EC%A0%95%EB%A6%AC/">에러,경고문 정리</a></h4>
+    <h5>June 5, 2018</h5>
     
 
 </div>
 
 
-    <br> <div class="text-justify">
-
-<hr />
-
-<h1 id="kotlin에서의-java키워드">kotlin에서의 java키워드</h1>
-
-<p>=============================================================</p>
-
-<h2 id="표현식"><em>표현식</em></h2>
-
-<h3 id="when-자바의-swich-case"><strong>when</strong>, 자바의 swich-case</h3>
-
-<hr />
-
-<h1 id="kotlin에만-추가된-키워드">kotlin에만 추가된 키워드</h1>
-
-<p>========================================================</p>
-
-<h3 id="tailrec">tailrec</h3>
-
-<ul>
-<li>꼬리형 재귀함수를 정의할 때 사용</li>
-</ul>
-
-<h3 id="is-is">is,!is</h3>
+    <br> <div class="text-justify"><p>가끔 grdle파일을 건드리다 보면 상단에 다음과 같은 문구가 뜨는데</p>
 
 <blockquote>
-<p>is는 자바의 instanceof로 자료형 혹은 타입을 확인하기 위한 키워드 이다.</p>
+<p>gradle files have changed since last project sync. A project sync may be necessary for the IDE to work properly. : sync now</p>
 </blockquote>
 
-<pre><code>* 예제
+<p>번역하면 이렇다</p>
 
-```kotlin
-fun main (args: Array&lt;String&gt;) {
-    val str:Any = &quot;문자열&quot;
-    if(str is String) {
-        println(&quot;str은 문자열입니다&quot;)
-    }else if(str is Int){
-        println(&quot;str은 정수입니다&quot;)
-    }
-}
-```
-</code></pre>
+<blockquote>
+<p>이전 프로젝트 동기화 이후에 gradle 파일이 변경되었습니다. IDE가 제대로 작동하려면 프로젝트 동기화가 필요할 수 있습니다. : 지금 동기화</p>
+</blockquote>
 
-<h3 id="infix">infix</h3>
-
-<p>중위함수를 정의할 때 사용</p>
-
-<h3 id="vararg">vararg</h3>
-
-<p>함수를 호출할 때 인자의 개수를 가변적으로 전달할 때 사용한다. //이전에는 정리안함</p>
-
-<h3 id="init">init</h3>
-
-<p>기본생성자를 별개로 선언할 때 속성을 초기화 할 때 사용(init안의 코드를 초기화 블록이라고 한다 if 등 사용가능)</p>
-
-<h3 id="constructor">constructor</h3>
-
-<p>1.생성자를 외부에서 호출할 수 없게 (private)와 같은 가시성 제한자를 만들때
-2.보조 생성자를 만들 때</p>
-
-<h3 id="field">field</h3>
-
-<h3 id="lateinit">lateinit</h3>
-
-<p>continue와 break, break@라벨 차이점</p>
-
-<p>*속성과 필드의 차이점
--가장중요한거는 사람눈에는 차이가 없다
--필드는 단순히 값만 가지며 그 값가져오거나 변경 할 때 직접 참조한다.(함수내부에 선언된 지역변수)
--속성은 값을 가져오거나 변경할 때 자동으로 관련함수가 호출되어 처리된다 (최상위변수나 클래스의 멤버변수,즉 접근자 함수)</p>
-
-<p>코틀린 연산자 정리</p>
-
-<p>코틀린 기본 함수 정리</p>
+<p>grable를 동기화 하면 .gradle파일안에 명시된 의존 라이브러리 및 패키지를 설치해준다. 빠른 동기화를 하도록 하자</p>
 </div>
 
     

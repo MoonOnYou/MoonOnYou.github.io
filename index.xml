@@ -33,10 +33,10 @@
     
     <item>
       <title>에러,경고문 정리</title>
-      <link>https://MoonOnYou.github.io/%EA%B8%B0%ED%83%80/%EC%97%90%EB%9F%AC%EA%B2%BD%EA%B3%A0%EB%AC%B8-%EC%A0%95%EB%A6%AC/</link>
+      <link>https://MoonOnYou.github.io/etc/%EC%97%90%EB%9F%AC%EA%B2%BD%EA%B3%A0%EB%AC%B8-%EC%A0%95%EB%A6%AC/</link>
       <pubDate>Tue, 05 Jun 2018 01:19:00 +0900</pubDate>
       
-      <guid>https://MoonOnYou.github.io/%EA%B8%B0%ED%83%80/%EC%97%90%EB%9F%AC%EA%B2%BD%EA%B3%A0%EB%AC%B8-%EC%A0%95%EB%A6%AC/</guid>
+      <guid>https://MoonOnYou.github.io/etc/%EC%97%90%EB%9F%AC%EA%B2%BD%EA%B3%A0%EB%AC%B8-%EC%A0%95%EB%A6%AC/</guid>
       <description>가끔 grdle파일을 건드리다 보면 상단에 다음과 같은 문구가 뜨는데
  gradle files have changed since last project sync. A project sync may be necessary for the IDE to work properly. : sync now
  번역하면 이렇다
@@ -46,10 +46,10 @@
     
     <item>
       <title>용어정리</title>
-      <link>https://MoonOnYou.github.io/%EA%B8%B0%ED%83%80/%EC%9A%A9%EC%96%B4%EC%A0%95%EB%A6%AC/</link>
+      <link>https://MoonOnYou.github.io/etc/%EC%9A%A9%EC%96%B4%EC%A0%95%EB%A6%AC/</link>
       <pubDate>Mon, 04 Jun 2018 23:55:43 +0900</pubDate>
       
-      <guid>https://MoonOnYou.github.io/%EA%B8%B0%ED%83%80/%EC%9A%A9%EC%96%B4%EC%A0%95%EB%A6%AC/</guid>
+      <guid>https://MoonOnYou.github.io/etc/%EC%9A%A9%EC%96%B4%EC%A0%95%EB%A6%AC/</guid>
       <description> 용어정리  라이브러리 : 자주 사용하는 부분 프로그램 집합
  모듈 : 프로그램을 구성하는 독립적인 부품 프로그램
  API : 앱을 개발하기 위한 규칙, 제공하는 기능을 제어할 수 있게 만든 인터페이스
@@ -62,18 +62,24 @@
       <pubDate>Mon, 04 Jun 2018 23:28:54 +0900</pubDate>
       
       <guid>https://MoonOnYou.github.io/android/import-api-%EC%A0%95%EB%A6%AC/</guid>
-      <description>import API 정리 Manifest * 사용예 ```kotlin import android.Manifest Manifest.permission.READ_EXTERNAL_STORAGE Manifest.permission.WRITE_EXTERNAL_STORAGE Manifest.permission.CAMERA ```  AppCompatActivity * 사용예 ```kotlin import android.support.v7.app.AppCompatActivity class MainActivity : AppCompatActivity() { ... } ```  Bundle  String값부터 다양한 parcelable type( 기본 type이 아닌 class객체를 activity 간에 주고 받기 위한 타입)까지 mapping해줌
- * 사용예 ```kotlin import android.os.Bundle override fun onCreate(savedInstanceState: Bundle?) { ... } ```  PackageManager * 사용예 ```kotlin import android.content.pm.PackageManager PackageManager.PERMISSION_GRANTED ```  ActivityCompat * 사용예 ```kotlin import android.</description>
+      <description>import API 정리 Manifest  사용예
+import android.Manifest Manifest.permission.READ_EXTERNAL_STORAGE Manifest.permission.WRITE_EXTERNAL_STORAGE Manifest.permission.CAMERA   AppCompatActivity  사용예
+import android.support.v7.app.AppCompatActivity class MainActivity : AppCompatActivity() { ... }   Bundle  String값부터 다양한 parcelable type( 기본 type이 아닌 class객체를 activity 간에 주고 받기 위한 타입)까지 mapping해줌
+  사용예
+import android.os.Bundle override fun onCreate(savedInstanceState: Bundle?) { ... }   PackageManager  사용예
+import android.content.pm.PackageManager PackageManager.PERMISSION_GRANTED   ActivityCompat  사용예</description>
     </item>
     
     <item>
       <title>Gitignore설정하기</title>
-      <link>https://MoonOnYou.github.io/%EA%B8%B0%ED%83%80/gitignore%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/</link>
+      <link>https://MoonOnYou.github.io/etc/gitignore%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/</link>
       <pubDate>Mon, 04 Jun 2018 22:23:23 +0900</pubDate>
       
-      <guid>https://MoonOnYou.github.io/%EA%B8%B0%ED%83%80/gitignore%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/</guid>
-      <description> 편집기의 캐쉬파일(idea)들이 git에 같이 올라가는 것을 막기위해 git이 있는 폴더에 .&amp;ldquo;gitignore&amp;rdquo; 파일을 만들어 명시해 준다. (또는 git에 올리고 싶지 않은 파일들을 명시해포함시켜주면 된다.)
- 1) 터미널 창을 열어 아래와 같이 입력하여 편집창을 연다 ```sh $ vi .gitignore ``` 2) i 를 눌러 입력모드로 바꾸고 아래의 파일(캐시파일) 또는 다른 포함하고 싶지 않은 파일들을 명시하여 추가한다. ``` */idea/ ./idea/ ``` 3) esc 를 누르고 :wq 를 입력하여 저장하고 나간다.  </description>
+      <guid>https://MoonOnYou.github.io/etc/gitignore%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/</guid>
+      <description>편집기의 캐쉬파일(idea)들이 git에 같이 올라가는 것을 막기위해 git이 있는 폴더에 .&amp;ldquo;gitignore&amp;rdquo; 파일을 만들어 명시해 준다. (또는 git에 올리고 싶지 않은 파일들을 명시해포함시켜주면 된다.)
+ 1) 터미널 창을 열어 아래와 같이 입력하여 편집창을 연다
+```sh $ vi .gitignore ```  2) i 를 눌러 입력모드로 바꾸고 아래의 파일(캐시파일) 또는 다른 포함하고 싶지 않은 파일들을 명시하여 추가한다.
+``` */idea/ ./idea/ ```  3) esc 를 누르고 :wq 를 입력하여 저장하고 나간다.</description>
     </item>
     
     <item>
@@ -82,11 +88,12 @@
       <pubDate>Mon, 04 Jun 2018 18:25:46 +0900</pubDate>
       
       <guid>https://MoonOnYou.github.io/android/%EA%B6%8C%ED%95%9C%EC%84%A4%EC%A0%95/</guid>
-      <description>AndroidMenifest.xml파일의 &amp;lt;menifest&amp;gt;태그 안에서 필요한 권한을 명시함과 동시에 어플리케이션 내에서 사용자에게 권한을 승인받으면 사용하고자 하는 기능을 사용 할 수 있다.  권한 설정 명시 코드 카메라 사용을 위한 권한 설정
+      <description>AndroidMenifest.xml파일의 &amp;lt;menifest&amp;gt;태그 안에서 필요한 권한을 명시함과 동시에 어플리케이션 내에서 사용자에게 권한을 승인받으면 사용하고자 하는 기능을 사용 할 수 있다.
+ 권한 설정 명시 코드  카메라 사용을 위한 권한 설정
 &amp;lt;uses-permission android:name=&amp;quot;android.permission.CAMERA&amp;quot;/&amp;gt;  (찍은 사진을) 저장하기 위한 권한 설정
 &amp;lt;uses-permission android:name=&amp;quot;android.permission.WRITE_EXTERNAL_STORAGE&amp;quot;/&amp;gt;  (갤러리에서 사진을) 읽기위한 권한 설정
 &amp;lt;uses-permission android:name=&amp;quot;android.permission.READ_EXTERNAL_STORAGE&amp;quot;/&amp;gt;  카메라 사용을 사용자에게 알림
-&amp;lt;uses-feature android:name=&amp;quot;android.hardware.camera2&amp;quot;/&amp;gt;  사용자에게 권한을 요청하는 코드 package com.example.moononyou.phonebookkotlin import android.Manifest import android.content.pm.PackageManager import android.support.v7.app.AppCompatActivity import android.</description>
+&amp;lt;uses-feature android:name=&amp;quot;android.hardware.camera2&amp;quot;/&amp;gt;   사용자에게 권한을 요청하는 코드  전체코드  package com.example.moononyou.phonebookkotlin import android.</description>
     </item>
     
     <item>
@@ -95,22 +102,24 @@
       <pubDate>Sun, 03 Jun 2018 18:36:54 +0900</pubDate>
       
       <guid>https://MoonOnYou.github.io/android/memo/</guid>
-      <description>My Library 간단하게 알아둘 것  android:onClick=&amp;ldquo;함수 이름&amp;rdquo; : 해당 뷰가 클릭되었을 때 자바에서 &amp;ldquo;함수이름&amp;rdquo;과 같은 함수를 실행하라는 의미 Intent : 어떤 기능을 실행할 지 지정하기 위해 사용 setContentView() : xml레이아웃에 정의된 뷰들을 메모리 상에 객체화하는 역할을 함 AndroidManifest.xml : 앱에대한 정보를 담고있음 , 애플리케이션 구성요소나 권한 등의 정보를 정의함 xmlns:android : API에 정의된 요소를 사용한다는 의미로,하나의 레이아웃 파일에 하나 이상 있어야 한다. Context란 : 일반적으로 어떤일이 발생한 상황을 의미하는데 프로그래밍에서는 객체의 상태정보를 표현하는 경우가 많다  꿀팁 * Alt+Tab같이 Ctrl+Tab 사용가능 * setting에서 show line numbers 사용하면 에러 발생 라인을 바로 알수 있다 * 함수 클릭 후 ctrl+q 하면 API간단하게 보임 , ctrl+함수클릭하면 API자세하게 보임 * ~~()사이 클릭 후 ctrl+p 하면 파라미터 후보들이 보임~~ * ctrl+f 파일에서 단어찾기 , ctrl+shift+f 폴더에서 단어 찾기  색깔 1.</description>
+      <description>My Library 간단하게 알아둘 것  android:onClick=&amp;ldquo;함수 이름&amp;rdquo; : 해당 뷰가 클릭되었을 때 자바에서 &amp;ldquo;함수이름&amp;rdquo;과 같은 함수를 실행하라는 의미
+ Intent : 어떤 기능을 실행할 지 지정하기 위해 사용
+ setContentView() : xml레이아웃에 정의된 뷰들을 메모리 상에 객체화하는 역할을 함
+ AndroidManifest.xml : 앱에대한 정보를 담고있음 , 애플리케이션 구성요소나 권한 등의 정보를 정의함
+ xmlns:android : API에 정의된 요소를 사용한다는 의미로,하나의 레이아웃 파일에 하나 이상 있어야 한다.
+ Context란 : 일반적으로 어떤일이 발생한 상황을 의미하는데 프로그래밍에서는 객체의 상태정보를 표현하는 경우가 많다</description>
     </item>
     
     <item>
       <title>Html,css</title>
-      <link>https://MoonOnYou.github.io/%EA%B8%B0%ED%83%80/htmlcss/</link>
+      <link>https://MoonOnYou.github.io/etc/htmlcss/</link>
       <pubDate>Sun, 03 Jun 2018 03:33:33 +0900</pubDate>
       
-      <guid>https://MoonOnYou.github.io/%EA%B8%B0%ED%83%80/htmlcss/</guid>
-      <description>brackets  Ctrl + D : 한줄 복사 및 생성
- 모든 단축키에 Shift를 더하면 반대가 된다.
- 예시  Shift + Ctrl + D // 한 줄 삭제     html  &amp;lt; img src=&amp;ldquo;&amp;rdquo; alt=&amp;ldquo;&amp;rdquo; &amp;gt;
- src : 이미지 경로(상대적경로 또는 절대적경로 또는 이미지 URL)
+      <guid>https://MoonOnYou.github.io/etc/htmlcss/</guid>
+      <description>brackets  Ctrl + D : 한줄 복사 및 생성 모든 단축키에 Shift를 더하면 반대가 된다.
+ 예시  Shift + Ctrl + D // 한 줄 삭제    html  &amp;lt; img src=&amp;ldquo;&amp;rdquo; alt=&amp;ldquo;&amp;rdquo; &amp;gt;   src : 이미지 경로(상대적경로 또는 절대적경로 또는 이미지 URL)
  alt : 이미지를 못 불러올 경우, 이 텍스트가 나온다.
-* alt를 써줘야 하는 이유
-1. 이미지가 안뜰 경우에도 검색엔진에 최적화 되기위해 2.</description>
+ alt를 써줘야 하는 이유   이미지가 안뜰 경우에도 검색엔진에 최적화 되기위해 프로그래머를 위해* 액박떳을 경우 사용자를 위해 시각장애인을 고려하여 웹사이트를 제작할때 웹표준 점수가 좋아짐    css  클래스 및 id 생성시 이름에 숫자를 포함하는 것은 좋지 않다.</description>
     </item>
     
     <item>
@@ -120,7 +129,8 @@
       
       <guid>https://MoonOnYou.github.io/kotlin/%EC%BD%94%ED%8B%80%EB%A6%B0-%EA%B8%B0%EB%B3%B8%EB%AC%B8%EB%B2%95-%EC%BD%94%ED%8B%80%EB%A6%B0-%ED%8A%B9%EC%A7%95/</guid>
       <description>코틀린의 변수  var  가변변수를 의미하며 variable(변수)의 뜻을 가지고 있다.  val  불변변수(상수)를 의미하며 Value(값)의 뜻을 가지고 있다. (자바의 final)    val변수가 객체를 참조하는 경우 변수 자신의 참조 값을 변경할 수 없지만 (초깃값으로 참조되는 객체외에 다른 객체를 참조할 수 없지만),참조되는 객체가 갖는 데이터는 변경이 가능하다.
- 코틀린의 표현식 if, when  코틀린은 if 와 when (자바의 switch-case)를 명령어가 아닌 표현식(하나의 값을 가지는 식)으로 간주하기 때문에 대입문(=)의 오른쪽에 사용될 수 있다.</description>
+ 코틀린의 기본 타입  코틀린의 기본타입은 자바와 달리 모두 클래스로 정의되어 있다
+때문에 모두 대문자로 시작한다 (코틀린은 Int, 자바는 int)</description>
     </item>
     
     <item>

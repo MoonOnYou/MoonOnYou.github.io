@@ -101,9 +101,9 @@
                             
                                 <li><a href="/android/">Android</a></li>
                             
-                                <li><a href="/%EA%B8%B0%ED%83%80/">기타</a></li>
+                                <li><a href="/etc/">etc</a></li>
                             
-                                <li><a href="/%EC%98%81%EC%96%B4/">영어</a></li>
+                                <li><a href="/english/">English</a></li>
                             
                         </ul>
                     
@@ -150,103 +150,125 @@
 <h3 id="간단하게-알아둘-것">간단하게 알아둘 것</h3>
 
 <ul>
-<li>android:onClick=&ldquo;함수 이름&rdquo; : 해당 뷰가 클릭되었을 때 자바에서 &ldquo;함수이름&rdquo;과 같은 함수를 실행하라는 의미</li>
-<li><del>Intent : 어떤 기능을 실행할 지 지정하기 위해 사용</del></li>
-<li>setContentView() : xml레이아웃에 정의된 뷰들을 메모리 상에 객체화하는 역할을 함</li>
-<li>AndroidManifest.xml : 앱에대한 정보를 담고있음 , 애플리케이션 구성요소나 권한 등의 정보를 정의함</li>
-<li>xmlns:android : API에 정의된 요소를 사용한다는 의미로,하나의 레이아웃 파일에 하나 이상 있어야 한다.</li>
-<li>Context란 : 일반적으로 어떤일이 발생한 상황을 의미하는데 프로그래밍에서는 객체의 상태정보를 표현하는 경우가 많다</li>
+<li><p>android:onClick=&ldquo;함수 이름&rdquo; : 해당 뷰가 클릭되었을 때 자바에서 &ldquo;함수이름&rdquo;과 같은 함수를 실행하라는 의미</p></li>
+
+<li><p><del>Intent : 어떤 기능을 실행할 지 지정하기 위해 사용</del></p></li>
+
+<li><p>setContentView() : xml레이아웃에 정의된 뷰들을 메모리 상에 객체화하는 역할을 함</p></li>
+
+<li><p>AndroidManifest.xml : 앱에대한 정보를 담고있음 , 애플리케이션 구성요소나 권한 등의 정보를 정의함</p></li>
+
+<li><p>xmlns:android : API에 정의된 요소를 사용한다는 의미로,하나의 레이아웃 파일에 하나 이상 있어야 한다.</p></li>
+
+<li><p>Context란 : 일반적으로 어떤일이 발생한 상황을 의미하는데 프로그래밍에서는 객체의 상태정보를 표현하는 경우가 많다</p></li>
 </ul>
 
 <h3 id="꿀팁">꿀팁</h3>
 
-<pre><code>* Alt+Tab같이 Ctrl+Tab 사용가능
-* setting에서 show line numbers 사용하면 에러 발생 라인을 바로 알수 있다
-* 함수 클릭 후 ctrl+q 하면 API간단하게 보임 , ctrl+함수클릭하면 API자세하게 보임
-* ~~()사이 클릭 후 ctrl+p 하면 파라미터 후보들이 보임~~
-* ctrl+f 파일에서 단어찾기 , ctrl+shift+f 폴더에서 단어 찾기 
-</code></pre>
+<ul>
+<li><p>Alt+Tab같이 Ctrl+Tab 사용가능</p></li>
+
+<li><p>setting에서 show line numbers 사용하면 에러 발생 라인을 바로 알수 있다</p></li>
+
+<li><p>함수 클릭 후 ctrl+q 하면 API간단하게 보임 , ctrl+함수클릭하면 API자세하게 보임</p></li>
+
+<li><p><del>()사이 클릭 후 ctrl+p 하면 파라미터 후보들이 보임</del></p></li>
+
+<li><p>ctrl+f 파일에서 단어찾기 , ctrl+shift+f 폴더에서 단어 찾기</p></li>
+</ul>
 
 <h2 id="색깔">색깔</h2>
 
-<pre><code>1. #을 붙힌후 RGB 또는 ARGB 값을 16진수로 순서대로 준다
-2. A는 알파로 투명도를 조절한다, 예로 FF는 투명하며 88은 반투명하다.
-3. FF로 갈 수록(숫자가 커질수록) RGB 색이 진해진다.
-</code></pre>
+<ol>
+<li><p>#을 붙힌후 RGB 또는 ARGB 값을 16진수로 순서대로 준다</p></li>
+
+<li><p>A는 알파로 투명도를 조절한다, 예로 FF는 투명하며 88은 반투명하다.</p></li>
+
+<li><p>FF로 갈 수록(숫자가 커질수록) RGB 색이 진해진다.</p></li>
+</ol>
 
 <h2 id="화면에-시각적인-알림-모음">화면에 시각적인 알림 모음</h2>
 
 <ol>
-<li><p>Toast</p>
+<li>Toast
+<br /></li>
+</ol>
 
 <ul>
-<li>구글 API 문서 예시
-```java
-Context context = getApplicationContext();
-CharSequence text = &ldquo;Hello toast!&rdquo;;
-int duration = Toast.LENGTH_SHORT;</li>
-</ul>
+<li><p>구글 API 문서 예시</p>
 
-<p>Toast toast = Toast.makeText(context, text, duration);
-toast.show();</p>
+<pre><code class="language-java">Context context = getApplicationContext();
+CharSequence text = &quot;Hello toast!&quot;;
+int duration = Toast.LENGTH_SHORT;
 
-<pre><code>- 보통 실전에서 쓰는 예시
-```java 
-public void onButton1Click(View v){
+Toast toast = Toast.makeText(context, text, duration);
+toast.show();
+</code></pre></li>
+
+<li><p>보통 실전에서 쓰는 예시</p>
+
+<pre><code class="language-java">public void onButton1Click(View v){
     Tost toast = Toast.makeText(getApplicationContext,&quot;안녕하세요&quot;,Toast.LENGTH_SHORT).show();
 }
 </code></pre></li>
-</ol>
+</ul>
 
 <h2 id="다른-어-플과-연동">다른 어 플과 연동</h2>
 
 <p>~~
-1. 웹,폰의 기본기능과 연결하는 Intent
-    - 책에 나온 예시
-    <code>java
-    public void onButton1Click(View v){
-        Intent myIntent = new Intent(Intent.ACTION_VIEW,Uri.parse(&quot;http://m.naver.com&quot;));
-        startActivity(myIntent);
-    }
-</code>
-~~</p>
+1. 웹,폰의 기본기능과 연결하는 Intent</p>
 
-<h2 id="화면이동관련">화면이동관련</h2>
+<ul>
+<li><p>책에 나온 예시</p>
+
+<pre><code class="language-java">public void onButton1Click(View v){
+    Intent myIntent = new Intent(Intent.ACTION_VIEW,Uri.parse(&quot;http://m.naver.com&quot;));
+    startActivity(myIntent);
+}
+</code></pre>
+
+<p>~~</p>
+
+<h2 id="화면이동관련">화면이동관련</h2></li>
+</ul>
 
 <ol>
-<li>액티비티(화면)추가시 메니페스트 파일 고치기
-
-<ul>
-<li>Manifest.xml 파일에서 </activity> 위에 추가하면 된다.
-<code>java
-&lt;activity android:name=&quot;.추가된액티비티이름&quot;&gt;&lt;/activity&gt;
-즉 &lt;activity android:name=&quot;.NewActivity&quot;&gt;&lt;/activity&gt;
-</code></li>
-</ul></li>
-<li>뒤로가기
-
-<ul>
-<li>뒤로가기 버튼 클릭시 실행되는 함수에 finish();를 넣는다.</li>
-<li>액티비티가 끝남으로써 뒤로 가는 것과 같은 효과가 나는 것</li>
-</ul></li>
+<li>액티비티(화면)추가시 메니페스트 파일 고치기</li>
 </ol>
+
+<ul>
+<li><p>Manifest.xml 파일에서 </activity> 위에 추가하면 된다.</p>
+
+<pre><code class="language-java">&lt;activity android:name=&quot;.추가된액티비티이름&quot;&gt;&lt;/activity&gt;
+즉 &lt;activity android:name=&quot;.NewActivity&quot;&gt;&lt;/activity&gt;
+</code></pre></li>
+</ul>
+
+<ol>
+<li>뒤로가기</li>
+</ol>
+
+<ul>
+<li><p>뒤로가기 버튼 클릭시 실행되는 함수에 finish();를 넣는다.</p></li>
+
+<li><p>액티비티가 끝남으로써 뒤로 가는 것과 같은 효과가 나는 것</p></li>
+</ul>
 
 <h3 id="자바코드에서-화면-구성하기">자바코드에서 화면 구성하기</h3>
 
 <ul>
 <li><p>레이아웃을 xml로 정의하게 되면 나중에 화면구성을 바꿀때도 간단하게 수정가능하다.
 그러나 사용자가 입력한 데이터 ,파일에서 읽어들이 데이터,네트워킹을 통헤 서버에서 받아온 데이터의
-유형에 따라 화면의 구성을 바꾸고 싶다면 자바코드에서 화면을 구성하는 것이 훨씬 효율적이다.</p>
+유형에 따라 화면의 구성을 바꾸고 싶다면 자바코드에서 화면을 구성하는 것이 훨씬 효율적이다.</p></li>
 
-<ul>
 <li><p>예시 (onCreate클래스 안에서 다음 코드로 구성)</p>
 
 <pre><code class="language-java">LinearLayout mainLayout = new LinearLayout(this);
 mainLayout.setOrientation(LinearLayout.VERTICAL);
 
 LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
-    LinearLayout.LayoutParams.MATCH_PARENT,
-    LinearLayout.LayoutParams.WRAP_CONTENT);
+LinearLayout.LayoutParams.MATCH_PARENT,
+LinearLayout.LayoutParams.WRAP_CONTENT);
 ~~//뷰 생성자에는 항상 Context객체가 전달되야 하는데 액티비티는 Context를 상속하므로
 //액티비디클래스 안에서는 this를 Context객체로 사용할 수 있다~~
 Button button01 =new Button(this);
@@ -255,40 +277,46 @@ button01.setLayoutParams(params);
 mainLayout.addView(button01);
 
 setContentView.(mainLayout);
-</code></pre>
-
-<p>```</p></li>
+</code></pre></li>
 
 <li><p>View를 상속하는 CustomView클래스에서 onDraw를 오버라이딩해 직접뷰를 만들어 줄 수 도 있다.</p></li>
-</ul></li>
 </ul>
 
 <h3 id="안드로이드의-매모리-속-인플레이션">안드로이드의 매모리 속 인플레이션</h3>
 
 <ol>
-<li>프로젝트 파일이 빌드될 때 xml레이아웃에 정의된 정보들이 객체화(inflation) 된다.</li>
-<li>자바코드에서 참조 할 때는 R.id.[아이디이름]으로 참조하고, 레이아웃에서 사용하는 형식은 @+id/[아이디 이름]이다.</li>
+<li><p>프로젝트 파일이 빌드될 때 xml레이아웃에 정의된 정보들이 객체화(inflation) 된다.</p></li>
+
+<li><p>자바코드에서 참조 할 때는 R.id.[아이디이름]으로 참조하고, 레이아웃에서 사용하는 형식은 @+id/[아이디 이름]이다.</p></li>
 </ol>
 
 <h2 id="edit-text">Edit Text</h2>
 
 <ul>
-<li>input_type
+<li><p>input_type</p>
 
 <ol>
-<li>text</li>
-<li>textPassword</li>
+<li><p>text</p></li>
+
+<li><p>textPassword</p></li>
 </ol></li>
 </ul>
 
 <h2 id="xml파일-관련">xml파일 관련</h2>
 
-<pre><code>1. border관련
-    * solid : 단색으로 채워넣기
-    * stroke : 테두리를 그려넣기 (dashWidth와 dashGap은 점선을 그릴 때 사용한다)
-    * corners  : 가장자리를 둥글게 처리
-    * padding : 패딩
-</code></pre>
+<ol>
+<li><p>border관련</p>
+
+<ul>
+<li><p>solid : 단색으로 채워넣기</p></li>
+
+<li><p>stroke : 테두리를 그려넣기 (dashWidth와 dashGap은 점선을 그릴 때 사용한다)</p></li>
+
+<li><p>corners  : 가장자리를 둥글게 처리</p></li>
+
+<li><p>padding : 패딩</p></li>
+</ul></li>
+</ol>
 </div>
 
     
