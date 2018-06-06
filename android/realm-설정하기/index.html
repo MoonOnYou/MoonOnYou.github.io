@@ -195,12 +195,15 @@ private int grade;
 
 </code></pre>
 
-<p>1) 필드를 수정해야 할 상황이 생길 수 있으므로 var으로 선언.</p>
+<ul>
+<li><p>필드를 수정해야 할 상황이 생길 수 있으므로 var으로 선언.</p></li>
 
-<p>2) 인자가 없는 생성자를 생략해주기 위해 기본값을 모두 설정.</p>
+<li><p>인자가 없는 생성자를 생략해주기 위해 기본값을 모두 설정.</p></li>
 
-<p>3) 상속이 가능 하도록 open.<br />
-4) getter,setter 없음.</p></li>
+<li><p>상속이 가능 하도록 open.</p></li>
+
+<li><p>getter,setter 없음.</p></li>
+</ul></li>
 
 <li><p>사용 설정</p>
 
@@ -250,6 +253,30 @@ override fun onDestroy() {
 }
 }
 </code></pre></li>
+
+<li><p>insert , update 기능 메소드 구현하기</p>
+
+<ul>
+<li>예제</li>
+</ul>
+
+<pre><code>private void insnertOrUpdateV1(final Student student) {
+    realm.beginTransaction(); //1
+    if(student.getStudentId() == 0) {
+        Number maxId = realm.where( Student.class ).max( &quot;StudentId&quot; ); //3
+        int nextId = maxId == null ? 1: maxId.intValue() + 1;
+        student.setStudentId( nextId );
+    }
+    realm.insertOrUpdate( student );
+    realm.commitTransaction(); //2
+}
+</code></pre>
+
+<p>1) realm.beginTransaction(); 메소드로 트렌젝션의 시작을 알림</p>
+
+<p>2) realm.commitTransaction(); 메소드로 트렌젝션의 종료를 알림과 동시에 변경사항을 적용</p>
+
+<p>3) realm.where 메소드로 어떤 모델에서 값을 조회할 것인지 설정</p></li>
 </ol>
 </div>
 
