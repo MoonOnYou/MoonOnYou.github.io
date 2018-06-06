@@ -155,11 +155,10 @@ import android.content.pm.PackageManager PackageManager.PERMISSION_GRANTED   Act
       <pubDate>Sat, 12 May 2018 22:00:14 +0900</pubDate>
       
       <guid>https://MoonOnYou.github.io/kotlin/%EC%BD%94%ED%8B%80%EB%A6%B0-%ED%82%A4%EC%9B%8C%EB%93%9C-%EC%A0%95%EB%A6%AC/</guid>
-      <description>kotlin에서의 java키워드 =============================================================
-표현식 when, 자바의 swich-case kotlin에만 추가된 키워드 ========================================================
-tailrec  꼬리형 재귀함수를 정의할 때 사용  is,!is  is는 자바의 instanceof로 자료형 혹은 타입을 확인하기 위한 키워드 이다.
+      <description>tailrec  꼬리형 재귀함수를 정의할 때 사용  is,!is  is는 자바의 instanceof로 자료형 혹은 타입을 확인하기 위한 키워드 이다.
  * 예제 ```kotlin fun main (args: Array&amp;lt;String&amp;gt;) { val str:Any = &amp;quot;문자열&amp;quot; if(str is String) { println(&amp;quot;str은 문자열입니다&amp;quot;) }else if(str is Int){ println(&amp;quot;str은 정수입니다&amp;quot;) } } ```  infix 중위함수를 정의할 때 사용
-vararg 함수를 호출할 때 인자의 개수를 가변적으로 전달할 때 사용한다.</description>
+vararg 함수를 호출할 때 인자의 개수를 가변적으로 전달할 때 사용한다.
+init 기본생성자를 별개로 선언할 때 속성을 초기화 할 때 사용(init안의 코드를 초기화 블록이라고 한다 if 등 사용가능)</description>
     </item>
     
   </channel>
