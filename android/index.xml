@@ -6,10 +6,19 @@
     <description>Recent content in Androids on ONYOU&#39;S  SITE</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Jun 2018 23:28:54 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 06 Jun 2018 21:51:02 +0900</lastBuildDate>
     
 	<atom:link href="https://MoonOnYou.github.io/android/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>안드로이드 스튜디오  팁</title>
+      <link>https://MoonOnYou.github.io/android/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4--%ED%8C%81/</link>
+      <pubDate>Wed, 06 Jun 2018 21:51:02 +0900</pubDate>
+      
+      <guid>https://MoonOnYou.github.io/android/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4--%ED%8C%81/</guid>
+      <description> getter, setter 자동생성  변수생성 마우스 오른쪽 버튼으로 클릭 &amp;ldquo;Generate&amp;rdquo;를 선택하고 &amp;ldquo;Getter and Setter&amp;rdquo;옵션을 선택  </description>
+    </item>
     
     <item>
       <title>import API 정리</title>
