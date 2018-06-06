@@ -30,6 +30,22 @@
     </item>
     
     <item>
+      <title>Realm 설정하기</title>
+      <link>https://MoonOnYou.github.io/android/realm-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/</link>
+      <pubDate>Tue, 05 Jun 2018 20:20:13 +0900</pubDate>
+      
+      <guid>https://MoonOnYou.github.io/android/realm-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/</guid>
+      <description>의존성 설정
+a. 프로젝트 build.gradle 파일의 dependancies안에 아래의 문구를 추가한다.
+classpath &amp;quot;io.realm:realm-gradle-plugin:3.5.0&amp;quot;  b. 어플리케이션 build.grable 파일의 dependancies안에 아래의 문구를 추가 한다.
+apply plugin: &#39;realm-android&#39;  c. Sync Now 를 클릭하여 스크립트를 적용한다.
+ 모델 클래스
+a. 데이터 베이스와 매피할 ORM클래스를 정의 한다.
+ 예제 (학생정보 관리)  ㄱ. JAVA예제
+public class Student extends RealmObject //1 @PrimaryKey //2 private int studentId; private String name; private int age; private int grade; //getter와 setter를 만들어 준다.</description>
+    </item>
+    
+    <item>
       <title>Some과 Any의 차이</title>
       <link>https://MoonOnYou.github.io/english/some%EA%B3%BC-any%EC%9D%98-%EC%B0%A8%EC%9D%B4/</link>
       <pubDate>Tue, 05 Jun 2018 18:41:25 +0900</pubDate>

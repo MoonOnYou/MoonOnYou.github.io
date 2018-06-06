@@ -4,7 +4,7 @@
          
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>import API 정리</title>
+        <title>Realm 설정하기</title>
         
         <style>
 
@@ -80,7 +80,7 @@
 
                 <div class="navbar-header">
 
-                    <a class="navbar-brand visible-xs" href="#">import API 정리</a>
+                    <a class="navbar-brand visible-xs" href="#">Realm 설정하기</a>
 
                     <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
                         <span class="icon-bar"></span>
@@ -136,101 +136,121 @@
     
     
 
-    <h4><a href="/android/import-api-%EC%A0%95%EB%A6%AC/">import API 정리</a></h4>
-    <h5>June 4, 2018</h5>
+    <h4><a href="/android/realm-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/">Realm 설정하기</a></h4>
+    <h5>June 5, 2018</h5>
     
 
 </div>
 
 
-    <br> <div class="text-justify">
+    <br> <div class="text-justify"><ol>
+<li><p>의존성 설정</p>
 
-<h2 id="import-api-정리">import API 정리</h2>
+<p>a. 프로젝트 build.gradle 파일의 dependancies안에 아래의 문구를 추가한다.</p>
 
-<h3 id="manifest">Manifest</h3>
+<pre><code>classpath &quot;io.realm:realm-gradle-plugin:3.5.0&quot;
+</code></pre>
 
-<ul>
-<li><p>사용예</p>
+<p>b. 어플리케이션 build.grable 파일의 dependancies안에 아래의 문구를 추가 한다.</p>
 
-<pre><code>import android.Manifest
+<pre><code>apply plugin: 'realm-android'
+</code></pre>
 
-Manifest.permission.READ_EXTERNAL_STORAGE
-Manifest.permission.WRITE_EXTERNAL_STORAGE
-Manifest.permission.CAMERA
-</code></pre></li>
-</ul>
+<p>c. Sync Now 를 클릭하여 스크립트를 적용한다.</p></li>
 
-<h3 id="appcompatactivity">AppCompatActivity</h3>
+<li><p>모델 클래스</p>
 
-<ul>
-<li><p>사용예</p>
-
-<pre><code>import android.support.v7.app.AppCompatActivity
-
-class MainActivity : AppCompatActivity() { ... }
-</code></pre></li>
-</ul>
-
-<h3 id="bundle">Bundle</h3>
-
-<blockquote>
-<p>String값부터 다양한 parcelable type( 기본 type이 아닌 class객체를 activity 간에 주고 받기 위한 타입)까지 mapping해줌</p>
-</blockquote>
+<p>a. 데이터 베이스와 매피할 ORM클래스를 정의 한다.</p>
 
 <ul>
-<li><p>사용예</p>
-
-<pre><code>import android.os.Bundle
-
-override fun onCreate(savedInstanceState: Bundle?) { ... }
-</code></pre></li>
+<li>예제 (학생정보 관리)</li>
 </ul>
 
-<h3 id="packagemanager">PackageManager</h3>
+<p>ㄱ. JAVA예제</p>
+
+<pre><code class="language-java">public class Student extends RealmObject //1
+
+@PrimaryKey   //2
+private int studentId;
+
+private String name;
+private int age;
+private int grade;
+
+//getter와 setter를 만들어 준다.
+...중략...
+</code></pre>
+
+<p>1) ReamlObject클래스를 상속 받으면 Reaml의 매핑 클래스가 된다.</p>
+
+<p>2) @PrimaryKey어노테이션으로 기본키 옵션을 준다.
+<br></p>
+
+<p>ㄴ. Kotlin예제</p>
+
+<pre><code>open class Student(@primaryKey open var studentId:Int? = null,  
+                               open var name:String? = null,
+                               open var age:Int? = null
+                               open var grade:Int? = null) : RealmObject()
+
+</code></pre>
+
+<p>1) 필드를 수정해야 할 상황이 생길 수 있으므로 var으로 선언.</p>
+
+<p>2) 인자가 없는 생성자를 생략해주기 위해 기본값을 모두 설정.</p>
+
+<p>3) 상속이 가능 하도록 open.<br />
+4) getter,setter 없음.</p></li>
+
+<li><p>사용 설정</p>
 
 <ul>
-<li><p>사용예</p>
-
-<pre><code>import android.content.pm.PackageManager
-
-PackageManager.PERMISSION_GRANTED
-</code></pre></li>
+<li>예제</li>
 </ul>
 
-<h3 id="activitycompat">ActivityCompat</h3>
+<p>ㄱ. java예제</p>
 
-<ul>
-<li><p>사용예</p>
+<pre><code>public class Main3Activity extends AppCompatActivity {
 
-<pre><code>import android.support.v4.app.ActivityCompat
+    private Realm realm; //Realm인스터스 클래스는 전역에서 사용하므로 클래스의 멤버변수로 선언하여 준다.
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate( savedInstanceState );
+        setContentView( R.layout.activity_main3 );
 
-ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE), 100)
+        Realm.init(getApplicationContext());
+        realm = Realm.getDefaultInstance();
+        //Realm메소드를 초기화하고, 인스턴스를 가져와 멤버변수에 할당해준다
+    }
+
+    @Override
+    protected void onDestroy() {
+    super.onDestroy();
+    realm.close();
+    }
+}
+</code></pre>
+
+<p>ㄴ. Kotlin예제</p>
+
+<pre><code>class Main2Activity : AppCompatActivity() {
+var realm:Realm? = null
+
+override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+    setContentView(R.layout.activity_main2)
+
+    Realm.init(applicationContext)
+    realm = Realm.getDefaultInstance()
+}
+
+override fun onDestroy() {
+    super.onDestroy()
+    realm?.close()
+}
+}
 </code></pre></li>
-</ul>
-
-<h3 id="contextcompat">ContextCompat</h3>
-
-<ul>
-<li><p>사용예</p>
-
-<pre><code>import android.support.v4.content.ContextCompat
-
-ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
-</code></pre></li>
-</ul>
-
-<h3 id="activity">Activity</h3>
-
-<blockquote>
-<p>안드로이드 어플리케이션 구성요소 중 Activity를 사용하겠다고 선언</p>
-</blockquote>
-
-<ul>
-<li><p>사용예</p>
-
-<pre><code>import android.app.Activity
-</code></pre></li>
-</ul>
+</ol>
 </div>
 
     
