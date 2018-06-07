@@ -4,7 +4,7 @@
          
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Androids</title>
+        <title>Gradle</title>
         
         <style>
 
@@ -61,9 +61,6 @@
 <script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
  <meta name="generator" content="Hugo 0.40.3" />
         
-        <link href="https://MoonOnYou.github.io/android/index.xml" rel="alternate" type="application/rss+xml" title="ONYOU&#39;S  SITE" />
-        <link href="https://MoonOnYou.github.io/android/index.xml" rel="feed" type="application/rss+xml" title="ONYOU&#39;S  SITE" />
-        
 
         
     </head>
@@ -83,7 +80,7 @@
 
                 <div class="navbar-header">
 
-                    <a class="navbar-brand visible-xs" href="#">Androids</a>
+                    <a class="navbar-brand visible-xs" href="#">Gradle</a>
 
                     <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
                         <span class="icon-bar"></span>
@@ -130,9 +127,7 @@
 
 <main>
 
-    <h2>Androids</h2>
-
-     <div class="item">
+    <div class="item">
 
     
     
@@ -146,67 +141,123 @@
     
 
 </div>
-  <div class="item">
 
-    
-    
-    
 
-    
-    
+    <br> <div class="text-justify">
 
-    <h4><a href="/android/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4--%ED%8C%81/">안드로이드 스튜디오  팁</a></h4>
-    <h5>June 6, 2018</h5>
-    
+<h1 id="installing-with-a-package-manager">Installing with a package manager</h1>
 
+<ul>
+<li><p>배포된 버전 확인
+&gt; <a href="https://gradle.org/releases/">https://gradle.org/releases/</a>
+```</p>
+
+<h1 id="패키지-저장소-추가">패키지 저장소 추가</h1>
+
+<p>sudo add-apt-repository ppa:cwchien/gradle
+sudo apt-get update</p></li>
+</ul>
+
+<h1 id="설치">설치</h1>
+
+<p>sudo apt-get install gradle-4.8</p>
+
+<h1 id="버전확인">버전확인</h1>
+
+<p>gradle -v</p>
+
+<pre><code>&gt; update-alternatives: using /usr/lib/gradle/4.8/bin/gradle to provide /usr/bin/gradle (gradle) in auto mode
+
+</code></pre>
+
+<h1 id="불필요-패키지-제거">불필요 패키지 제거</h1>
+
+<p>sudo apt autoremove</p>
+
+<h1 id="패키지가-설치된-경로-찾기">패키지가 설치된 경로 찾기</h1>
+
+<p>dpkg -L gradle
+```</p>
+
+<h1 id="안드로이드-gradle">안드로이드 Gradle</h1>
+
+<ul>
+<li>안드로이드 스튜디오는 편집만 담당할 뿐, 빌드는 Gradle 을 통해 수행됨</li>
+<li>라이브러리 설치 도구로도 이용</li>
+<li>gradle 스크립트 내용에는 빌드에 사용할 sdk 버전, 애플리케이션 버전, 사용하는 라이브러리 등의 내용이 포함됨</li>
+</ul>
+
+<h2 id="프로젝트-build-gradle">프로젝트 build.gradle</h2>
+
+<ul>
+<li>Android Gradle 플러그인 버전 지정</li>
+<li>하위 모듈 공통적으로 해당하는 항목들 지정</li>
+</ul>
+
+<h2 id="app-모듈-의-build-gradle">App(모듈)의 Build.gradle</h2>
+
+<ul>
+<li>AndroidManifest.xml 재정의
+build tools / minSDK / targetSDK / ApplicationID / versionCode / VersionName 등</li>
+</ul>
+
+<h2 id="settings-gradle">Settings.gradle</h2>
+
+<p>멀티 프로젝트에 포함되는 하위 모듈 목록</p>
+
+<h2 id="gradle-properties">Gradle.properties</h2>
+
+<p>기타 환경 변수들</p>
+
+<h2 id="local-properties">Local.properties</h2>
+
+<p>SDK Home 등</p>
+
+<h2 id="명령어">명령어</h2>
+
+<p>./gradlew :app:dependencies</p>
+
+<h2 id="참고링크">참고링크</h2>
+
+<ul>
+<li><a href="https://www.slideshare.net/koreacio/gradle-64458419">https://www.slideshare.net/koreacio/gradle-64458419</a></li>
+<li><a href="https://guides.gradle.org/building-android-apps/?_ga=2.52121193.1300548979.1528291190-326059834.1527966143">https://guides.gradle.org/building-android-apps/?_ga=2.52121193.1300548979.1528291190-326059834.1527966143</a></li>
+</ul>
 </div>
-  <div class="item">
-
-    
-    
-    
 
     
     
 
-    <h4><a href="/android/realm-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/">Realm 설정하기</a></h4>
-    <h5>June 5, 2018</h5>
-    
-
-</div>
-  <div class="item">
-
-    
-    
     
 
     
-    
 
-    <h4><a href="/android/%EA%B6%8C%ED%95%9C%EC%84%A4%EC%A0%95/">권한설정</a></h4>
-    <h5>June 4, 2018</h5>
-    
+        <h4 class="page-header">Comments</h4>
 
-</div>
-  <div class="item">
+        <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "onyous-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
     
-    
-    
-
-    
-    
-
-    <h4><a href="/android/mine/">Mine</a></h4>
-    <h5>June 3, 2018</h5>
-    
-
-</div>
- 
 
 </main>
-
-
 
         <footer>
 
