@@ -143,7 +143,15 @@
 </div>
 
 
-    <br> <div class="text-justify"><ol>
+    <br> <div class="text-justify">
+
+<h2 id="realm">Realm</h2>
+
+<blockquote>
+<p>예제는 학생정보 관리</p>
+</blockquote>
+
+<ol>
 <li><p>의존성 설정</p>
 
 <p>a. 프로젝트 build.gradle 파일의 dependancies안에 아래의 문구를 추가한다.</p>
@@ -161,10 +169,6 @@
 <li><p>모델 클래스</p>
 
 <p>a. 데이터 베이스와 매핑할 ORM클래스를 정의 한다.</p>
-
-<ul>
-<li>예제 (학생정보 관리)</li>
-</ul>
 
 <p>ㄱ. JAVA예제</p>
 
@@ -206,10 +210,6 @@ private int grade;
 </ul></li>
 
 <li><p>사용 설정</p>
-
-<ul>
-<li>예제</li>
-</ul>
 
 <p>ㄱ. java예제</p>
 
@@ -274,10 +274,6 @@ override fun onDestroy() {
 
 <li><p>insert , update 기능 메소드 구현하기</p>
 
-<ul>
-<li>예제</li>
-</ul>
-
 <p>ㄱ. java예제</p>
 
 <pre><code>private void insnertOrUpdateV1(final Student student) {
@@ -325,6 +321,35 @@ override fun onDestroy() {
 <p>2) ?: 문법을 이용하여 maxId가 Null일 경우에는 0, 아닐경우에는 maxId의 Ind값을 반환하여 1을 더하여 주게함</p>
 
 <p>3) getter와 setter가 자동 호출되므로 studentId를 student객체에 넣어줄 때에도 &lsquo;student.setStudentId( nextId );&lsquo;가 아닌 = 을 사용.</p></li>
+
+<li><p>정보 입력하기</p>
+
+<p>ㄱ. 자바예제</p>
+
+<pre><code>Student student1 = new Student();
+        student1.setStudentId( 1 );
+        student1.setName( &quot;박중수&quot; );
+        student1.setAge( 26 );
+        student1.setGrade( 4 );
+
+        Student student2 = new Student();
+        student2.setStudentId( 2 );
+        student2.setName( &quot;박영환&quot; );
+        student2.setAge( 27 );
+        student2.setGrade( 4 );
+
+        insnertOrUpdateV( student1 );
+        insnertOrUpdateV( student2 );
+</code></pre>
+
+<p>ㄴ. 코틀린 예제</p>
+
+<pre><code>val student1 = Student(1,&quot;박중수&quot;,26,4)
+        val student2 = Student(2,&quot;박영환&quot;,27,4)
+
+        insertOrUpdate(student1)
+        insertOrUpdate(student2)
+</code></pre></li>
 </ol>
 </div>
 
