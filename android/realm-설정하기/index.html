@@ -355,40 +355,39 @@ override fun onDestroy() {
 
 <p>ㄱ. 자바예제</p>
 
-<ul>
-<li><p>전체를 불러오는 메소드</p>
+<p>a. 전체를 불러오는 메소드</p>
 
 <pre><code>private List&lt;Student&gt; findAll(){
-RealmResults&lt;Student&gt; results = realm.where(Student.class) //1
-        .findAll() //2
-        .sort(&quot;studentId&quot;, Sort.DESCENDING); //4
-List&lt;Student&gt; list = results; //3
+    RealmResults&lt;Student&gt; results = realm.where(Student.class) //1
+            .findAll() //2
+            .sort(&quot;studentId&quot;, Sort.DESCENDING); //4
+    List&lt;Student&gt; list = results; //3
 
-return  list;
+    return  list;
 }
 </code></pre>
 
-<p>1) where메소드를 통해 Student에서 찾을것을 realm에게 알려줌</p></li>
-</ul>
+<p>1) where메소드를 통해 Student에서 찾을것을 realm에게 알려줌</p>
 
 <p>2) findAll()메소드를 통해 모든 결과를 가져오도록 함</p>
 
-<p>3) 받아온 결과는</p>
-
-<p>4)
-* RealmResults<E> 클래스는 List<E>인터페이스를 상속받은 클래스이기에 다향성을 이용해 List에 담을 수 있다. 이 코드는 이를 이용해 List형식으로 반환했다.</p>
+<p>1,3) 받아온 결과는 RealmResults 라는 객체에 담기게 된다</p>
 
 <ul>
-<li>id를 조건으로 데이터를 불러오는 메소드
-<code>
-private Student findOndeById(int studentId){
-Student results = realm.where(Student.class)
-        .equalTo(&quot;studentId&quot;,studentId)
-        .findFirst();
-return results;
+<li>RealmResults<E> 클래스는 List<E>인터페이스를 상속받은 클래스이기에 다향성을 이용해 List에 담을 수 있다. 이 코드는 이를 이용해 List형식으로 반환했다.</li>
+</ul>
+
+<p>4) <strong>오름차순</strong> 정렬을 해주었다</p>
+
+<p>b. id를 조건으로 데이터를 불러오는 메소드</p>
+
+<pre><code>private Student findOndeById(int studentId){
+    Student results = realm.where(Student.class)
+            .equalTo(&quot;studentId&quot;,studentId)
+            .findFirst();
+    return results;
 }
-</code></li>
-</ul></li>
+</code></pre></li>
 </ol>
 
 <p><em>책 &lsquo; 자바 개발자를 위한 kotlin (박중수 저) &rsquo; 를 보고 정리하였습니다</em></p>
