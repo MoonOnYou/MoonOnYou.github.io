@@ -145,6 +145,34 @@
 
     <br> <div class="text-justify">
 
+<h2 id="a"><strong><em>A</em></strong></h2>
+
+<h3 id="as-as">as,as?</h3>
+
+<blockquote>
+<p>객체의 타입을 변환할 때 사용하는 연산자</p>
+
+<p>단 Int와 같은 기본 타입간에는 사용할 수 없고 변환함수를 사용해야한다.</p>
+</blockquote>
+
+<ul>
+<li><p><em>ex 1</em></p>
+
+<pre><code>val s1: String = s2 as String
+</code></pre>
+
+<ul>
+<li><p>s2의 값이 String타입에 적합하면 String타입으로 변환하여 s1에 넣음</p></li>
+
+<li><p>만일 s2값이 String타입에 부적합하다면 ClassCastException이 발생한다. (s2의 값이 null일 때도 마찬가지)</p></li>
+</ul></li>
+
+<li><p>_ex 2__</p>
+
+<pre><code>val s1: String? = s2 as? String
+</code></pre></li>
+</ul>
+
 <h2 id="c"><strong><em>C</em></strong></h2>
 
 <h3 id="constructor">constructor</h3>

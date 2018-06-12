@@ -145,21 +145,18 @@
 
     <br> <div class="text-justify">
 
-<h1 id="코틀린의-변수">코틀린의 변수</h1>
+<h2 id="코틀린의-변수">코틀린의 변수</h2>
 
-<ol>
-<li>var
-
-<ul>
-<li>가변변수를 의미하며 variable(변수)의 뜻을 가지고 있다.</li>
-</ul></li>
-<li>val
+<h3 id="1-var">1. var</h3>
 
 <ul>
-<li>불변변수(상수)를 의미하며 Value(값)의 뜻을 가지고 있다.
-(자바의 final)</li>
-</ul></li>
-</ol>
+<li><p>가변변수를 의미하며 variable(변수)의 뜻을 가지고 있다.</p>
+
+<h3 id="2-val">2. val</h3></li>
+
+<li><p>불변변수(상수)를 의미하며 Value(값)의 뜻을 가지고 있다.
+(자바의 final)</p></li>
+</ul>
 
 <blockquote>
 <p>val변수가 객체를 참조하는 경우 변수 자신의 참조 값을
@@ -168,7 +165,59 @@
 변경이 가능하다.</p>
 </blockquote>
 
-<h1 id="코틀린의-기본-타입">코틀린의 기본 타입</h1>
+<h2 id="코틀린-선언-vs-자바-선언">코틀린 선언 VS 자바 선언</h2>
+
+<h3 id="1-변수-선언">1. 변수 선언</h3>
+
+<ol>
+<li><p>kotlin</p>
+
+<ul>
+<li><p>ver또는vel 변수이름 : 타입,생략가능 = 선언</p>
+
+<ul>
+<li>예시</li>
+</ul>
+
+<pre><code> val a: Int = 7;   var b = 10 //1
+</code></pre>
+
+<p>1) 세미콜론(;)은 생략해도 되지만 한줄에 두개이상의 표현식을 쓸때는 써줘야 한다</p></li>
+</ul></li>
+
+<li><p>java</p>
+
+<ul>
+<li>타입 변수이름 = 선언 ;</li>
+</ul></li>
+</ol>
+
+<h3 id="2-함수-선언">2. 함수 선언</h3>
+
+<ol>
+<li><p>kotlin</p>
+
+<ul>
+<li><strong>fun</strong> <strong>메소드명</strong>(입력변수1:입력타입1,입력변수2:입력타입2) : <strong>반환값타입</strong></li>
+</ul></li>
+
+<li><p>java</p>
+
+<ul>
+<li>접근제한 <strong>반환값타입 메소드명</strong>(입력타입1 입력변수1,입력타입2 입력변수2)</li>
+</ul></li>
+</ol>
+
+<blockquote>
+<p>코틀린은 &lsquo;메소드명(파라미터),이름&rsquo;을 가장 중요시 하고, 자바는 &lsquo;타입&rsquo;을 중요시 하는게 아닌가 싶다.파라미터를 넘겨줄때도 코틀린은 이름부터 넘겨주고 있다..
+타입추론이 가능해서 덜 중요한 건가..</p>
+
+<p>코틀린은 함수는 소스파일의 어디든 바로 정의 가능 (자바는 반드시 클래스 안에 함수를 정의 해야 한다.)</p>
+
+<p>코틀림 반환값이 없을 때는 Unit타입이지만 생략해도 된다. (자바의 void와 비슷하다)</p>
+</blockquote>
+
+<h2 id="코틀린의-기본-타입">코틀린의 기본 타입</h2>
 
 <blockquote>
 <p>코틀린의 기본타입은 자바와 달리 모두 클래스로 정의되어 있다</p>
@@ -204,7 +253,7 @@
     else -&gt; false                           //3
 </code></pre>
 
-<p>2) <a href="/kotlin/코틀린-키워드-정리.md/### is,!is">is 키워드</a> (is는 java의 instanceof)를 이용하여 변수 타입이
+<p>2) is 키워드 (is는 java의 instanceof)를 이용하여 변수 타입이
 String인지 검사 한다. 그리고 myText의 문자열 맨 앞이
 &ldquo;onyou&rdquo;이면 <strong>true</strong> 값을 반환한다. (타입은 컴파일러가
 boolean으로 <strong>자동 추론</strong>)</p>
