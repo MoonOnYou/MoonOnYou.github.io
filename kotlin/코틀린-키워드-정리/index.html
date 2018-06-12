@@ -147,9 +147,43 @@
 
 <h2 id="a"><strong><em>A</em></strong></h2>
 
+<h3 id="arrayof-arrayofnulls">arrayOf() ,arrayOfNulls()</h3>
+
+<blockquote>
+<p>간단한 배열을 쉽게 생성할 수 있다</p>
+</blockquote>
+
+<ul>
+<li><p><em>예제</em></p>
+
+<pre><code>val item = arrayOf(&quot;가&quot;, &quot;나&quot;, &quot;다&quot;)
+</code></pre></li>
+</ul>
+
+<blockquote>
+<p>[대괄호]는 배열의 각 요소를 읽거나 쓸 때만 사용한다.</p>
+
+<p>위의 경우 item[0]의 값은 &ldquo;가&rdquo; 이다.</p>
+
+<p>타입은 컴파일러가 알아서 String으로 추론해준다.</p>
+
+<p>배열요소가 null값을 가질 수 있거나 요소의 타입이 null값을 허용하는 경우 arrayOfNulls() 함수를 사용한다.</p>
+</blockquote>
+
+<ul>
+<li><p><em>배열의 요솟값 출력예제</em></p>
+
+<pre><code>for (Korean in item) {
+    println(Korean)
+}
+</code></pre></li>
+</ul>
+
 <h3 id="as-as">as,as?</h3>
 
 <blockquote>
+<p>영어 &lsquo;as&rsquo;는 &lsquo;~처럼&rsquo; 이라고 번역 가능하다</p>
+
 <p>객체의 타입을 변환할 때 사용하는 연산자</p>
 
 <p>단 Int와 같은 기본 타입간에는 사용할 수 없고 변환함수를 사용해야한다.</p>
@@ -167,10 +201,16 @@
 <li><p>만일 s2값이 String타입에 부적합하다면 ClassCastException이 발생한다. (s2의 값이 null일 때도 마찬가지)</p></li>
 </ul></li>
 
-<li><p>_ex 2__</p>
+<li><p><em>ex 2</em></p>
 
 <pre><code>val s1: String? = s2 as? String
-</code></pre></li>
+</code></pre>
+
+<ul>
+<li><p>s2의 값이 String타입에 부합한 경우 예외를 발생시키지않고 null값이 반환된다.</p></li>
+
+<li><p>따라서 s1변수는 null가능 타입인 String? 으로 선언하면 된다.</p></li>
+</ul></li>
 </ul>
 
 <h2 id="c"><strong><em>C</em></strong></h2>
@@ -192,7 +232,7 @@
 </blockquote>
 
 <ul>
-<li><p>예제</p>
+<li><p><em>예제</em></p>
 
 <pre><code>fun main (args: Array&lt;String&gt;) {
     val str:Any = &quot;문자열&quot;
@@ -203,6 +243,36 @@
     }
 }
 </code></pre></li>
+</ul>
+
+<h3 id="in-in">in, !in</h3>
+
+<blockquote>
+<p>List, Map, Set과 같이 객체를 저장하는 데이터 구조인 컬렉션(collection)에서 특정 객체가 컬랙션에 저장되어 있는지 확인해주는 연산자이다.</p>
+
+<p>true 또는 false를 반환한다.</p>
+
+<p>a in b 에서 컬랙션 b에 a가 있으면 true가 반환되고, a !in b 에서는 없을 때 true 가 반환된다.</p>
+
+<p>for이나 범위연산자와 같이 많이 사용한다.</p>
+</blockquote>
+
+<ul>
+<li><p><em>예제</em></p>
+
+<pre><code>val num = arrayOf(100, 200, 300, 400) //1
+println(&quot;${200 in num}&quot;) //2
+println(&quot;${200 !in num}&quot;) //3
+println(&quot;${!num.contains(200)&quot;}) //4
+</code></pre>
+
+<p>1) arrayOf() 함수로 배열을 생성한다.</p>
+
+<p>2) 200이 num에 있는지 검사하여 true를 출력</p>
+
+<p>3) 200이 num에 있는지 검사하여 false를 출력</p>
+
+<p>4) in연산자는 내부적으로 contains()함수를 호출하기 때문에 주석4의 코드와 주석3의 코드는 기능적으로 같음. false를 출력.</p></li>
 </ul>
 
 <h3 id="infix">infix</h3>
@@ -228,6 +298,8 @@
 <ul>
 <li>함수를 호출할 때 인자의 개수를 가변적으로 전달할 때 사용한다.</li>
 </ul>
+
+<p><br></p>
 
 <h2 id="속성과-필드의-차이점">속성과 필드의 차이점</h2>
 
