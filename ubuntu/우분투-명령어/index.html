@@ -4,7 +4,7 @@
          
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Ubuntus</title>
+        <title>우분투 명령어</title>
         
         <style>
 
@@ -61,9 +61,6 @@
 <script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
  <meta name="generator" content="Hugo 0.40.3" />
         
-        <link href="https://MoonOnYou.github.io/ubuntu/index.xml" rel="alternate" type="application/rss+xml" title="ONYOU&#39;S  SITE" />
-        <link href="https://MoonOnYou.github.io/ubuntu/index.xml" rel="feed" type="application/rss+xml" title="ONYOU&#39;S  SITE" />
-        
 
         
     </head>
@@ -83,7 +80,7 @@
 
                 <div class="navbar-header">
 
-                    <a class="navbar-brand visible-xs" href="#">Ubuntus</a>
+                    <a class="navbar-brand visible-xs" href="#">우분투 명령어</a>
 
                     <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
                         <span class="icon-bar"></span>
@@ -132,9 +129,7 @@
 
 <main>
 
-    <h2>Ubuntus</h2>
-
-     <div class="item">
+    <div class="item">
 
     
     
@@ -148,11 +143,118 @@
     
 
 </div>
- 
+
+
+    <br> <div class="text-justify">
+
+<ul>
+<li>패키지 매니저</li>
+</ul>
+
+<h1 id="불필요-패키지-제거">불필요 패키지 제거</h1>
+
+<blockquote>
+<p>의존성이 떨어진 (사용하진 않은지 오래된) 패키지들( 우분투에서는 프로그램을 패키지라고 함)을 삭제해 준다</p>
+</blockquote>
+
+<pre><code>sudo apt autoremove 
+</code></pre>
+
+<h1 id="패키지가-설치된-경로-찾기">패키지가 설치된 경로 찾기</h1>
+
+<pre><code>dpkg -L gradle
+</code></pre>
+
+<ul>
+<li>환경변수</li>
+</ul>
+
+<h1 id="시스템-단계에서-설정하는-파일">시스템 단계에서 설정하는 파일</h1>
+
+<h1 id="모든-유저에게-적용됨">모든 유저에게 적용됨</h1>
+
+<pre><code>cat /etc/environment
+</code></pre>
+
+<h1 id="각-사용자-마다-개별적으로-가지고있는-스크립트-파일">각 사용자 마다 개별적으로 가지고있는 스크립트 파일</h1>
+
+<pre><code>cat ~/.profile
+</code></pre>
+
+<h1 id="전역-스크립트">전역 스크립트</h1>
+
+<h1 id="이게-먼저-실행되고-개별-profile-이-실행됨">이게 먼저 실행되고 개별 ~/.profile 이 실행됨</h1>
+
+<pre><code>cat /etc/profile
+ls /etc/profile.d/
+</code></pre>
+
+<h1 id="현재-터미널에서만-적용하는-방법">현재 터미널에서만 적용하는 방법</h1>
+
+<pre><code>export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/
+</code></pre>
+
+<h1 id="현재-터미널-환경변수-해제">현재 터미널 환경변수 해제</h1>
+
+<pre><code>unset 환경변수명
+</code></pre>
+
+<h1 id="정의된-모든-환경변수-확인">정의된 모든 환경변수 확인</h1>
+
+<pre><code>export
+env
+env | grep JAVA_HOME
+</code></pre>
+
+<h1 id="특정-환경변수-값-확인">특정 환경변수 값 확인</h1>
+
+<pre><code>echo $환경변수명
+</code></pre>
+
+<h1 id="ex-자바-환경변수를-만들어야-되면">ex) 자바 환경변수를 만들어야 되면</h1>
+
+<pre><code>sudo vi /etc/profile.d/java.sh
+</code></pre>
+
+<h1 id="스크립트-파일을-하나-만들고-아래의-내용-추가">스크립트 파일을 하나 만들고 아래의 내용 추가</h1>
+
+<pre><code>export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
+</code></pre>
+</div>
+
+    
+    
+
+    
+
+    
+
+        <h4 class="page-header">Comments</h4>
+
+        <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "onyous-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    
 
 </main>
-
-
 
         <footer>
 
