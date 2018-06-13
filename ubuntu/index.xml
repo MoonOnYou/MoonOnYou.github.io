@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ubuntus on ONYOU&#39;S  SITE</title>
+    <link>https://MoonOnYou.github.io/ubuntu/</link>
+    <description>Recent content in Ubuntus on ONYOU&#39;S  SITE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 13 Jun 2018 14:17:39 +0900</lastBuildDate>
+    
+	<atom:link href="https://MoonOnYou.github.io/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>우분투의 유용한 프로그램</title>
+      <link>https://MoonOnYou.github.io/ubuntu/%EC%9A%B0%EB%B6%84%ED%88%AC%EC%9D%98-%EC%9C%A0%EC%9A%A9%ED%95%9C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8/</link>
+      <pubDate>Wed, 13 Jun 2018 14:17:39 +0900</pubDate>
+      
+      <guid>https://MoonOnYou.github.io/ubuntu/%EC%9A%B0%EB%B6%84%ED%88%AC%EC%9D%98-%EC%9C%A0%EC%9A%A9%ED%95%9C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,19 +6,10 @@
     <description>Recent content in Androids on ONYOU&#39;S  SITE</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Jun 2018 21:51:02 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 05 Jun 2018 20:20:13 +0900</lastBuildDate>
     
 	<atom:link href="https://MoonOnYou.github.io/android/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>안드로이드 스튜디오  팁</title>
-      <link>https://MoonOnYou.github.io/android/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4--%ED%8C%81/</link>
-      <pubDate>Wed, 06 Jun 2018 21:51:02 +0900</pubDate>
-      
-      <guid>https://MoonOnYou.github.io/android/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4--%ED%8C%81/</guid>
-      <description> getter, setter 자동생성  변수생성 마우스 오른쪽 버튼으로 클릭 &amp;ldquo;Generate&amp;rdquo;를 선택하고 &amp;ldquo;Getter and Setter&amp;rdquo;옵션을 선택  </description>
-    </item>
     
     <item>
       <title>Realm 설정하기</title>
@@ -26,28 +17,16 @@
       <pubDate>Tue, 05 Jun 2018 20:20:13 +0900</pubDate>
       
       <guid>https://MoonOnYou.github.io/android/realm-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/</guid>
-      <description>의존성 설정
+      <description>Realm  예제는 학생정보 관리
+&amp;lsquo;숫자)&amp;rsquo; 는 숫자와 일치하는 주석의 코드를 풀이
+  의존성 설정
 a. 프로젝트 build.gradle 파일의 dependancies안에 아래의 문구를 추가한다.
 classpath &amp;quot;io.realm:realm-gradle-plugin:3.5.0&amp;quot;  b. 어플리케이션 build.grable 파일의 dependancies안에 아래의 문구를 추가 한다.
 apply plugin: &#39;realm-android&#39;  c. Sync Now 를 클릭하여 스크립트를 적용한다.
  모델 클래스
-a. 데이터 베이스와 매피할 ORM클래스를 정의 한다.
- 예제 (학생정보 관리)  ㄱ. JAVA예제
+a. 데이터 베이스와 매핑할 ORM클래스를 정의 한다.
+ㄱ. JAVA예제
 public class Student extends RealmObject //1 @PrimaryKey //2 private int studentId; private String name; private int age; private int grade; //getter와 setter를 만들어 준다.</description>
-    </item>
-    
-    <item>
-      <title>import API 정리</title>
-      <link>https://MoonOnYou.github.io/android/import-api-%EC%A0%95%EB%A6%AC/</link>
-      <pubDate>Mon, 04 Jun 2018 23:28:54 +0900</pubDate>
-      
-      <guid>https://MoonOnYou.github.io/android/import-api-%EC%A0%95%EB%A6%AC/</guid>
-      <description>import API 정리 Manifest  사용예
-import android.Manifest Manifest.permission.READ_EXTERNAL_STORAGE Manifest.permission.WRITE_EXTERNAL_STORAGE Manifest.permission.CAMERA   AppCompatActivity  사용예
-import android.support.v7.app.AppCompatActivity class MainActivity : AppCompatActivity() { ... }   Bundle  String값부터 다양한 parcelable type( 기본 type이 아닌 class객체를 activity 간에 주고 받기 위한 타입)까지 mapping해줌
-  사용예
-import android.os.Bundle override fun onCreate(savedInstanceState: Bundle?) { ... }   PackageManager  사용예
-import android.content.pm.PackageManager PackageManager.PERMISSION_GRANTED   ActivityCompat  사용예</description>
     </item>
     
     <item>
@@ -62,20 +41,6 @@ import android.content.pm.PackageManager PackageManager.PERMISSION_GRANTED   Act
 &amp;lt;uses-permission android:name=&amp;quot;android.permission.WRITE_EXTERNAL_STORAGE&amp;quot;/&amp;gt;  (갤러리에서 사진을) 읽기위한 권한 설정
 &amp;lt;uses-permission android:name=&amp;quot;android.permission.READ_EXTERNAL_STORAGE&amp;quot;/&amp;gt;  카메라 사용을 사용자에게 알림
 &amp;lt;uses-feature android:name=&amp;quot;android.hardware.camera2&amp;quot;/&amp;gt;   사용자에게 권한을 요청하는 코드  전체코드  package com.example.moononyou.phonebookkotlin import android.</description>
-    </item>
-    
-    <item>
-      <title>Mine</title>
-      <link>https://MoonOnYou.github.io/android/memo/</link>
-      <pubDate>Sun, 03 Jun 2018 18:36:54 +0900</pubDate>
-      
-      <guid>https://MoonOnYou.github.io/android/memo/</guid>
-      <description>My Library 간단하게 알아둘 것  android:onClick=&amp;ldquo;함수 이름&amp;rdquo; : 해당 뷰가 클릭되었을 때 자바에서 &amp;ldquo;함수이름&amp;rdquo;과 같은 함수를 실행하라는 의미
- Intent : 어떤 기능을 실행할 지 지정하기 위해 사용
- setContentView() : xml레이아웃에 정의된 뷰들을 메모리 상에 객체화하는 역할을 함
- AndroidManifest.xml : 앱에대한 정보를 담고있음 , 애플리케이션 구성요소나 권한 등의 정보를 정의함
- xmlns:android : API에 정의된 요소를 사용한다는 의미로,하나의 레이아웃 파일에 하나 이상 있어야 한다.
- Context란 : 일반적으로 어떤일이 발생한 상황을 의미하는데 프로그래밍에서는 객체의 상태정보를 표현하는 경우가 많다</description>
     </item>
     
   </channel>
