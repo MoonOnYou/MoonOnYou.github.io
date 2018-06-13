@@ -40,7 +40,8 @@ public class Student extends RealmObject //1 @PrimaryKey //2 private int student
 &amp;lt;uses-permission android:name=&amp;quot;android.permission.CAMERA&amp;quot;/&amp;gt;  (찍은 사진을) 저장하기 위한 권한 설정
 &amp;lt;uses-permission android:name=&amp;quot;android.permission.WRITE_EXTERNAL_STORAGE&amp;quot;/&amp;gt;  (갤러리에서 사진을) 읽기위한 권한 설정
 &amp;lt;uses-permission android:name=&amp;quot;android.permission.READ_EXTERNAL_STORAGE&amp;quot;/&amp;gt;  카메라 사용을 사용자에게 알림
-&amp;lt;uses-feature android:name=&amp;quot;android.hardware.camera2&amp;quot;/&amp;gt;   사용자에게 권한을 요청하는 코드  전체코드  package com.example.moononyou.phonebookkotlin import android.</description>
+&amp;lt;uses-feature android:name=&amp;quot;android.hardware.camera2&amp;quot;/&amp;gt;   사용자에게 권한을 요청하는 코드  전체코드 예시
+package com.example.moononyou.phonebookkotlin import android.</description>
     </item>
     
   </channel>

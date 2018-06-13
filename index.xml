@@ -6,20 +6,10 @@
     <description>Recent content on ONYOU&#39;S  SITE</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 13 Jun 2018 14:31:50 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 05 Jun 2018 20:20:13 +0900</lastBuildDate>
     
 	<atom:link href="https://MoonOnYou.github.io/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>우분투 명령어</title>
-      <link>https://MoonOnYou.github.io/ubuntu/%EC%9A%B0%EB%B6%84%ED%88%AC-%EB%AA%85%EB%A0%B9%EC%96%B4/</link>
-      <pubDate>Wed, 13 Jun 2018 14:31:50 +0900</pubDate>
-      
-      <guid>https://MoonOnYou.github.io/ubuntu/%EC%9A%B0%EB%B6%84%ED%88%AC-%EB%AA%85%EB%A0%B9%EC%96%B4/</guid>
-      <description>패키지 매니저  불필요 패키지 제거  의존성이 떨어진 (사용하진 않은지 오래된) 패키지들( 우분투에서는 프로그램을 패키지라고 함)을 삭제해 준다
- sudo apt autoremove  패키지가 설치된 경로 찾기 dpkg -L gradle   환경변수  시스템 단계에서 설정하는 파일 모든 유저에게 적용됨 cat /etc/environment  각 사용자 마다 개별적으로 가지고있는 스크립트 파일 cat ~/.profile  전역 스크립트 이게 먼저 실행되고 개별 ~/.profile 이 실행됨 cat /etc/profile ls /etc/profile.d/  현재 터미널에서만 적용하는 방법 export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/  현재 터미널 환경변수 해제 unset 환경변수명  정의된 모든 환경변수 확인 export env env | grep JAVA_HOME  특정 환경변수 값 확인 echo $환경변수명  ex) 자바 환경변수를 만들어야 되면 sudo vi /etc/profile.</description>
-    </item>
     
     <item>
       <title>Realm 설정하기</title>
@@ -77,7 +67,8 @@ $ vi .gitignore  2) i 를 눌러 입력모드로 바꾸고 아래의 파일(캐�
 &amp;lt;uses-permission android:name=&amp;quot;android.permission.CAMERA&amp;quot;/&amp;gt;  (찍은 사진을) 저장하기 위한 권한 설정
 &amp;lt;uses-permission android:name=&amp;quot;android.permission.WRITE_EXTERNAL_STORAGE&amp;quot;/&amp;gt;  (갤러리에서 사진을) 읽기위한 권한 설정
 &amp;lt;uses-permission android:name=&amp;quot;android.permission.READ_EXTERNAL_STORAGE&amp;quot;/&amp;gt;  카메라 사용을 사용자에게 알림
-&amp;lt;uses-feature android:name=&amp;quot;android.hardware.camera2&amp;quot;/&amp;gt;   사용자에게 권한을 요청하는 코드  전체코드  package com.example.moononyou.phonebookkotlin import android.</description>
+&amp;lt;uses-feature android:name=&amp;quot;android.hardware.camera2&amp;quot;/&amp;gt;   사용자에게 권한을 요청하는 코드  전체코드 예시
+package com.example.moononyou.phonebookkotlin import android.</description>
     </item>
     
     <item>
