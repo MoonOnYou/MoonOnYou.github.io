@@ -29,14 +29,14 @@
       <pubDate>Sat, 12 May 2018 22:00:14 +0900</pubDate>
       
       <guid>https://MoonOnYou.github.io/kotlin/%EC%BD%94%ED%8B%80%EB%A6%B0-%ED%82%A4%EC%9B%8C%EB%93%9C-%EC%A0%95%EB%A6%AC/</guid>
-      <description>A arrayOf() ,arrayOfNulls()  간단한 배열을 쉽게 생성할 수 있다
+      <description>A 1. arrayOf() ,arrayOfNulls()  간단한 배열을 쉽게 생성할 수 있다
   예제
 val item = arrayOf(&amp;quot;가&amp;quot;, &amp;quot;나&amp;quot;, &amp;quot;다&amp;quot;)    [대괄호]는 배열의 각 요소를 읽거나 쓸 때만 사용한다.
 위의 경우 item[0]의 값은 &amp;ldquo;가&amp;rdquo; 이다.
 타입은 컴파일러가 알아서 String으로 추론해준다.
 배열요소가 null값을 가질 수 있거나 요소의 타입이 null값을 허용하는 경우 arrayOfNulls() 함수를 사용한다.
   배열의 요솟값 출력예제
-for (Korean in item) { println(Korean) }   as,as?  영어 &amp;lsquo;as&amp;rsquo;는 &amp;lsquo;~처럼&amp;rsquo; 이라고 번역 가능하다</description>
+for (Korean in item) { println(Korean) }   2.</description>
     </item>
     
   </channel>

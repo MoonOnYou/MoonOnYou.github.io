@@ -29,10 +29,10 @@ $ vi .gitignore  2) i 를 눌러 입력모드로 바꾸고 아래의 파일(캐�
       <pubDate>Sun, 03 Jun 2018 03:33:33 +0900</pubDate>
       
       <guid>https://MoonOnYou.github.io/etc/htmlcss/</guid>
-      <description>brackets  Ctrl + D : 한줄 복사 및 생성 모든 단축키에 Shift를 더하면 반대가 된다.
- 예시   Shift + Ctrl + D // 한 줄 삭제   html  &amp;lt; img src=&amp;ldquo;&amp;rdquo; alt=&amp;ldquo;&amp;rdquo; &amp;gt;   src : 이미지 경로(상대적경로 또는 절대적경로 또는 이미지 URL)
+      <description>1. brackets  Ctrl + D : 한줄 복사 및 생성 모든 단축키에 Shift를 더하면 반대가 된다.
+ 예시   Shift + Ctrl + D // 한 줄 삭제   2. html  &amp;lt; img src=&amp;ldquo;&amp;rdquo; alt=&amp;ldquo;&amp;rdquo; &amp;gt;   src : 이미지 경로(상대적경로 또는 절대적경로 또는 이미지 URL)
  alt : 이미지를 못 불러올 경우, 이 텍스트가 나온다.
- alt를 써줘야 하는 이유   이미지가 안뜰 경우에도 검색엔진에 최적화 되기위해 프로그래머를 위해* 액박떳을 경우 사용자를 위해 시각장애인을 고려하여 웹사이트를 제작할때 웹표준 점수가 좋아짐    css  클래스 및 id 생성시 이름에 숫자를 포함하는 것은 좋지 않다.</description>
+ alt를 써줘야 하는 이유   검색엔진에 최적화 되기위해</description>
     </item>
     
   </channel>
