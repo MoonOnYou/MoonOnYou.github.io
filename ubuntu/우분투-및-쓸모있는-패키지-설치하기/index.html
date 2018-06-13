@@ -147,37 +147,93 @@
 
     <br> <div class="text-justify">
 
+<blockquote>
+<p>어디서든 sudo 명령어를 사용할 때는 최고 권한자의 비밀번호(컴퓨터 로그인 할 때 비밀번호)를 입력해야 한다.</p>
+</blockquote>
+
 <h1 id="1-우분투-설치하기">1. 우분투 설치하기</h1>
 
-<h2 id="1-좋은-블로그가-있어서-우분투-os-설치할-일이-있으면-참고-하면-될거-같다">1) 좋은 블로그가 있어서 우분투 OS 설치할 일이 있으면 참고 하면 될거 같다</h2>
+<h3 id="1-우분투-컴퓨터-만들기">1) 우분투 컴퓨터 만들기</h3>
+
+<blockquote>
+<p>좋은 블로그가 있어서 우분투 설치할 일이 있으면 참고</p>
+</blockquote>
 
 <ul>
-<li><a href="https://medium.com/ics-lab/%EC%9A%B0%EB%B6%84%ED%88%AC-ubuntu-%EB%A1%9C-%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0-1-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0-%EB%93%80%EC%96%BC%EB%B6%80%ED%8C%85-9964f088c9ac">@요기클릭</a></li>
+<li><a href="https://medium.com/ics-lab/%EC%9A%B0%EB%B6%84%ED%88%AC-ubuntu-%EB%A1%9C-%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0-1-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0-%EB%93%80%EC%96%BC%EB%B6%80%ED%8C%85-9964f088c9ac">&mdash;요기클릭&mdash;</a></li>
 </ul>
 
-<h2 id="2-우분투를-깔았으니-한영키-설정-하는-설명이-잘나와-있는-블로그를-찾았으니-여기서-보면-될-듯-ㅎㅎ">2) 우분투를 깔았으니 한영키 설정!! 하는 설명이 잘나와 있는 블로그를 찾았으니 여기서 보면 될 듯 ㅎㅎ</h2>
+<h3 id="2-우분투-한영키-설정">2) 우분투 한영키 설정</h3>
+
+<blockquote>
+<p>하는 방법 잘나와 있는 블로그를 찾았으니 여기서 보면 될 듯</p>
+</blockquote>
 
 <ul>
-<li><a href="http://blankspace-dev.tistory.com/229">요기클릭</a></li>
+<li><a href="http://blankspace-dev.tistory.com/229">&mdash;요기클릭&mdash;</a></li>
 </ul>
 
-<h2 id="3-우분투를-설치하면-파이어-폭스가-생기는데-애는-필요없으니까-깔끔하게-삭제하고-크롬-사용">3) 우분투를 설치하면 파이어 폭스가 생기는데 애는 필요없으니까 깔끔하게 삭제하고 크롬 사용</h2>
+<h3 id="3-파이어-폭스-삭제">3) 파이어 폭스 삭제</h3>
 
-<ul>
-<li><p>다음 명령어로 파이어 폭스를 지워준다</p>
+<blockquote>
+<p>우분투를 설치하면 파이어 폭스가 생기는데 애는 필요없으니까 깔끔하게 삭제하고 크롬 사용</p>
+</blockquote>
+
+<p>a. 다음 명령어로 파이어 폭스를 지워준다</p>
 
 <pre><code>sudo apt-get purge firefox
-</code></pre></li>
+</code></pre>
 
-<li><p>다음 명령어는 파이어폭스의 캐시들을 깔끔하게 지우는 코드</p>
+<p>b. 다음 명령어는 파이어폭스의 캐시들을 깔끔하게 지우는 코드</p>
 
 <pre><code>sudo rm -rf ~/.mozilla/firefox/
 sudo rm -rf ~/.macromedia/
 sudo rm -rf /etc/firefox/
 sudo rm -rf /usr/lib/firefox/
 sudo rm -rf /usr/lib/firefox-addons/
-</code></pre></li>
-</ul>
+</code></pre>
+
+<h1 id="2-패키지-설치하기">2. 패키지 설치하기</h1>
+
+<blockquote>
+<p>우분투에서는 프로그램을 패키지라고 한다.</p>
+</blockquote>
+
+<h3 id="1-visual-studeo">1) Visual Studeo</h3>
+
+<blockquote>
+<p>리눅스와 친한 git과 md 관리가 용이한 Visual Studeo를 설치하고 깔끔하게 지우는 법까지</p>
+</blockquote>
+
+<p><strong>ㄱ. 설치하기</strong></p>
+
+<p>a. 터미널에서 다음 명령어로 MicrosoftGPG키 다운로드</p>
+
+<pre><code>curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor &gt; microsoft.gpg
+</code></pre>
+
+<p>b. 다음 명령어로 키를 설치</p>
+
+<pre><code>sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
+</code></pre>
+
+<p>c. 다음 명령어로 저장소에 비주얼 스튜지오 시스템 추가</p>
+
+<pre><code>sudo sh -c 'echo &quot;deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main&quot; &gt; /etc/apt/sources.list.d/vscode.list'
+</code></pre>
+
+<p>d. 설치</p>
+
+<pre><code>sudo apt update
+sudo apt install code
+</code></pre>
+
+<p><strong>ㄴ. 제거하기</strong></p>
+
+<p>a. 다음 명령어 실행</p>
+
+<pre><code>sudo apt remove code &amp;&amp; sudo apt autoremove
+</code></pre>
 </div>
 
     
