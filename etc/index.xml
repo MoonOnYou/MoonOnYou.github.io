@@ -6,10 +6,24 @@
     <description>Recent content in Etcs on ONYOU&#39;S  SITE</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Jun 2018 22:23:23 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 24 Jun 2018 01:13:45 +0900</lastBuildDate>
     
 	<atom:link href="https://MoonOnYou.github.io/etc/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Color</title>
+      <link>https://MoonOnYou.github.io/etc/color/</link>
+      <pubDate>Sun, 24 Jun 2018 01:13:45 +0900</pubDate>
+      
+      <guid>https://MoonOnYou.github.io/etc/color/</guid>
+      <description>컴퓨터에서의 색  #을 붙힌후 RGB 또는 ARGB 값을 16진수로 순서대로 준다
+ A는 투명도를 조절한다, 예로 00는 투명하며 88은 반투명하며 ff은 투명하지 않다.
+ RGB는 FF로 갈 수록(숫자가 커질수록) 색이 연해진다, 예로 FFFFFF는 흰색이고, 000000은 검은색이다.
+ 중학교 때 , 물감은 섞을 수록 검은 색이되고, 빛은 섞을 수록 흰색이 된다는 내용.
+ 맨 앞의 A자릿 수에 있는 두자리는 생략 가능 하다
+   색상 참고 사이트  colourLovers : 처음 어떤색상으로 시작할지 모르겟다 할때 참고</description>
+    </item>
     
     <item>
       <title>Gitignore설정하기</title>
@@ -21,18 +35,6 @@
  1) 터미널 창을 열어 아래와 같이 입력하여 편집창을 연다
 $ vi .gitignore  2) i 를 눌러 입력모드로 바꾸고 아래의 파일(캐시파일) 또는 다른 포함하고 싶지 않은 파일들을 명시하여 추가한다.
 */idea/ ./idea/  3) esc 를 누르고 :wq 를 입력하여 저장하고 나간다.</description>
-    </item>
-    
-    <item>
-      <title>Html,css</title>
-      <link>https://MoonOnYou.github.io/etc/htmlcss/</link>
-      <pubDate>Sun, 03 Jun 2018 03:33:33 +0900</pubDate>
-      
-      <guid>https://MoonOnYou.github.io/etc/htmlcss/</guid>
-      <description>1. brackets  Ctrl + D : 한줄 복사 및 생성 모든 단축키에 Shift를 더하면 반대가 된다.
- 예시   Shift + Ctrl + D // 한 줄 삭제   2. html  &amp;lt; img src=&amp;ldquo;&amp;rdquo; alt=&amp;ldquo;&amp;rdquo; &amp;gt;   src : 이미지 경로(상대적경로 또는 절대적경로 또는 이미지 URL)
- alt : 이미지를 못 불러올 경우, 이 텍스트가 나온다.
- alt를 써줘야 하는 이유   검색엔진에 최적화 되기위해</description>
     </item>
     
   </channel>

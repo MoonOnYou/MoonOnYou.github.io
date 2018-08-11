@@ -6,10 +6,23 @@
     <description>Recent content in Androids on ONYOU&#39;S  SITE</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Jun 2018 21:51:02 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 24 Jun 2018 00:32:35 +0900</lastBuildDate>
     
 	<atom:link href="https://MoonOnYou.github.io/android/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Android design</title>
+      <link>https://MoonOnYou.github.io/android/android-design/</link>
+      <pubDate>Sun, 24 Jun 2018 00:32:35 +0900</pubDate>
+      
+      <guid>https://MoonOnYou.github.io/android/android-design/</guid>
+      <description>안드로이드에서 마진, 패딩을 8dp단위로 사용하면 훨씬더 깔끔하고 정돈된 디자인이 된다.
+ 안드로이드에 구글 폰트(무료) 적용하기  사용자 임의 폰트를 적용하기 위해서 &amp;ldquo; assets&amp;rdquo;폴더가 필요한데 ,만들어 줘야한다.
+ src폴더에 마우스 오른쪽 클리을 해서 &amp;ldquo;New -&amp;gt; Folder -&amp;gt; Assets Folder&amp;rdquo;를 누룸
+ 사용자 폴저 구조마다 다름 현재 나는 project 단위로 폴더구조보기를 지정해놓은 상태  assets는 폴더명이 &amp;ldquo;assets&amp;rdquo;로 지정되 있으므로 Finish 누르면 됨
+ google Fonts에 들어가서 마음에 드는 폰트에 + 를 누른다</description>
+    </item>
     
     <item>
       <title>안드로이드 스튜디오  팁</title>

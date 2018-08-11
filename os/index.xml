@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OSs on ONYOU&#39;S  SITE</title>
+    <link>https://MoonOnYou.github.io/os/</link>
+    <description>Recent content in OSs on ONYOU&#39;S  SITE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 13 Jun 2018 17:28:36 +0900</lastBuildDate>
+    
+	<atom:link href="https://MoonOnYou.github.io/os/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>우분투 및 쓸모있는 패키지 설치하기</title>
+      <link>https://MoonOnYou.github.io/os/%EC%9A%B0%EB%B6%84%ED%88%AC-%EB%B0%8F-%EC%93%B8%EB%AA%A8%EC%9E%88%EB%8A%94-%ED%8C%A8%ED%82%A4%EC%A7%80-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</link>
+      <pubDate>Wed, 13 Jun 2018 17:28:36 +0900</pubDate>
+      
+      <guid>https://MoonOnYou.github.io/os/%EC%9A%B0%EB%B6%84%ED%88%AC-%EB%B0%8F-%EC%93%B8%EB%AA%A8%EC%9E%88%EB%8A%94-%ED%8C%A8%ED%82%A4%EC%A7%80-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</guid>
+      <description>어디서든 sudo 명령어를 사용할 때는 최고 권한자의 비밀번호(컴퓨터 로그인 할 때 비밀번호)를 입력해야 한다.
+ 1. 우분투 설치하기 1) 우분투 컴퓨터 만들기  좋은 블로그가 있어서 우분투 설치할 일이 있으면 참고
+  &amp;mdash;요기클릭&amp;mdash;  2) 우분투 한영키 설정  하는 방법 잘나와 있는 블로그를 찾았으니 여기서 보면 될 듯
+  &amp;mdash;요기클릭&amp;mdash;  3) 파이어 폭스 삭제  우분투를 설치하면 파이어 폭스가 생기는데 애는 필요없으니까 깔끔하게 삭제하고 크롬 사용</description>
+    </item>
+    
+    <item>
+      <title>리눅스 명령어</title>
+      <link>https://MoonOnYou.github.io/os/%EB%A6%AC%EB%88%85%EC%8A%A4-%EB%AA%85%EB%A0%B9%EC%96%B4/</link>
+      <pubDate>Mon, 09 Jul 2018 22:22:41 +0900</pubDate>
+      
+      <guid>https://MoonOnYou.github.io/os/%EB%A6%AC%EB%88%85%EC%8A%A4-%EB%AA%85%EB%A0%B9%EC%96%B4/</guid>
+      <description> cd ~/ &amp;gt; 홈 디렉토리로 이동
+pwd &amp;gt; 현재의 경로 표시
+ls &amp;gt; 현재 경로에 있는 파일 및 폴더를 모두 보여줌
+mv XXX YYY &amp;gt; XXX를 YYY로 옮김 &amp;gt; 허가 거부가 뜬다면 &amp;ldquo;sudo mw XXX YYY&amp;rdquo;와 같이 sudo를 붙여주면 됨
+불필요 패키지 제거  의존성이 떨어진 (사용하진 않은지 오래된) 패키지들( 우분투에서는 프로그램을 패키지라고 함)을 삭제해 준다
+ sudo apt autoremove  </description>
+    </item>
+    
+  </channel>
+</rss>
