@@ -5,14 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>
-All Tags
-</title>
+  <title>ONYOU&#39;S  SITE</title>
 
   
   
   <meta name="author" content="onyou" />
-  <meta name="description" content="공유로 만드는 아름다운 세상" />
+  <meta name="description" content="1. brackets  Ctrl &#43; D : 한줄 복사 및 생성 모든 단축키에 Shift를 더하면 반대가 된다.
+ 예시   Shift &#43; Ctrl &#43; D // 한 줄 삭제   2. html  &amp;lt; img src=&amp;ldquo;&amp;rdquo; alt=&amp;ldquo;&amp;rdquo; &amp;gt;   src : 이미지 경로(상대적경로 또는 절대적경로 또는 이미지 URL)
+ alt : 이미지를 못 불러올 경우, 이 텍스트가 나온다.
+ alt를 써줘야 하는 이유   검색엔진에 최적화 되기위해" />
 
 
 
@@ -21,7 +22,7 @@ All Tags
 <meta name="generator" content="Hugo 0.40.3" />
 
 
-<link rel="canonical" href="https://MoonOnYou.github.io/tags/" />
+<link rel="canonical" href="https://MoonOnYou.github.io/post/computer-language/htmlcss/" />
 <link rel="alternative" href="/index.xml" title="ONYOU&#39;S  SITE" type="application/atom+xml" />
 
 <link href="https://cdn.bootcss.com/semantic-ui/2.2.14/semantic.min.css" rel="stylesheet" />
@@ -35,16 +36,149 @@ All Tags
     <div class="flipper">
       <section class="front">
         
-<nav class="ui top secondary menu" style="overflow-x: auto">
+<nav class="ui top secondary menu">
   <div class="item">
     <i class="inverted big link bullseye icon dream-flip-toggle" title="Flip it!"></i>
   </div>
   <div class="item">
-    <a href="/"><i class="inverted big link home icon" title="Home"></i></a>
+    <a href="/">
+      <i class="inverted big link home icon" title="Home"></i>
+    </a>
   </div>
 </nav>
  
 <div class="ui centered grid">
+  <div class="fifteen wide mobile fifteen wide tablet eleven wide computer column post-list post-single-main">
+
+    <section class="ui secondary top attached black segment">
+      <a class="ui black right corner label" href="javascript:void(0)" onclick="savePostAsImg()">
+        <i class="save icon"></i>
+      </a>
+      <header>
+        <h1 class="ui header">
+          Html,css
+          <div class="sub header">@ onyou · Jun 3, 2018 · 1 min read · Update at Jun 3, 2018</div>
+        </h1>
+      </header>
+      <article class="post-content" style="margin-top: 2rem; font-size: 1.4rem;">
+
+<h2 id="1-brackets">1. brackets</h2>
+
+<ol>
+<li>Ctrl + D : 한줄 복사 및 생성</li>
+
+<li><p><strong>모든 단축키에 Shift를 더하면 반대가 된다.</strong></p>
+
+<ul>
+<li><em>예시</em>
+<br /></li>
+</ul>
+
+<pre><code>Shift + Ctrl + D // 한 줄 삭제 
+</code></pre></li>
+</ol>
+
+<hr />
+
+<h2 id="2-html">2. html</h2>
+
+<ol>
+<li>&lt; img src=&ldquo;&rdquo; alt=&ldquo;&rdquo; &gt;</li>
+</ol>
+
+<ul>
+<li><p>src : 이미지 경로(상대적경로 또는 절대적경로 또는 이미지 URL)</p></li>
+
+<li><p>alt : 이미지를 못 불러올 경우, 이 텍스트가 나온다.</p>
+
+<ul>
+<li><strong>alt를 써줘야 하는 이유</strong></li>
+</ul>
+
+<ol>
+<li><p>검색엔진에 최적화 되기위해</p></li>
+
+<li><p>웹 표준점수를 고려 할 때</p></li>
+
+<li><p>프로그래머를 위해</p></li>
+
+<li><p>액박떳을 경우 사용자를 위해</p></li>
+
+<li><p>시각장애인을 위해</p></li>
+</ol></li>
+</ul>
+
+<h2 id="3-css">3. css</h2>
+
+<ol>
+<li><p><strong>클래스 및 id 생성시 이름에 숫자를 포함하는 것은 좋지 않다.</strong></p>
+
+<ul>
+<li>프로젝트가 커지면 걷잡을 수 없다.</li>
+</ul></li>
+
+<li><p><strong>css파일에서 가장 상위에 있어야 하는 것이 초기화이다.</strong></p>
+
+<ul>
+<li><p><code>&lt;ul&gt; &lt;li&gt;</code> 초기화를 해주어야 pading이 0으로 되서 글이 가운데로 이쁘게 된다.</p>
+
+<ul>
+<li><p><em>예시</em></p>
+
+<pre><code class="language-css">h1,h2,body,p,ul{ margin: 0; padding: 0;} /모든 기본마진을 없애겟다/
+
+h1{ font-weight: normal; }
+
+li{ list-style-type: none; }
+
+a{ color: dimgray; text-decoration: none; }
+            
+a:hover, a:active{ text-decoration: none; color: dimgray; }
+</code></pre></li>
+</ul></li>
+</ul></li>
+
+<li><p><strong>공공재 style은 위 쪽 (상위)에 적어 주는 것이 좋다.</strong></p></li>
+
+<li><p><strong>width는 960px</strong>이 가장 많이 쓰이고 쓸때도 손 쉽게 쓸 수 있다.</p></li>
+</ol>
+</article>
+    </section>
+
+    <footer class="ui secondary attached segment dream-tags">
+      
+      <span>No Tag</span>
+      
+    </footer>
+
+    
+
+    
+    <footer class="ui secondary bottom attached stacked segment post-disqus-area" data-html2canvas-ignore="true">
+      <div id="disqus_thread"></div>
+      <script>
+      
+
+      
+
+
+      var disqus_config = function () {
+      this.page.url = 'https:\/\/MoonOnYou.github.io\/post\/computer-language\/htmlcss\/';  
+      this.page.identifier = '\/post\/computer-language\/htmlcss\/'; 
+      };
+
+      (function() { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://' + 'onyous-blog' + '.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </footer>
+    
+
+  </div>
   <div class="fifteen wide mobile fifteen wide tablet four wide computer column">
 
     <section class="ui top attached center aligned inverted segment">
@@ -132,22 +266,6 @@ All Tags
 
 
   </div>
-  <div class="fifteen wide mobile fifteen wide tablet eleven wide computer column post-list">
-    <div class="ui inverted segment">
-      <h2 class="ui header">
-        All Tags
-        <div class="ui grey sub header">
-          
-          0 tags
-          
-        </div>
-      </h2>
-
-      
-      
-
-    </div>
-  </div>
 </div>
 
       </section>
@@ -190,30 +308,6 @@ All Tags
       
 
       
-        
-        <footer class="ui secondary segment">
-          <div id="disqus_thread"></div>
-          <script>
-          
-
-          
-
-
-          var disqus_config = function () {
-          this.page.url = 'https:\/\/MoonOnYou.github.io\/tags\/about';  
-          this.page.identifier = '/about'; 
-          };
-
-          (function() { 
-          var d = document, s = d.createElement('script');
-          s.src = 'https://' + 'onyous-blog' + '.disqus.com/embed.js';
-          s.setAttribute('data-timestamp', +new Date());
-          (d.head || d.body).appendChild(s);
-          })();
-          </script>
-          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        </footer>
-        
       
     </section>
 

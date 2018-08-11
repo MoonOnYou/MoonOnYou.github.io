@@ -5,14 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>
-All Tags
-</title>
+  <title>ONYOU&#39;S  SITE</title>
 
   
   
   <meta name="author" content="onyou" />
-  <meta name="description" content="공유로 만드는 아름다운 세상" />
+  <meta name="description" content="편집기의 캐쉬파일(idea)들이 git에 같이 올라가는 것을 막기위해 git이 있는 폴더에 .&amp;ldquo;gitignore&amp;rdquo; 파일을 만들어 명시해 준다. (또는 git에 올리고 싶지 않은 파일들을 명시해포함시켜주면 된다.)
+ 1) 터미널 창을 열어 아래와 같이 입력하여 편집창을 연다
+$ vi .gitignore  2) i 를 눌러 입력모드로 바꾸고 아래의 파일(캐시파일) 또는 다른 포함하고 싶지 않은 파일들을 명시하여 추가한다.
+*/idea/ ./idea/  3) esc 를 누르고 :wq 를 입력하여 저장하고 나간다." />
 
 
 
@@ -21,7 +22,7 @@ All Tags
 <meta name="generator" content="Hugo 0.40.3" />
 
 
-<link rel="canonical" href="https://MoonOnYou.github.io/tags/" />
+<link rel="canonical" href="https://MoonOnYou.github.io/post/etc/gitignore%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/" />
 <link rel="alternative" href="/index.xml" title="ONYOU&#39;S  SITE" type="application/atom+xml" />
 
 <link href="https://cdn.bootcss.com/semantic-ui/2.2.14/semantic.min.css" rel="stylesheet" />
@@ -35,16 +36,83 @@ All Tags
     <div class="flipper">
       <section class="front">
         
-<nav class="ui top secondary menu" style="overflow-x: auto">
+<nav class="ui top secondary menu">
   <div class="item">
     <i class="inverted big link bullseye icon dream-flip-toggle" title="Flip it!"></i>
   </div>
   <div class="item">
-    <a href="/"><i class="inverted big link home icon" title="Home"></i></a>
+    <a href="/">
+      <i class="inverted big link home icon" title="Home"></i>
+    </a>
   </div>
 </nav>
  
 <div class="ui centered grid">
+  <div class="fifteen wide mobile fifteen wide tablet eleven wide computer column post-list post-single-main">
+
+    <section class="ui secondary top attached black segment">
+      <a class="ui black right corner label" href="javascript:void(0)" onclick="savePostAsImg()">
+        <i class="save icon"></i>
+      </a>
+      <header>
+        <h1 class="ui header">
+          Gitignore설정하기
+          <div class="sub header">@ onyou · Jun 4, 2018 · 1 min read · Update at Jun 4, 2018</div>
+        </h1>
+      </header>
+      <article class="post-content" style="margin-top: 2rem; font-size: 1.4rem;"><blockquote>
+<p>편집기의 캐쉬파일(idea)들이 git에 같이 올라가는 것을 막기위해 git이 있는 폴더에 .&ldquo;gitignore&rdquo; 파일을 만들어 명시해 준다. (또는 git에 올리고 싶지 않은 파일들을 명시해포함시켜주면 된다.)</p>
+</blockquote>
+
+<p>1) 터미널 창을 열어 아래와 같이 입력하여 편집창을 연다</p>
+
+<pre><code>$ vi .gitignore
+</code></pre>
+
+<p>2) i 를 눌러 입력모드로 바꾸고 아래의 파일(캐시파일) 또는 다른 포함하고 싶지 않은 파일들을 명시하여 추가한다.</p>
+
+<pre><code>*/idea/
+./idea/
+</code></pre>
+
+<p>3) esc 를 누르고 :wq 를 입력하여 저장하고 나간다.</p>
+</article>
+    </section>
+
+    <footer class="ui secondary attached segment dream-tags">
+      
+      <span>No Tag</span>
+      
+    </footer>
+
+    
+
+    
+    <footer class="ui secondary bottom attached stacked segment post-disqus-area" data-html2canvas-ignore="true">
+      <div id="disqus_thread"></div>
+      <script>
+      
+
+      
+
+
+      var disqus_config = function () {
+      this.page.url = 'https:\/\/MoonOnYou.github.io\/post\/etc\/gitignore%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0\/';  
+      this.page.identifier = '\/post\/etc\/gitignore%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0\/'; 
+      };
+
+      (function() { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://' + 'onyous-blog' + '.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </footer>
+    
+
+  </div>
   <div class="fifteen wide mobile fifteen wide tablet four wide computer column">
 
     <section class="ui top attached center aligned inverted segment">
@@ -132,22 +200,6 @@ All Tags
 
 
   </div>
-  <div class="fifteen wide mobile fifteen wide tablet eleven wide computer column post-list">
-    <div class="ui inverted segment">
-      <h2 class="ui header">
-        All Tags
-        <div class="ui grey sub header">
-          
-          0 tags
-          
-        </div>
-      </h2>
-
-      
-      
-
-    </div>
-  </div>
 </div>
 
       </section>
@@ -190,30 +242,6 @@ All Tags
       
 
       
-        
-        <footer class="ui secondary segment">
-          <div id="disqus_thread"></div>
-          <script>
-          
-
-          
-
-
-          var disqus_config = function () {
-          this.page.url = 'https:\/\/MoonOnYou.github.io\/tags\/about';  
-          this.page.identifier = '/about'; 
-          };
-
-          (function() { 
-          var d = document, s = d.createElement('script');
-          s.src = 'https://' + 'onyous-blog' + '.disqus.com/embed.js';
-          s.setAttribute('data-timestamp', +new Date());
-          (d.head || d.body).appendChild(s);
-          })();
-          </script>
-          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        </footer>
-        
       
     </section>
 

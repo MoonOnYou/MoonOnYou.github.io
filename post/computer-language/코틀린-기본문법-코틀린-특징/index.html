@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ONYOU&#39;S  SITE</title>
+
+  
+  
+  <meta name="author" content="onyou" />
+  <meta name="description" content="코틀린의 변수 1. var  가변변수를 의미하며 variable(변수)의 뜻을 가지고 있다.  2. val  불변변수(상수)를 의미하며 Value(값)의 뜻을 가지고 있다.(자바의 final)   val변수가 객체를 참조하는 경우 변수 자신의 참조 값을 변경할 수 없지만 (초깃값으로 참조되는 객체외에 다른 객체를 참조할 수 없지만),참조되는 객체가 갖는 데이터는 변경이 가능하다.
+ 코틀린 선언 VS 자바 선언 1. 변수 선언  kotlin
+ ver또는vel 변수이름 : 타입,생략가능 = 선언
+ 예시  val a: Int = 7; var b = 10 //1  1) 세미콜론(;)은 생략해도 되지만 한줄에 두개이상의 표현식을 쓸때는 써줘야 한다" />
+
+
+
+
+
+<meta name="generator" content="Hugo 0.40.3" />
+
+
+<link rel="canonical" href="https://MoonOnYou.github.io/post/computer-language/%EC%BD%94%ED%8B%80%EB%A6%B0-%EA%B8%B0%EB%B3%B8%EB%AC%B8%EB%B2%95-%EC%BD%94%ED%8B%80%EB%A6%B0-%ED%8A%B9%EC%A7%95/" />
+<link rel="alternative" href="/index.xml" title="ONYOU&#39;S  SITE" type="application/atom+xml" />
+
+<link href="https://cdn.bootcss.com/semantic-ui/2.2.14/semantic.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="/css/site.css" />
+
+
+</head>
+
+<body>
+  <div class="flip-container">
+    <div class="flipper">
+      <section class="front">
+        
+<nav class="ui top secondary menu">
+  <div class="item">
+    <i class="inverted big link bullseye icon dream-flip-toggle" title="Flip it!"></i>
+  </div>
+  <div class="item">
+    <a href="/">
+      <i class="inverted big link home icon" title="Home"></i>
+    </a>
+  </div>
+</nav>
+ 
+<div class="ui centered grid">
+  <div class="fifteen wide mobile fifteen wide tablet eleven wide computer column post-list post-single-main">
+
+    <section class="ui secondary top attached black segment">
+      <a class="ui black right corner label" href="javascript:void(0)" onclick="savePostAsImg()">
+        <i class="save icon"></i>
+      </a>
+      <header>
+        <h1 class="ui header">
+          코틀린 기본문법, 코틀린 특징
+          <div class="sub header">@ onyou · May 12, 2018 · 2 min read · Update at May 12, 2018</div>
+        </h1>
+      </header>
+      <article class="post-content" style="margin-top: 2rem; font-size: 1.4rem;">
+
+<h2 id="코틀린의-변수">코틀린의 변수</h2>
+
+<h3 id="1-var">1. var</h3>
+
+<ul>
+<li>가변변수를 의미하며 variable(변수)의 뜻을 가지고 있다.</li>
+</ul>
+
+<h3 id="2-val">2. val</h3>
+
+<ul>
+<li>불변변수(상수)를 의미하며 Value(값)의 뜻을 가지고 있다.(자바의 final)</li>
+</ul>
+
+<blockquote>
+<p>val변수가 객체를 참조하는 경우 변수 자신의 참조 값을 변경할 수 없지만 (초깃값으로 참조되는 객체외에
+다른 객체를 참조할 수 없지만),참조되는 객체가 갖는 데이터는
+변경이 가능하다.</p>
+</blockquote>
+
+<h2 id="코틀린-선언-vs-자바-선언">코틀린 선언 VS 자바 선언</h2>
+
+<h3 id="1-변수-선언">1. 변수 선언</h3>
+
+<ol>
+<li><p>kotlin</p>
+
+<ul>
+<li><p>ver또는vel 변수이름 : 타입,생략가능 = 선언</p>
+
+<ul>
+<li><em>예시</em></li>
+</ul>
+
+<pre><code>val a: Int = 7;   var b = 10 //1
+</code></pre>
+
+<p>1) 세미콜론(;)은 생략해도 되지만 한줄에 두개이상의 표현식을 쓸때는 써줘야 한다</p></li>
+</ul></li>
+
+<li><p>java</p>
+
+<ul>
+<li>타입 변수이름 = 선언 ;</li>
+</ul></li>
+</ol>
+
+<h3 id="2-함수-선언">2. 함수 선언</h3>
+
+<ol>
+<li><p>kotlin</p>
+
+<ul>
+<li><strong>fun</strong> <strong>메소드명</strong>(입력변수1:입력타입1,입력변수2:입력타입2) : <strong>반환값타입</strong></li>
+</ul></li>
+
+<li><p>java</p>
+
+<ul>
+<li>접근제한 <strong>반환값타입 메소드명</strong>(입력타입1 입력변수1,입력타입2 입력변수2)</li>
+</ul></li>
+</ol>
+
+<blockquote>
+<p>코틀린은 &lsquo;메소드명(파라미터),이름&rsquo;을 가장 중요시 하고, 자바는 &lsquo;타입&rsquo;을 중요시 하는게 아닌가 싶다.파라미터를 넘겨줄때도 코틀린은 이름부터 넘겨주고 있다..
+타입추론이 가능해서 덜 중요한 건가..</p>
+
+<p>코틀린은 함수는 소스파일의 어디든 바로 정의 가능 (자바는 반드시 클래스 안에 함수를 정의 해야 한다.)</p>
+
+<p>코틀림 반환값이 없을 때는 Unit타입이지만 생략해도 된다. (자바의 void와 비슷하다)</p>
+</blockquote>
+
+<h2 id="코틀린의-기본-타입">코틀린의 기본 타입</h2>
+
+<blockquote>
+<p>코틀린의 기본타입은 자바와 달리 모두 클래스로 정의되어 있다</p>
+
+<p>때문에 모두 대문자로 시작한다 (코틀린은 Int, 자바는 int)</p>
+
+<p>클래스로 정의 되어 있지만 코틀린 컴파일러가 자동으로 객체를 생성하거나 값만 갖는 변수로 처리하므로, 우리가 일일히 객체로 생성할 필요가 없다.</p>
+</blockquote>
+
+<h1 id="코틀린의-표현식-if-when">코틀린의 표현식 if, when</h1>
+
+<blockquote>
+<p>코틀린은 if 와 when (자바의 switch-case)를 명령어가 아닌
+<strong>표현식(하나의 값을 가지는 식)</strong>으로 간주하기 때문에 대입문(=)의
+오른쪽에 사용될 수 있다.</p>
+
+<p>그러나 하나의 값만 가져야 하기 때문에 if나 when을 사용할 때
+<strong>else</strong>를 반드시 구현 해야한다.</p>
+</blockquote>
+
+<ul>
+<li><p><em>ex 1</em><br></p>
+
+<pre><code>val text = if (a == 1) &quot;안녕하세요&quot; else &quot;안녕히가세요&quot; //1
+</code></pre>
+
+<p>1) a 가 1 이면 &ldquo;안녕하세요&rdquo;라는 문자열이 text변수에 대입된다.</p></li>
+
+<li><p><em>ex 2</em> <br></p>
+
+<pre><code>val testText = when (myText) {                //1
+    is String -&gt; text.startsWith(&quot;onyou&quot;)   //2
+    else -&gt; false                           //3
+</code></pre>
+
+<p>2) is 키워드 (is는 java의 instanceof)를 이용하여 변수 타입이
+String인지 검사 한다. 그리고 myText의 문자열 맨 앞이
+&ldquo;onyou&rdquo;이면 <strong>true</strong> 값을 반환한다. (타입은 컴파일러가
+boolean으로 <strong>자동 추론</strong>)</p>
+
+<p>3) when도 if와 마찬가지로 표현식으로 사용되기 위해선 반드시
+하나의 값을 가져야만 하므로 <strong>else</strong>를 구현해 주어야 한다.</p>
+
+<p>1) when을 통해 나온 값을 testText에 대입한다.</p></li>
+</ul>
+</article>
+    </section>
+
+    <footer class="ui secondary attached segment dream-tags">
+      
+      <span>No Tag</span>
+      
+    </footer>
+
+    
+
+    
+    <footer class="ui secondary bottom attached stacked segment post-disqus-area" data-html2canvas-ignore="true">
+      <div id="disqus_thread"></div>
+      <script>
+      
+
+      
+
+
+      var disqus_config = function () {
+      this.page.url = 'https:\/\/MoonOnYou.github.io\/post\/computer-language\/%EC%BD%94%ED%8B%80%EB%A6%B0-%EA%B8%B0%EB%B3%B8%EB%AC%B8%EB%B2%95-%EC%BD%94%ED%8B%80%EB%A6%B0-%ED%8A%B9%EC%A7%95\/';  
+      this.page.identifier = '\/post\/computer-language\/%EC%BD%94%ED%8B%80%EB%A6%B0-%EA%B8%B0%EB%B3%B8%EB%AC%B8%EB%B2%95-%EC%BD%94%ED%8B%80%EB%A6%B0-%ED%8A%B9%EC%A7%95\/'; 
+      };
+
+      (function() { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://' + 'onyous-blog' + '.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </footer>
+    
+
+  </div>
+  <div class="fifteen wide mobile fifteen wide tablet four wide computer column">
+
+    <section class="ui top attached center aligned inverted segment">
+  <div class="ui small circular image">
+    
+    <img src="/img/avatar-ex.svg">
+    
+  </div>
+  <h3 class="ui header">onyou&#39;s blog<div class="sub header" style="color: white;"></div>
+  </h3>
+
+  <div class="ui inverted horizontal list">
+    
+    <a class="item" href="/post">
+      <i class="archive icon" title="Archives"></i>
+    </a>
+    
+    <a class="item" href="/tags">
+      <i class="tags icon" title="All Tags"></i>
+    </a>
+    <a class="item" href="/categories">
+      <i class="inverted cubes icon" title="All Categories"></i>
+    </a>
+  </div>
+
+  <a id="tag-category-pop" class="ui red right corner label">
+    <i class="pointing down icon" title="Click this to pop tags and categories"></i>
+  </a>
+</section>
+
+
+
+
+<section class="ui attached inverted segment dream-categories">
+  <div class="ui inverted accordion">
+    
+    <div class="title">
+      <i class="dropdown icon"></i>
+      <a href="/categories/android" class="item" style="color: white;">android</a>
+    </div>
+    <div class="content">
+      <div class="ui link inverted list">
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="cocktail icon"></i>
+        <div class="content">
+          <a href="https://MoonOnYou.github.io/post/android/android-design/" class="item">Android design</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="cocktail icon"></i>
+        <div class="content">
+          <a href="https://MoonOnYou.github.io/post/android/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4--%ED%8C%81/" class="item">안드로이드 스튜디오  팁</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="cocktail icon"></i>
+        <div class="content">
+          <a href="https://MoonOnYou.github.io/post/android/realm-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/" class="item">Realm 설정하기</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="cocktail icon"></i>
+        <div class="content">
+          <a href="https://MoonOnYou.github.io/post/android/%EA%B6%8C%ED%95%9C%EC%84%A4%EC%A0%95/" class="item">권한설정</a>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+<section class="ui bottom attached center aligned inverted segment">
+    
+    <p>© 2018 ONYOU&#39;S  SITE</p>
+    
+    <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</p>
+</section>
+
+
+  </div>
+</div>
+
+      </section>
+      <section class="back">
+        <nav class="ui top secondary menu" style="overflow-x: auto">
+  <div class="item">
+    <i class="inverted big link bullseye icon dream-flip-toggle" title="Flip it!"></i>
+  </div>
+  
+  
+  
+  
+  
+</nav>
+
+<div class="ui centered grid about">
+  <div class="fifteen wide mobile fifteen wide tablet fifteen wide computer column">
+
+    <section class="ui stacked segments">
+      <header class="ui inverted segment">
+        <h2 class="ui header">
+          About
+        </h2>
+      </header>
+
+      <article class="ui inverted segment back-about">
+        <div class="ui stackable three column grid">
+          <div class="column">
+              
+          </div>
+          <div class="column">
+              
+          </div>
+          <div class="column">
+              
+          </div>
+        </div>
+      </article>
+
+      
+
+      
+      
+    </section>
+
+  </div>
+</div>
+
+      </section>
+    </div>
+  </div>
+
+  
+<script src="/js/jquery.min.js"></script>
+<script src="/js/semantic.min.js"></script>
+<script src="/js/html2canvas.min.js"></script>
+<script src="/js/bg.js"></script>
+<script src="/js/site.js"></script>
+
+
+
+</body>
+
+</html>

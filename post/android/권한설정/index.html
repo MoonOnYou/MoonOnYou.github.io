@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ONYOU&#39;S  SITE</title>
+
+  
+  
+  <meta name="author" content="onyou" />
+  <meta name="description" content="AndroidMenifest.xml파일의 &amp;lt;menifest&amp;gt;태그 안에서 필요한 권한을 명시함과 동시에 어플리케이션 내에서 사용자에게 권한을 승인받으면 사용하고자 하는 기능을 사용 할 수 있다.
+ 권한 설정 명시 코드  카메라 사용을 위한 권한 설정
+&amp;lt;uses-permission android:name=&amp;quot;android.permission.CAMERA&amp;quot;/&amp;gt;  (찍은 사진을) 저장하기 위한 권한 설정
+&amp;lt;uses-permission android:name=&amp;quot;android.permission.WRITE_EXTERNAL_STORAGE&amp;quot;/&amp;gt;  (갤러리에서 사진을) 읽기위한 권한 설정
+&amp;lt;uses-permission android:name=&amp;quot;android.permission.READ_EXTERNAL_STORAGE&amp;quot;/&amp;gt;  카메라 사용을 사용자에게 알림
+&amp;lt;uses-feature android:name=&amp;quot;android.hardware.camera2&amp;quot;/&amp;gt;   사용자에게 권한을 요청하는 코드  전체코드 예시
+package com.example.moononyou.phonebookkotlin import android." />
+
+
+
+
+
+<meta name="generator" content="Hugo 0.40.3" />
+
+
+<link rel="canonical" href="https://MoonOnYou.github.io/post/android/%EA%B6%8C%ED%95%9C%EC%84%A4%EC%A0%95/" />
+<link rel="alternative" href="/index.xml" title="ONYOU&#39;S  SITE" type="application/atom+xml" />
+
+<link href="https://cdn.bootcss.com/semantic-ui/2.2.14/semantic.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="/css/site.css" />
+
+
+</head>
+
+<body>
+  <div class="flip-container">
+    <div class="flipper">
+      <section class="front">
+        
+<nav class="ui top secondary menu">
+  <div class="item">
+    <i class="inverted big link bullseye icon dream-flip-toggle" title="Flip it!"></i>
+  </div>
+  <div class="item">
+    <a href="/">
+      <i class="inverted big link home icon" title="Home"></i>
+    </a>
+  </div>
+</nav>
+ 
+<div class="ui centered grid">
+  <div class="fifteen wide mobile fifteen wide tablet eleven wide computer column post-list post-single-main">
+
+    <section class="ui secondary top attached black segment">
+      <a class="ui black right corner label" href="javascript:void(0)" onclick="savePostAsImg()">
+        <i class="save icon"></i>
+      </a>
+      <header>
+        <h1 class="ui header">
+          권한설정
+          <div class="sub header">@ onyou · Jun 4, 2018 · 1 min read · Update at Jun 4, 2018</div>
+        </h1>
+      </header>
+      <article class="post-content" style="margin-top: 2rem; font-size: 1.4rem;">
+
+<blockquote>
+<p>AndroidMenifest.xml파일의 <code>&lt;menifest&gt;</code>태그 안에서 필요한 권한을 명시함과 동시에 어플리케이션 내에서 사용자에게 권한을 승인받으면 사용하고자 하는 기능을 사용 할 수 있다.</p>
+</blockquote>
+
+<h3 id="권한-설정-명시-코드">권한 설정 명시 코드</h3>
+
+<ul>
+<li><p>카메라 사용을 위한 권한 설정</p>
+
+<pre><code>&lt;uses-permission android:name=&quot;android.permission.CAMERA&quot;/&gt;
+</code></pre></li>
+
+<li><p>(찍은 사진을) 저장하기 위한 권한 설정</p>
+
+<pre><code>&lt;uses-permission android:name=&quot;android.permission.WRITE_EXTERNAL_STORAGE&quot;/&gt;
+</code></pre></li>
+
+<li><p>(갤러리에서 사진을) 읽기위한 권한 설정</p>
+
+<pre><code>&lt;uses-permission android:name=&quot;android.permission.READ_EXTERNAL_STORAGE&quot;/&gt;
+</code></pre></li>
+
+<li><p>카메라 사용을 사용자에게 알림</p>
+
+<pre><code>&lt;uses-feature android:name=&quot;android.hardware.camera2&quot;/&gt;
+</code></pre></li>
+</ul>
+
+<h3 id="사용자에게-권한을-요청하는-코드">사용자에게 권한을 요청하는 코드</h3>
+
+<ul>
+<li><p><em>전체코드 예시</em></p>
+
+<pre><code>package com.example.moononyou.phonebookkotlin
+
+import android.Manifest
+import android.content.pm.PackageManager
+import android.support.v7.app.AppCompatActivity
+import android.os.Bundle
+import android.support.v4.app.ActivityCompat
+import android.support.v4.content.ContextCompat
+
+class MainActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+        permissionCheck()
+    }
+
+    private fun permissionCheck() {
+        if (android.os.Build.VERSION.SDK_INT &gt;= 23) { 
+            // 1. 읽기권한 체크
+            var permissionCheck = ContextCompat.checkSelfPermission(this,
+                    Manifest.permission.READ_EXTERNAL_STORAGE)
+            // 1.1 읽기권한 없으면 요청
+            if (permissionCheck != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE),
+                        100)
+            }
+                
+                
+            // 2. 쓰기권한 체크 
+            permissionCheck = ContextCompat.checkSelfPermission(this,
+                    Manifest.permission.WRITE_EXTERNAL_STORAGE)
+            // 2.1 쓰기권한이 없으면 요청
+            if (permissionCheck != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(this,
+                        arrayOf(Manifest.permission.WRITE_EXTERNAL_STORAGE),100)
+            }
+
+            // 3.카메라 권한체크
+            permissionCheck = ContextCompat.checkSelfPermission(this,
+                    Manifest.permission.CAMERA)
+            // 3.1 권한이 없으면 요청 
+            if (permissionCheck != PackageManager.PERMISSION_GRANTED){
+                ActivityCompat.requestPermissions(this,
+                        arrayOf(Manifest.permission.CAMERA), 100)
+            }
+
+        } 
+
+
+    }
+}
+</code></pre></li>
+</ul>
+</article>
+    </section>
+
+    <footer class="ui secondary attached segment dream-tags">
+      
+      <span>No Tag</span>
+      
+    </footer>
+
+    
+
+    
+    <footer class="ui secondary bottom attached stacked segment post-disqus-area" data-html2canvas-ignore="true">
+      <div id="disqus_thread"></div>
+      <script>
+      
+
+      
+
+
+      var disqus_config = function () {
+      this.page.url = 'https:\/\/MoonOnYou.github.io\/post\/android\/%EA%B6%8C%ED%95%9C%EC%84%A4%EC%A0%95\/';  
+      this.page.identifier = '\/post\/android\/%EA%B6%8C%ED%95%9C%EC%84%A4%EC%A0%95\/'; 
+      };
+
+      (function() { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://' + 'onyous-blog' + '.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </footer>
+    
+
+  </div>
+  <div class="fifteen wide mobile fifteen wide tablet four wide computer column">
+
+    <section class="ui top attached center aligned inverted segment">
+  <div class="ui small circular image">
+    
+    <img src="/img/avatar-ex.svg">
+    
+  </div>
+  <h3 class="ui header">onyou&#39;s blog<div class="sub header" style="color: white;"></div>
+  </h3>
+
+  <div class="ui inverted horizontal list">
+    
+    <a class="item" href="/post">
+      <i class="archive icon" title="Archives"></i>
+    </a>
+    
+    <a class="item" href="/tags">
+      <i class="tags icon" title="All Tags"></i>
+    </a>
+    <a class="item" href="/categories">
+      <i class="inverted cubes icon" title="All Categories"></i>
+    </a>
+  </div>
+
+  <a id="tag-category-pop" class="ui red right corner label">
+    <i class="pointing down icon" title="Click this to pop tags and categories"></i>
+  </a>
+</section>
+
+
+
+
+<section class="ui attached inverted segment dream-categories">
+  <div class="ui inverted accordion">
+    
+    <div class="title">
+      <i class="dropdown icon"></i>
+      <a href="/categories/android" class="item" style="color: white;">android</a>
+    </div>
+    <div class="content">
+      <div class="ui link inverted list">
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="cocktail icon"></i>
+        <div class="content">
+          <a href="https://MoonOnYou.github.io/post/android/android-design/" class="item">Android design</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="cocktail icon"></i>
+        <div class="content">
+          <a href="https://MoonOnYou.github.io/post/android/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4--%ED%8C%81/" class="item">안드로이드 스튜디오  팁</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="cocktail icon"></i>
+        <div class="content">
+          <a href="https://MoonOnYou.github.io/post/android/realm-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/" class="item">Realm 설정하기</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="cocktail icon"></i>
+        <div class="content">
+          <a href="https://MoonOnYou.github.io/post/android/%EA%B6%8C%ED%95%9C%EC%84%A4%EC%A0%95/" class="item">권한설정</a>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+<section class="ui bottom attached center aligned inverted segment">
+    
+    <p>© 2018 ONYOU&#39;S  SITE</p>
+    
+    <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</p>
+</section>
+
+
+  </div>
+</div>
+
+      </section>
+      <section class="back">
+        <nav class="ui top secondary menu" style="overflow-x: auto">
+  <div class="item">
+    <i class="inverted big link bullseye icon dream-flip-toggle" title="Flip it!"></i>
+  </div>
+  
+  
+  
+  
+  
+</nav>
+
+<div class="ui centered grid about">
+  <div class="fifteen wide mobile fifteen wide tablet fifteen wide computer column">
+
+    <section class="ui stacked segments">
+      <header class="ui inverted segment">
+        <h2 class="ui header">
+          About
+        </h2>
+      </header>
+
+      <article class="ui inverted segment back-about">
+        <div class="ui stackable three column grid">
+          <div class="column">
+              
+          </div>
+          <div class="column">
+              
+          </div>
+          <div class="column">
+              
+          </div>
+        </div>
+      </article>
+
+      
+
+      
+      
+    </section>
+
+  </div>
+</div>
+
+      </section>
+    </div>
+  </div>
+
+  
+<script src="/js/jquery.min.js"></script>
+<script src="/js/semantic.min.js"></script>
+<script src="/js/html2canvas.min.js"></script>
+<script src="/js/bg.js"></script>
+<script src="/js/site.js"></script>
+
+
+
+</body>
+
+</html>

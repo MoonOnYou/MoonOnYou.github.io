@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ONYOU&#39;S  SITE</title>
+
+  
+  
+  <meta name="author" content="onyou" />
+  <meta name="description" content="자주 사용하는 String 클래스 함수  문자열은 char(문자형)이 배열로 이루어져 있기 때문에 문자열이라고 하는 것임
+ 문자열 비교 equals(boolean반환) : 대소문자 구분하여 비교  equals -&amp;gt; 동일한
+ String a = &amp;quot;문자&amp;quot;; String b = &amp;quot;문자열&amp;quot;; System.out.println(a.equals(b));  equalsIgnoreCase(boolean반환) : 대소문자 구분않고 비교  ignore -&amp;gt; 무시하다
+ System.out.println(a.equalsIgnoreCase(b));  문자열 합치기 concat(String반환)  concatenate -&amp;gt; 사슬같이 잇다
+ String c = &amp;quot;가,나,다&amp;quot;&#43;&amp;quot;라,마,바&amp;quot;; String d = a.concat(&amp;quot;사,아,자&amp;quot;); System.out.println(d);  구분자로 문자열 분리 split(배열반환)  split -&amp;gt; 분리되다" />
+
+
+
+
+
+<meta name="generator" content="Hugo 0.40.3" />
+
+
+<link rel="canonical" href="https://MoonOnYou.github.io/post/computer-language/java/" />
+<link rel="alternative" href="/index.xml" title="ONYOU&#39;S  SITE" type="application/atom+xml" />
+
+<link href="https://cdn.bootcss.com/semantic-ui/2.2.14/semantic.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="/css/site.css" />
+
+
+</head>
+
+<body>
+  <div class="flip-container">
+    <div class="flipper">
+      <section class="front">
+        
+<nav class="ui top secondary menu">
+  <div class="item">
+    <i class="inverted big link bullseye icon dream-flip-toggle" title="Flip it!"></i>
+  </div>
+  <div class="item">
+    <a href="/">
+      <i class="inverted big link home icon" title="Home"></i>
+    </a>
+  </div>
+</nav>
+ 
+<div class="ui centered grid">
+  <div class="fifteen wide mobile fifteen wide tablet eleven wide computer column post-list post-single-main">
+
+    <section class="ui secondary top attached black segment">
+      <a class="ui black right corner label" href="javascript:void(0)" onclick="savePostAsImg()">
+        <i class="save icon"></i>
+      </a>
+      <header>
+        <h1 class="ui header">
+          Java
+          <div class="sub header">@ onyou · Jul 26, 2018 · 2 min read · Update at Jul 26, 2018</div>
+        </h1>
+      </header>
+      <article class="post-content" style="margin-top: 2rem; font-size: 1.4rem;">
+
+<h1 id="자주-사용하는-string-클래스-함수">자주 사용하는 String 클래스 함수</h1>
+
+<blockquote>
+<p>문자열은 char(문자형)이 배열로 이루어져 있기 때문에 문자열이라고 하는 것임</p>
+</blockquote>
+
+<h2 id="문자열-비교">문자열 비교</h2>
+
+<h3 id="equals-boolean반환-대소문자-구분하여-비교">equals(boolean반환) : 대소문자 구분하여 비교</h3>
+
+<blockquote>
+<p>equals -&gt; 동일한</p>
+</blockquote>
+
+<pre><code class="language-java">String a = &quot;문자&quot;;
+String b = &quot;문자열&quot;;
+System.out.println(a.equals(b));
+</code></pre>
+
+<h3 id="equalsignorecase-boolean반환-대소문자-구분않고-비교">equalsIgnoreCase(boolean반환) : 대소문자 구분않고 비교</h3>
+
+<blockquote>
+<p>ignore -&gt; 무시하다</p>
+</blockquote>
+
+<pre><code class="language-java">System.out.println(a.equalsIgnoreCase(b));
+</code></pre>
+
+<h2 id="문자열-합치기">문자열 합치기</h2>
+
+<h3 id="concat-string반환">concat(String반환)</h3>
+
+<blockquote>
+<p>concatenate -&gt; 사슬같이 잇다</p>
+</blockquote>
+
+<pre><code class="language-java">String c = &quot;가,나,다&quot;+&quot;라,마,바&quot;; 
+String d = a.concat(&quot;사,아,자&quot;);
+System.out.println(d);
+</code></pre>
+
+<h2 id="구분자로-문자열-분리">구분자로 문자열 분리</h2>
+
+<h3 id="split-배열반환">split(배열반환)</h3>
+
+<blockquote>
+<p>split -&gt; 분리되다</p>
+</blockquote>
+
+<pre><code class="language-java">String array[] = d.split(&quot;,&quot;);
+System.out.println(array[1]);
+</code></pre>
+
+<h2 id="문자열-교체">문자열 교체</h2>
+
+<h3 id="replaceall-string반환-문자열에서-첫번째-파라미터-값을-찾아-두번째-파라미터-값으로-바꾼다">replaceAll(String반환) : 문자열에서 첫번째 파라미터 값을 찾아 두번째 파라미터 값으로 바꾼다.</h3>
+
+<blockquote>
+<p>replace -&gt; 교체하다</p>
+</blockquote>
+
+<pre><code class="language-java">String e = d.replaceAll(&quot;가&quot;,&quot;갸&quot;);
+System.out.println(e);
+</code></pre>
+
+<h2 id="문자열-길이-구하기">문자열 길이 구하기</h2>
+
+<h3 id="length-정수반환">length(정수반환)</h3>
+
+<blockquote>
+<p>length -&gt; 길이</p>
+
+<p>문자열에서는 length(); 이지만 배열에서는 length;로 호출해야 한다 (괄호 차이)</p>
+</blockquote>
+
+<pre><code class="language-java">System.out.println(e.length());
+</code></pre>
+
+<h2 id="시작-또는-끝나는-문자-검사하기">시작 또는 끝나는 문자 검사하기</h2>
+
+<h3 id="startwith-boolean반환-문자열의-시작이-비교하는-문자와-같은지-검사">startWith(boolean반환) : 문자열의 시작이 비교하는 문자와 같은지 검사</h3>
+
+<h3 id="endwith-boolean반환-문자열의-끝이-비교하는-문자와-같은지-검사">endWith(boolean반환) : 문자열의 끝이 비교하는 문자와 같은지 검사</h3>
+
+<pre><code class="language-java">System.out.println(&quot;갸로 시작하나요?&quot;+e.startWith(&quot;갸&quot;));
+</code></pre>
+
+<h2 id="특정-위치의-문자-반환">특정 위치의 문자 반환</h2>
+
+<h3 id="charat-char반환-반환값이-char이므로-한-글자만-반환">charAt(char반환) : 반환값이 char이므로 한 글자만 반환</h3>
+
+<pre><code class="language-java">char f  = e.charAt(1); // 파라미터로 문자열에서 반환받고 싶은 문자의 인덱스 값을 지정해준다
+Systrm.out.println(&quot;문자열의 두번째 문자는 &quot; + f + &quot;입니다&quot;);
+</code></pre>
+
+<h2 id="특정-위치의-문자열-반환">특정 위치의 문자열 반환</h2>
+
+<h3 id="substring-string반환">subString(string반환)</h3>
+
+<blockquote>
+<p>index가 이렇게 되있다고 생각하면됨</p>
+</blockquote>
+
+<p>|  | 가| |나|   |다|  |라|  |
+|&ndash;|&mdash;|-|&ndash;|&ndash;|&mdash;|-|&mdash;|-|
+|0 |   |1|  |2 |   |3|   |4|</p>
+
+<ol>
+<li>파라미터(정수)가 하나 일 경우 : 파라미터 값에 해당하는 인덱스 부터 끝까지 출력됨</li>
+</ol>
+
+<pre><code class="language-java">System.out.println(e.subString(6));
+</code></pre>
+
+<pre><code>&gt; &quot;사아자&quot;가 출력 
+</code></pre>
+
+<ol>
+<li>파라미터(정수)가 두개 일 경우 : 첫번째 파라미터값에 해당하는 인덱스 부터 두번쩨 파라미터값에 해당하는 인덱스 까지 출력</li>
+</ol>
+
+<pre><code class="language-java">System.out.println(e.subString(2,6));
+</code></pre>
+
+<pre><code>&gt; &quot;나다라마바&quot;가 출력 
+</code></pre>
+
+<h2 id="문자열-검색-함수">문자열 검색 함수</h2>
+
+<h3 id="indexof-index에-해당하는-int-또는-1-반환">indexOf(index에 해당하는 int 또는 -1 반환)</h3>
+
+<pre><code class="language-java">int g = e.indexOf(&quot;갸&quot;);
+System.out.println(&quot;갸는 문자열에서 &quot; + g + &quot;번째 있습니다&quot;);
+</code></pre>
+
+<h3 id="contains-boolean-반환">contains(boolean 반환)</h3>
+
+<ul>
+<li>indexOf</li>
+</ul>
+
+<blockquote>
+<p>특정 문자열에서 검색 문자열의 인덱스를 반환</p>
+
+<p>인텍스인 int, 없으면 -1반환</p>
+</blockquote>
+
+<p>```java</p>
+
+<p>int position = array.indexOf(&ldquo;가&rdquo;);
+````</p>
+
+<h3 id="trim-문자열-맨앞과-맨뒤의-공백-제거">trim : 문자열 맨앞과 맨뒤의 공백 제거</h3>
+</article>
+    </section>
+
+    <footer class="ui secondary attached segment dream-tags">
+      
+      <span>No Tag</span>
+      
+    </footer>
+
+    
+
+    
+    <footer class="ui secondary bottom attached stacked segment post-disqus-area" data-html2canvas-ignore="true">
+      <div id="disqus_thread"></div>
+      <script>
+      
+
+      
+
+
+      var disqus_config = function () {
+      this.page.url = 'https:\/\/MoonOnYou.github.io\/post\/computer-language\/java\/';  
+      this.page.identifier = '\/post\/computer-language\/java\/'; 
+      };
+
+      (function() { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://' + 'onyous-blog' + '.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </footer>
+    
+
+  </div>
+  <div class="fifteen wide mobile fifteen wide tablet four wide computer column">
+
+    <section class="ui top attached center aligned inverted segment">
+  <div class="ui small circular image">
+    
+    <img src="/img/avatar-ex.svg">
+    
+  </div>
+  <h3 class="ui header">onyou&#39;s blog<div class="sub header" style="color: white;"></div>
+  </h3>
+
+  <div class="ui inverted horizontal list">
+    
+    <a class="item" href="/post">
+      <i class="archive icon" title="Archives"></i>
+    </a>
+    
+    <a class="item" href="/tags">
+      <i class="tags icon" title="All Tags"></i>
+    </a>
+    <a class="item" href="/categories">
+      <i class="inverted cubes icon" title="All Categories"></i>
+    </a>
+  </div>
+
+  <a id="tag-category-pop" class="ui red right corner label">
+    <i class="pointing down icon" title="Click this to pop tags and categories"></i>
+  </a>
+</section>
+
+
+
+
+<section class="ui attached inverted segment dream-categories">
+  <div class="ui inverted accordion">
+    
+    <div class="title">
+      <i class="dropdown icon"></i>
+      <a href="/categories/android" class="item" style="color: white;">android</a>
+    </div>
+    <div class="content">
+      <div class="ui link inverted list">
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="cocktail icon"></i>
+        <div class="content">
+          <a href="https://MoonOnYou.github.io/post/android/android-design/" class="item">Android design</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="cocktail icon"></i>
+        <div class="content">
+          <a href="https://MoonOnYou.github.io/post/android/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4--%ED%8C%81/" class="item">안드로이드 스튜디오  팁</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="cocktail icon"></i>
+        <div class="content">
+          <a href="https://MoonOnYou.github.io/post/android/realm-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/" class="item">Realm 설정하기</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="cocktail icon"></i>
+        <div class="content">
+          <a href="https://MoonOnYou.github.io/post/android/%EA%B6%8C%ED%95%9C%EC%84%A4%EC%A0%95/" class="item">권한설정</a>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+<section class="ui bottom attached center aligned inverted segment">
+    
+    <p>© 2018 ONYOU&#39;S  SITE</p>
+    
+    <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</p>
+</section>
+
+
+  </div>
+</div>
+
+      </section>
+      <section class="back">
+        <nav class="ui top secondary menu" style="overflow-x: auto">
+  <div class="item">
+    <i class="inverted big link bullseye icon dream-flip-toggle" title="Flip it!"></i>
+  </div>
+  
+  
+  
+  
+  
+</nav>
+
+<div class="ui centered grid about">
+  <div class="fifteen wide mobile fifteen wide tablet fifteen wide computer column">
+
+    <section class="ui stacked segments">
+      <header class="ui inverted segment">
+        <h2 class="ui header">
+          About
+        </h2>
+      </header>
+
+      <article class="ui inverted segment back-about">
+        <div class="ui stackable three column grid">
+          <div class="column">
+              
+          </div>
+          <div class="column">
+              
+          </div>
+          <div class="column">
+              
+          </div>
+        </div>
+      </article>
+
+      
+
+      
+      
+    </section>
+
+  </div>
+</div>
+
+      </section>
+    </div>
+  </div>
+
+  
+<script src="/js/jquery.min.js"></script>
+<script src="/js/semantic.min.js"></script>
+<script src="/js/html2canvas.min.js"></script>
+<script src="/js/bg.js"></script>
+<script src="/js/site.js"></script>
+
+
+
+</body>
+
+</html>

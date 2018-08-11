@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ONYOU&#39;S  SITE</title>
+
+  
+  
+  <meta name="author" content="onyou" />
+  <meta name="description" content="어디서든 sudo 명령어를 사용할 때는 최고 권한자의 비밀번호(컴퓨터 로그인 할 때 비밀번호)를 입력해야 한다.
+ 1. 우분투 설치하기 1) 우분투 컴퓨터 만들기  좋은 블로그가 있어서 우분투 설치할 일이 있으면 참고
+  &amp;mdash;요기클릭&amp;mdash;  2) 우분투 한영키 설정  하는 방법 잘나와 있는 블로그를 찾았으니 여기서 보면 될 듯
+  &amp;mdash;요기클릭&amp;mdash;  3) 파이어 폭스 삭제  우분투를 설치하면 파이어 폭스가 생기는데 애는 필요없으니까 깔끔하게 삭제하고 크롬 사용" />
+
+
+
+
+
+<meta name="generator" content="Hugo 0.40.3" />
+
+
+<link rel="canonical" href="https://MoonOnYou.github.io/post/os/%EC%9A%B0%EB%B6%84%ED%88%AC-%EB%B0%8F-%EC%93%B8%EB%AA%A8%EC%9E%88%EB%8A%94-%ED%8C%A8%ED%82%A4%EC%A7%80-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/" />
+<link rel="alternative" href="/index.xml" title="ONYOU&#39;S  SITE" type="application/atom+xml" />
+
+<link href="https://cdn.bootcss.com/semantic-ui/2.2.14/semantic.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="/css/site.css" />
+
+
+</head>
+
+<body>
+  <div class="flip-container">
+    <div class="flipper">
+      <section class="front">
+        
+<nav class="ui top secondary menu">
+  <div class="item">
+    <i class="inverted big link bullseye icon dream-flip-toggle" title="Flip it!"></i>
+  </div>
+  <div class="item">
+    <a href="/">
+      <i class="inverted big link home icon" title="Home"></i>
+    </a>
+  </div>
+</nav>
+ 
+<div class="ui centered grid">
+  <div class="fifteen wide mobile fifteen wide tablet eleven wide computer column post-list post-single-main">
+
+    <section class="ui secondary top attached black segment">
+      <a class="ui black right corner label" href="javascript:void(0)" onclick="savePostAsImg()">
+        <i class="save icon"></i>
+      </a>
+      <header>
+        <h1 class="ui header">
+          우분투 및 쓸모있는 패키지 설치하기
+          <div class="sub header">@ onyou · Jun 13, 2018 · 2 min read · Update at Jun 13, 2018</div>
+        </h1>
+      </header>
+      <article class="post-content" style="margin-top: 2rem; font-size: 1.4rem;">
+
+<blockquote>
+<p>어디서든 sudo 명령어를 사용할 때는 최고 권한자의 비밀번호(컴퓨터 로그인 할 때 비밀번호)를 입력해야 한다.</p>
+</blockquote>
+
+<h1 id="1-우분투-설치하기">1. 우분투 설치하기</h1>
+
+<h2 id="1-우분투-컴퓨터-만들기">1) 우분투 컴퓨터 만들기</h2>
+
+<blockquote>
+<p>좋은 블로그가 있어서 우분투 설치할 일이 있으면 참고</p>
+</blockquote>
+
+<ul>
+<li><a href="https://medium.com/ics-lab/%EC%9A%B0%EB%B6%84%ED%88%AC-ubuntu-%EB%A1%9C-%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0-1-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0-%EB%93%80%EC%96%BC%EB%B6%80%ED%8C%85-9964f088c9ac">&mdash;요기클릭&mdash;</a></li>
+</ul>
+
+<h2 id="2-우분투-한영키-설정">2) 우분투 한영키 설정</h2>
+
+<blockquote>
+<p>하는 방법 잘나와 있는 블로그를 찾았으니 여기서 보면 될 듯</p>
+</blockquote>
+
+<ul>
+<li><a href="http://blankspace-dev.tistory.com/229">&mdash;요기클릭&mdash;</a></li>
+</ul>
+
+<h2 id="3-파이어-폭스-삭제">3) 파이어 폭스 삭제</h2>
+
+<blockquote>
+<p>우분투를 설치하면 파이어 폭스가 생기는데 애는 필요없으니까 깔끔하게 삭제하고 크롬 사용</p>
+</blockquote>
+
+<p>a. 다음 명령어로 파이어 폭스를 지워준다</p>
+
+<pre><code>sudo apt-get purge firefox
+</code></pre>
+
+<p>b. 다음 명령어는 파이어폭스의 캐시들을 깔끔하게 지우는 코드</p>
+
+<pre><code>sudo rm -rf ~/.mozilla/firefox/
+sudo rm -rf ~/.macromedia/
+sudo rm -rf /etc/firefox/
+sudo rm -rf /usr/lib/firefox/
+sudo rm -rf /usr/lib/firefox-addons/
+</code></pre>
+
+<h1 id="2-패키지-설치하기">2. 패키지 설치하기</h1>
+
+<blockquote>
+<p>우분투에서는 프로그램을 패키지라고 한다.</p>
+</blockquote>
+
+<h2 id="1-git">1) git</h2>
+
+<p>a. 다음 명령어로 git 설치</p>
+
+<pre><code>sudo apt-get install git
+</code></pre>
+
+<p>b. 다음과 같이 자신의 컴퓨터에 git 환경을 설정</p>
+
+<pre><code>git config --global user.name &quot;여기에 자신의 영어 이름을 입력합니다&quot;
+git config --global user.email &quot;여기에 자신의 이메일을 입력합니다&quot;
+git config --global color.ui auto
+git config --global core.quotepath off
+git config --global credential.helper store
+</code></pre>
+
+<h2 id="2-visual-studio">2) Visual Studio</h2>
+
+<blockquote>
+<p>리눅스와 친한 git과 md 관리가 용이한 Visual Studeo를 설치하고 깔끔하게 지우는 법까지</p>
+</blockquote>
+
+<p><strong>ㄱ. 설치하기</strong></p>
+
+<p>a. 터미널에서 다음 명령어로 MicrosoftGPG키 다운로드</p>
+
+<pre><code>curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor &gt; microsoft.gpg
+</code></pre>
+
+<p>b. 다음 명령어로 키를 설치</p>
+
+<pre><code>sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
+</code></pre>
+
+<p>c. 다음 명령어로 저장소에 비주얼 스튜지오 시스템 추가</p>
+
+<pre><code>sudo sh -c 'echo &quot;deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main&quot; &gt; /etc/apt/sources.list.d/vscode.list'
+</code></pre>
+
+<p>d. 설치</p>
+
+<pre><code>sudo apt update
+sudo apt install code
+</code></pre>
+
+<p><strong>ㄴ. 제거하기</strong></p>
+
+<p>a. 다음 명령어 실행</p>
+
+<pre><code>sudo apt remove code &amp;&amp; sudo apt autoremove
+</code></pre>
+
+<h2 id="3-android-studio">3) android Studio</h2>
+
+<p>a. 다음 링크에서 안드로이드 스튜디오를 다운로드 받는다.</p>
+
+<ul>
+<li><a href="https://developer.android.com/studio">&ndash;이 링크 입니다&ndash;</a></li>
+</ul>
+
+<p>b. 그 다음 이 링크의 맨 아래 동영상을 그대로 따라한다 (압축 푸는 거부터 포함되어 있음 )</p>
+
+<ul>
+<li><a href="https://developer.android.com/studio/install">&ndash;이 링크 입니다&ndash;</a></li>
+</ul>
+
+<p>c. 안드로이드 개발자라면 런쳐에 고정 필수.</p>
+</article>
+    </section>
+
+    <footer class="ui secondary attached segment dream-tags">
+      
+      <span>No Tag</span>
+      
+    </footer>
+
+    
+
+    
+    <footer class="ui secondary bottom attached stacked segment post-disqus-area" data-html2canvas-ignore="true">
+      <div id="disqus_thread"></div>
+      <script>
+      
+
+      
+
+
+      var disqus_config = function () {
+      this.page.url = 'https:\/\/MoonOnYou.github.io\/post\/os\/%EC%9A%B0%EB%B6%84%ED%88%AC-%EB%B0%8F-%EC%93%B8%EB%AA%A8%EC%9E%88%EB%8A%94-%ED%8C%A8%ED%82%A4%EC%A7%80-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0\/';  
+      this.page.identifier = '\/post\/os\/%EC%9A%B0%EB%B6%84%ED%88%AC-%EB%B0%8F-%EC%93%B8%EB%AA%A8%EC%9E%88%EB%8A%94-%ED%8C%A8%ED%82%A4%EC%A7%80-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0\/'; 
+      };
+
+      (function() { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://' + 'onyous-blog' + '.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </footer>
+    
+
+  </div>
+  <div class="fifteen wide mobile fifteen wide tablet four wide computer column">
+
+    <section class="ui top attached center aligned inverted segment">
+  <div class="ui small circular image">
+    
+    <img src="/img/avatar-ex.svg">
+    
+  </div>
+  <h3 class="ui header">onyou&#39;s blog<div class="sub header" style="color: white;"></div>
+  </h3>
+
+  <div class="ui inverted horizontal list">
+    
+    <a class="item" href="/post">
+      <i class="archive icon" title="Archives"></i>
+    </a>
+    
+    <a class="item" href="/tags">
+      <i class="tags icon" title="All Tags"></i>
+    </a>
+    <a class="item" href="/categories">
+      <i class="inverted cubes icon" title="All Categories"></i>
+    </a>
+  </div>
+
+  <a id="tag-category-pop" class="ui red right corner label">
+    <i class="pointing down icon" title="Click this to pop tags and categories"></i>
+  </a>
+</section>
+
+
+
+
+<section class="ui attached inverted segment dream-categories">
+  <div class="ui inverted accordion">
+    
+    <div class="title">
+      <i class="dropdown icon"></i>
+      <a href="/categories/android" class="item" style="color: white;">android</a>
+    </div>
+    <div class="content">
+      <div class="ui link inverted list">
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="cocktail icon"></i>
+        <div class="content">
+          <a href="https://MoonOnYou.github.io/post/android/android-design/" class="item">Android design</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="cocktail icon"></i>
+        <div class="content">
+          <a href="https://MoonOnYou.github.io/post/android/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4--%ED%8C%81/" class="item">안드로이드 스튜디오  팁</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="cocktail icon"></i>
+        <div class="content">
+          <a href="https://MoonOnYou.github.io/post/android/realm-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/" class="item">Realm 설정하기</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="cocktail icon"></i>
+        <div class="content">
+          <a href="https://MoonOnYou.github.io/post/android/%EA%B6%8C%ED%95%9C%EC%84%A4%EC%A0%95/" class="item">권한설정</a>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+<section class="ui bottom attached center aligned inverted segment">
+    
+    <p>© 2018 ONYOU&#39;S  SITE</p>
+    
+    <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</p>
+</section>
+
+
+  </div>
+</div>
+
+      </section>
+      <section class="back">
+        <nav class="ui top secondary menu" style="overflow-x: auto">
+  <div class="item">
+    <i class="inverted big link bullseye icon dream-flip-toggle" title="Flip it!"></i>
+  </div>
+  
+  
+  
+  
+  
+</nav>
+
+<div class="ui centered grid about">
+  <div class="fifteen wide mobile fifteen wide tablet fifteen wide computer column">
+
+    <section class="ui stacked segments">
+      <header class="ui inverted segment">
+        <h2 class="ui header">
+          About
+        </h2>
+      </header>
+
+      <article class="ui inverted segment back-about">
+        <div class="ui stackable three column grid">
+          <div class="column">
+              
+          </div>
+          <div class="column">
+              
+          </div>
+          <div class="column">
+              
+          </div>
+        </div>
+      </article>
+
+      
+
+      
+      
+    </section>
+
+  </div>
+</div>
+
+      </section>
+    </div>
+  </div>
+
+  
+<script src="/js/jquery.min.js"></script>
+<script src="/js/semantic.min.js"></script>
+<script src="/js/html2canvas.min.js"></script>
+<script src="/js/bg.js"></script>
+<script src="/js/site.js"></script>
+
+
+
+</body>
+
+</html>

@@ -5,14 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>
-All Tags
-</title>
+  <title>ONYOU&#39;S  SITE</title>
 
   
   
   <meta name="author" content="onyou" />
-  <meta name="description" content="공유로 만드는 아름다운 세상" />
+  <meta name="description" content="안드로이드에서 마진, 패딩을 8dp단위로 사용하면 훨씬더 깔끔하고 정돈된 디자인이 된다.
+ 안드로이드에 구글 폰트(무료) 적용하기  사용자 임의 폰트를 적용하기 위해서 &amp;ldquo; assets&amp;rdquo;폴더가 필요한데 ,만들어 줘야한다.
+ src폴더에 마우스 오른쪽 클리을 해서 &amp;ldquo;New -&amp;gt; Folder -&amp;gt; Assets Folder&amp;rdquo;를 누룸
+ 사용자 폴저 구조마다 다름 현재 나는 project 단위로 폴더구조보기를 지정해놓은 상태  assets는 폴더명이 &amp;ldquo;assets&amp;rdquo;로 지정되 있으므로 Finish 누르면 됨
+ google Fonts에 들어가서 마음에 드는 폰트에 &#43; 를 누른다" />
 
 
 
@@ -21,7 +23,7 @@ All Tags
 <meta name="generator" content="Hugo 0.40.3" />
 
 
-<link rel="canonical" href="https://MoonOnYou.github.io/tags/" />
+<link rel="canonical" href="https://MoonOnYou.github.io/post/android/android-design/" />
 <link rel="alternative" href="/index.xml" title="ONYOU&#39;S  SITE" type="application/atom+xml" />
 
 <link href="https://cdn.bootcss.com/semantic-ui/2.2.14/semantic.min.css" rel="stylesheet" />
@@ -35,16 +37,116 @@ All Tags
     <div class="flipper">
       <section class="front">
         
-<nav class="ui top secondary menu" style="overflow-x: auto">
+<nav class="ui top secondary menu">
   <div class="item">
     <i class="inverted big link bullseye icon dream-flip-toggle" title="Flip it!"></i>
   </div>
   <div class="item">
-    <a href="/"><i class="inverted big link home icon" title="Home"></i></a>
+    <a href="/">
+      <i class="inverted big link home icon" title="Home"></i>
+    </a>
   </div>
 </nav>
  
 <div class="ui centered grid">
+  <div class="fifteen wide mobile fifteen wide tablet eleven wide computer column post-list post-single-main">
+
+    <section class="ui secondary top attached black segment">
+      <a class="ui black right corner label" href="javascript:void(0)" onclick="savePostAsImg()">
+        <i class="save icon"></i>
+      </a>
+      <header>
+        <h1 class="ui header">
+          Android design
+          <div class="sub header">@ onyou · Jun 24, 2018 · 1 min read · Update at Jun 24, 2018</div>
+        </h1>
+      </header>
+      <article class="post-content" style="margin-top: 2rem; font-size: 1.4rem;">
+
+<blockquote>
+<p>안드로이드에서 마진, 패딩을 8dp단위로 사용하면 훨씬더 깔끔하고 정돈된 디자인이 된다.</p>
+</blockquote>
+
+<h1 id="안드로이드에-구글-폰트-무료-적용하기">안드로이드에 구글 폰트(무료) 적용하기</h1>
+
+<ol>
+<li><p>사용자 임의 폰트를 적용하기 위해서 &ldquo; assets&rdquo;폴더가 필요한데 ,만들어 줘야한다.</p></li>
+
+<li><p>src폴더에 마우스 오른쪽 클리을 해서 &ldquo;New -&gt; Folder -&gt; Assets  Folder&rdquo;를 누룸</p>
+
+<ul>
+<li>사용자 폴저 구조마다 다름 현재 나는 project 단위로 폴더구조보기를 지정해놓은 상태</li>
+</ul></li>
+
+<li><p>assets는 폴더명이 &ldquo;assets&rdquo;로 지정되 있으므로 Finish 누르면 됨</p></li>
+
+<li><p><a href="https://fonts.google.com/?selection.family=Domine|Song+Myung">google Fonts</a>에 들어가서 마음에 드는 폰트에 + 를 누른다</p></li>
+
+<li><p>다운로드한다.</p></li>
+
+<li><p>다운로드 후 압축을 풀면 .ttf 파일이 보이는데 이 파일을 assets 폴더에 복사해서 넣는다.</p></li>
+
+<li><p>만약 google fonts를 적용해야 하는 textView id이름이 &ldquo;fistTitle&rdquo;이고 .ttf파일 이름이 &ldquo;onyou.ttf&rdquo;라면</p></li>
+</ol>
+
+<pre><code>TextView textView = findViewById( R.id.fistTitle );
+        Typeface typeface = Typeface.createFromAsset( getAssets(),&quot;onyou.ttf&quot; );
+        textView.setTypeface( typeface );
+</code></pre>
+
+<h1 id="무료-아이콘-다운로드-사이트">무료 아이콘 다운로드 사이트</h1>
+
+<blockquote>
+<p><a href="https://www.flaticon.com/">flaticon</a></p>
+</blockquote>
+
+<ol>
+<li><p>마음에 드는 아이콘을 선택한다</p>
+
+<ul>
+<li>왕관은 유료 아닌것은 무료이다</li>
+<li>가로로 쭉 나열되 있는 것들은 다른 사이트로 넘어가는데 좀 귀찮음, 그냥 해당사이트게 젤 편함</li>
+</ul></li>
+
+<li><p>원하는 확장자를 누르면 색상, 크기를 선택할 수 있고, 두번째에 있는 Free download 눌러서 무료로 다운로드 한다</p></li>
+</ol>
+</article>
+    </section>
+
+    <footer class="ui secondary attached segment dream-tags">
+      
+      <span>No Tag</span>
+      
+    </footer>
+
+    
+
+    
+    <footer class="ui secondary bottom attached stacked segment post-disqus-area" data-html2canvas-ignore="true">
+      <div id="disqus_thread"></div>
+      <script>
+      
+
+      
+
+
+      var disqus_config = function () {
+      this.page.url = 'https:\/\/MoonOnYou.github.io\/post\/android\/android-design\/';  
+      this.page.identifier = '\/post\/android\/android-design\/'; 
+      };
+
+      (function() { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://' + 'onyous-blog' + '.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </footer>
+    
+
+  </div>
   <div class="fifteen wide mobile fifteen wide tablet four wide computer column">
 
     <section class="ui top attached center aligned inverted segment">
@@ -132,22 +234,6 @@ All Tags
 
 
   </div>
-  <div class="fifteen wide mobile fifteen wide tablet eleven wide computer column post-list">
-    <div class="ui inverted segment">
-      <h2 class="ui header">
-        All Tags
-        <div class="ui grey sub header">
-          
-          0 tags
-          
-        </div>
-      </h2>
-
-      
-      
-
-    </div>
-  </div>
 </div>
 
       </section>
@@ -190,30 +276,6 @@ All Tags
       
 
       
-        
-        <footer class="ui secondary segment">
-          <div id="disqus_thread"></div>
-          <script>
-          
-
-          
-
-
-          var disqus_config = function () {
-          this.page.url = 'https:\/\/MoonOnYou.github.io\/tags\/about';  
-          this.page.identifier = '/about'; 
-          };
-
-          (function() { 
-          var d = document, s = d.createElement('script');
-          s.src = 'https://' + 'onyous-blog' + '.disqus.com/embed.js';
-          s.setAttribute('data-timestamp', +new Date());
-          (d.head || d.body).appendChild(s);
-          })();
-          </script>
-          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        </footer>
-        
       
     </section>
 

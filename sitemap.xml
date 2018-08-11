@@ -3,96 +3,83 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://MoonOnYou.github.io/os/%EC%9A%B0%EB%B6%84%ED%88%AC-%EB%B0%8F-%EC%93%B8%EB%AA%A8%EC%9E%88%EB%8A%94-%ED%8C%A8%ED%82%A4%EC%A7%80-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</loc>
+    <loc>https://MoonOnYou.github.io/post/os/%EC%9A%B0%EB%B6%84%ED%88%AC-%EB%B0%8F-%EC%93%B8%EB%AA%A8%EC%9E%88%EB%8A%94-%ED%8C%A8%ED%82%A4%EC%A7%80-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</loc>
     <lastmod>2018-06-13T17:28:36+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://MoonOnYou.github.io/computer-language/%EC%BD%94%ED%8B%80%EB%A6%B0-%EA%B8%B0%EB%B3%B8%EB%AC%B8%EB%B2%95-%EC%BD%94%ED%8B%80%EB%A6%B0-%ED%8A%B9%EC%A7%95/</loc>
+    <loc>https://MoonOnYou.github.io/post/computer-language/%EC%BD%94%ED%8B%80%EB%A6%B0-%EA%B8%B0%EB%B3%B8%EB%AC%B8%EB%B2%95-%EC%BD%94%ED%8B%80%EB%A6%B0-%ED%8A%B9%EC%A7%95/</loc>
     <lastmod>2018-05-12T23:53:43+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://MoonOnYou.github.io/computer-language/%EC%BD%94%ED%8B%80%EB%A6%B0-%ED%82%A4%EC%9B%8C%EB%93%9C-%EC%A0%95%EB%A6%AC/</loc>
+    <loc>https://MoonOnYou.github.io/post/computer-language/%EC%BD%94%ED%8B%80%EB%A6%B0-%ED%82%A4%EC%9B%8C%EB%93%9C-%EC%A0%95%EB%A6%AC/</loc>
     <lastmod>2018-05-12T22:00:14+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://MoonOnYou.github.io/computer-language/java/</loc>
+    <loc>https://MoonOnYou.github.io/post/computer-language/java/</loc>
     <lastmod>2018-07-26T21:30:09+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://MoonOnYou.github.io/os/%EB%A6%AC%EB%88%85%EC%8A%A4-%EB%AA%85%EB%A0%B9%EC%96%B4/</loc>
+    <loc>https://MoonOnYou.github.io/post/os/%EB%A6%AC%EB%88%85%EC%8A%A4-%EB%AA%85%EB%A0%B9%EC%96%B4/</loc>
     <lastmod>2018-07-09T22:22:41+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://MoonOnYou.github.io/etc/color/</loc>
+    <loc>https://MoonOnYou.github.io/post/etc/color/</loc>
     <lastmod>2018-06-24T01:13:45+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://MoonOnYou.github.io/android/android-design/</loc>
+    <loc>https://MoonOnYou.github.io/post/android/android-design/</loc>
     <lastmod>2018-06-24T00:32:35+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://MoonOnYou.github.io/android/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4--%ED%8C%81/</loc>
+    <loc>https://MoonOnYou.github.io/post/android/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4--%ED%8C%81/</loc>
     <lastmod>2018-06-06T21:51:02+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://MoonOnYou.github.io/android/realm-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/</loc>
+    <loc>https://MoonOnYou.github.io/post/android/realm-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/</loc>
     <lastmod>2018-06-05T20:20:13+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://MoonOnYou.github.io/human-language/some%EA%B3%BC-any%EC%9D%98-%EC%B0%A8%EC%9D%B4/</loc>
+    <loc>https://MoonOnYou.github.io/post/human-language/some%EA%B3%BC-any%EC%9D%98-%EC%B0%A8%EC%9D%B4/</loc>
     <lastmod>2018-06-05T18:41:25+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://MoonOnYou.github.io/etc/gitignore%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/</loc>
+    <loc>https://MoonOnYou.github.io/post/etc/gitignore%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/</loc>
     <lastmod>2018-06-04T22:23:23+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://MoonOnYou.github.io/android/%EA%B6%8C%ED%95%9C%EC%84%A4%EC%A0%95/</loc>
+    <loc>https://MoonOnYou.github.io/post/android/%EA%B6%8C%ED%95%9C%EC%84%A4%EC%A0%95/</loc>
     <lastmod>2018-06-04T18:25:46+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://MoonOnYou.github.io/computer-language/htmlcss/</loc>
+    <loc>https://MoonOnYou.github.io/post/computer-language/htmlcss/</loc>
     <lastmod>2018-06-03T03:33:33+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://MoonOnYou.github.io/android/</loc>
+    <loc>https://MoonOnYou.github.io/post/about/desc/</loc>
+  </url>
+  
+  <url>
+    <loc>https://MoonOnYou.github.io/categories/android/</loc>
     <lastmod>2018-06-24T00:32:35+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://MoonOnYou.github.io/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://MoonOnYou.github.io/computer-language/</loc>
-    <lastmod>2018-05-12T23:53:43+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://MoonOnYou.github.io/etc/</loc>
-    <lastmod>2018-06-24T01:13:45+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://MoonOnYou.github.io/human-language/</loc>
-    <lastmod>2018-06-05T18:41:25+09:00</lastmod>
+    <lastmod>2018-06-24T00:32:35+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -103,7 +90,7 @@
   </url>
   
   <url>
-    <loc>https://MoonOnYou.github.io/os/</loc>
+    <loc>https://MoonOnYou.github.io/post/</loc>
     <lastmod>2018-06-13T17:28:36+09:00</lastmod>
     <priority>0</priority>
   </url>
