@@ -68,7 +68,12 @@
   </url>
   
   <url>
-    <loc>https://MoonOnYou.github.io/post/about/desc/</loc>
+    <loc>https://MoonOnYou.github.io/about/desc/</loc>
+  </url>
+  
+  <url>
+    <loc>https://MoonOnYou.github.io/about/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
